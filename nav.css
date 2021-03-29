@@ -10,7 +10,7 @@ nav {
     align-items: center;
     padding: 0;
     min-height: 10vh;
-    background-color: whitesmoke;
+    background-color: white;
     
 }
 footer{
@@ -19,7 +19,7 @@ footer{
     align-items: center;
     padding: 0;
     min-height: 10vh;
-    background-color: whitesmoke;
+    background-color: white;
 }
 .logo {
     display: flex;

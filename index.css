@@ -1,0 +1,28 @@
+.title {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+
+.new_stores {
+    background-color:whitesmoke;
+    width: 100%;
+    height: 200px;
+}
+
+.new_products {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 200px;
+}
+
+.featured_stores {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 200px;
+}
+
+.featured_products {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 200px;
+}
