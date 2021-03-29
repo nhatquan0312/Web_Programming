@@ -1,0 +1,15 @@
+Trang này để trữ code
+
+  In this first stage, the client wants you to design and implement UI/UX parts of the mall using HTML & CSS. To attract as many visitors as possible, the client wants the new website to support at least 3 types of device:
+
+Desktop computer: 1024 pixels or higher width
+Tablet: 768 to 1023 pixels width
+Smartphone: 767 pixels or lower width
+Here are some places where you may need to provide different UI component arrangements for different device types:
+
+Navigation menu bar: always-visible horizontal navigation menu on desktop computers vs. alternating between visible and hidden vertical navigation menu on tablets/smartphones
+Input form: a label and its linked input field may be positioned on the same line on desktop computers, but they should be placed on 2 different lines on tablets/smartphones
+Layout: a multi-column layout on desktop computers may collapse into a one-column layout on tablets/smartphones
+
+
+            
