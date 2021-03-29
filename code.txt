@@ -11,5 +11,19 @@ Navigation menu bar: always-visible horizontal navigation menu on desktop comput
 Input form: a label and its linked input field may be positioned on the same line on desktop computers, but they should be placed on 2 different lines on tablets/smartphones
 Layout: a multi-column layout on desktop computers may collapse into a one-column layout on tablets/smartphones
 
+Display a contact form for visitors to contact the mall owner. The form contains the following fields
+
+Contact purpose (a drop-down select element, use human-friendly text to display information, but use shorter computer-friendly values to store information; apply this principle for other inputs too)
+Name: a required text field
+Email: a valid email address
+Phone: a valid phone number
+Preferred contact method: 2 radios (email and phone)
+Contact days: from Monday to Sunday (7 checkboxes)
+Message: a multiple-line text input
+Two buttons: Clear and Send
+Use the same header and footer as the Mall Home page.
+
+A README.md file is required in the root folder of your submission to describes briefly your group and the mall website. It also contains the GitHub URL of your repo. You need to add me as a collaborator to your repo. My GitHub ID is TriDang
+
 
             
