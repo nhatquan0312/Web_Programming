@@ -1,0 +1,36 @@
+* {
+    font-family: Arial;
+    margin: 10px;
+}
+.store-page {
+    display: -webkit-flex;
+    display: flex;
+}
+.store-logo {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-left: 3%;
+}
+.store-description {
+    box-sizing: border-box;
+    
+    margin-right: 35%;
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+    font-size: 20px;
+}
+.new-products  {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.item-box {
+    box-sizing:border-box;
+    border:1px solid black;
+    margin-left: 4%;
+    width: 260px;
+    height: 420px;
+    text-align: center;
+}
