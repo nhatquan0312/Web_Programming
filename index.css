@@ -4,18 +4,29 @@
 }
 
 
-.new_stores {
-    background-color:whitesmoke;
-    width: 100%;
-    height: 200px;
-}
-
-.new_products {
+.stores_container {
     background-color: whitesmoke;
     width: 100%;
     height: 200px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.product_container {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.store{
+    background-color: #f1f1f1;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+  height: 50px;
 }
 .products {
  background-color: #f1f1f1;

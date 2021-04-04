@@ -21,6 +21,9 @@ footer{
     min-height: 10vh;
     background-color: white;
 }
+.logo h4 b {
+    font-size: 40px;
+}
 .logo {
     display: flex;
     flex:1;    
@@ -32,8 +35,8 @@ footer{
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0;
-    font-size: 25px;
     margin: 0 0 0 20px;
+    
 } 
 
 ul 
@@ -55,15 +58,13 @@ ul li {
  ul li a {
     
     text-decoration: none;
-     color: black;
-     font-family: 'Inter', sans-serif;
-     
-     color: black;
-        letter-spacing: 1px;
-        font-size: 12px ;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 0.82rem ;
         
-        
-        
+    
  }
  ul li a:hover {
     color: #ccc;
