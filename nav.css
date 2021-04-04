@@ -21,6 +21,9 @@ footer{
     min-height: 10vh;
     background-color: white;
 }
+.logo h4 b {
+    font-size: 50px;
+}
 .logo {
     display: flex;
     flex:1;    
@@ -32,8 +35,9 @@ footer{
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0;
-    font-size: 25px;
+    font-size: 30px;
     margin: 0 0 0 20px;
+    
 } 
 
 ul 
@@ -60,7 +64,7 @@ ul li {
      
      color: black;
         letter-spacing: 1px;
-        font-size: 12px ;
+        font-size: large ;
         
         
         
