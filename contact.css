@@ -29,9 +29,13 @@
 .right-box {
     display: flex;
     flex-basis: 60%;
-    
-
 }
+.submit {
+cursor: pointer;
+}
+
+
+
 .left-box {
     display: flex;
     flex-basis: 60%;
