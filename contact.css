@@ -29,18 +29,16 @@
 .right-box {
     display: flex;
     flex-basis: 60%;
+    justify-content: space-around;
 }
 .submit {
 cursor: pointer;
 }
-
-
-
 .left-box {
     display: flex;
     flex-basis: 60%;
     flex-direction: column;
-}
+} 
 input {
     background-color: #ccc;
 }
