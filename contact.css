@@ -25,11 +25,14 @@
     line-height: 1.4;
     text-transform: uppercase;
     color: #000000;
+    margin: 4vh;
+
 }
 .right-box {
     display: flex;
-    flex-basis: 60%;
+    
     justify-content: space-around;
+
 }
 .submit {
 cursor: pointer;
@@ -38,6 +41,7 @@ cursor: pointer;
     display: flex;
     flex-basis: 60%;
     flex-direction: column;
+
 } 
 input {
     background-color: #ccc;
