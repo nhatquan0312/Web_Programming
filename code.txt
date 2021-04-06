@@ -75,3 +75,168 @@ input {
     
     
 }
+pinpoint-icon-vector-9434992.jpeg
+
+contact.html code
+
+<main>
+    
+        
+        <div class="container">
+            <div class="contactinfo">
+            
+           
+        
+        
+    
+       
+            
+                <ul>
+                    <li><span><img src="75444181-phone-call-symbol-simple-silhouette-icon-on-background.jpeg" alt="location"></span>
+                    <span>Nam molestie nec risus placerat interdum. Maecenas sit amet velit vel tortor imperdiet volutpat id nec quam. Nam ac porttitor urna. Aliquam congue ligula ipsum, id r</span>
+                </li>
+                <li><span><img src="#"  alt="location"></span>
+                    <span>Nam molestie nec risus placerat interdum. Maecenas sit amet velit vel tortor imperdiet volutpat id nec quam. Nam ac porttitor urna. </span>
+                </li>
+                <li><span><img src="download.png" alt="mail"></span>
+                    <span>Nam molestie nec risus placerat interdum. Maecenas sit amet velit vel tortor imperdiet volutpat id nec quam. Nam ac portt</span>
+                </li>
+            
+            
+            </ul>
+
+        </div>
+     </div>
+       
+        
+    
+        
+   
+   <section>
+    <div>
+        
+        <p>WE ARE ALWAYS LOOKING FOR GREAT COLLABORATORS. LET’S MESSAGE ME AND MAKE SOMETHING TOGETHER!
+        </p>
+        <form action="">
+        <div class="inputbox w50">
+            <label for="fname"></label><br>
+            <input type="text" id="fname" name="" placeholder="First name" required><br>
+            <span> First name</span>
+        </div>
+        <div class="inputbox w50">
+            <label for="lname"></label><br>
+            <input type="text" id="lname" name="" placeholder="Last name" required><br>
+            <span> Last name</span>
+        </div>
+        <div class="inputbox w50">
+            <label for="address"></label><br>
+            <input type="text" id="address" placeholder="Address" name="" required><br>
+            <span> Address</span>
+        </div>
+       
+        <div class="inputbox w50">
+            <label for="method"></label><br>
+            <select id="method" placeholder="Please choose your preferred contact method" required><br>
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+            </select><br><br>
+            <span> Please choose your preferred contact method</span>
+        </div>  
+        
+        <div class="inputbox w50">
+            <label for="email"></label><br>
+            <input type="text" id="email" placeholder="Email" name="" required><br>
+            <span> Email</span>
+        </div>
+        <div class="inputbox w50">  
+        <label for="phone"></label><br>
+            <input type="text" id="phone" name="phone" placeholder="Phone" required><br> 
+            <span> Phone</span>
+            </div>
+
+           
+           
+        <div class="inputbox w100">
+        <label for="message"></label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        
+        <div class="submit">
+            <input type="button" value="Submit">
+        </div>
+       
+</div>
+</form>
+</section>
+</main>
+    
+  
+</body>
+<footer>
+
+</footer>
+</html>
+ contact.css code 
+.body {
+    background-color: black;
+}
+
+.intro
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -.02em;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 4vh;
+
+}
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+ section {
+     content: "";
+     position: absolute;
+     right:0;
+     top: 0;
+     width: 50%;
+     height: 100%;
+     background-color: #ccc;
+
+}
+    
+main. container {
+    position: relative;
+    min-width: 1200px;
+    min-height: 560px;
+    display: flex;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+main .container .contactinfo {
+    position: absolute;
+    min-width: 50%;
+    min-height: 100%;
+    top: 0px;
+    left:0;
+    width: 350px;
+    height: calc (100 - 80px);
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    
+}
+

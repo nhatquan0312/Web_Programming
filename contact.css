@@ -1,3 +1,7 @@
+*
+{
+    font-family: 'Courier New', Courier, monospace;
+}
 .body {
     background-color: black;
 }
@@ -17,7 +21,28 @@
     margin: 4vh;
 
 }
-image {
-   height: 10px;
-    width: 10px;
+section {
+    position: relative;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #ccc;
+    justify-content: center;
+
+}
+section::before{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height:100%;
+    top: 0;
+    left: 0;
+    background: #03a9f4;
+
+}
+section .container {
+    position: relative;
+    min-height: 560px;
+    min-width: 1120px;
+    z-index: 1000;
+    display: flex;
 }
