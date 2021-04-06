@@ -26,4 +26,52 @@ Use the same header and footer as the Mall Home page.
 A README.md file is required in the root folder of your submission to describes briefly your group and the mall website. It also contains the GitHub URL of your repo. You need to add me as a collaborator to your repo. My GitHub ID is TriDang
 
 
+            </div>
+            <div class="Reachus-info"></div>
+                <ul>
+            <li><span> <img src="95977351-map-pin-icon-location-symbol-outline-vector-illustration-.png" alt="location symbol"></span>
+            <span> 26 Tan Thoi Nhat 5</span>
+            </li>
             
+            <li>
+                <span> <img src="95977351-map-pin-icon-location-symbol-outline-vector-illustration-.png" alt="location symbol"></span>
+                <span> 26 Tan Thoi Nhat 5</span>
+
+            </li>
+                </ul>
+        
+        </div>
+        
+
+
+
+
+        .right-box {
+    display: flex;
+     
+    justify-content: space-around;
+
+}
+.submit {
+cursor: pointer;
+}
+.left-box {
+    display: flex;
+    flex-basis: 60%;
+    flex-direction: column;
+
+} 
+input {
+    background-color: #ccc;
+}
+.container {
+    display: flex;
+    
+    margin: 3vh 0 0 3vh;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;
+    
+    
+}
