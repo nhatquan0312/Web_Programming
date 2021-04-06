@@ -1,17 +1,14 @@
-*
-{
-    font-family: 'Courier New', Courier, monospace;
-}
-.body {
-    background-color: black;
-}
 
-.intro
+body{
+    background: cornsilk;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.intro 
 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif ;
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: -.02em;
@@ -19,30 +16,80 @@
     text-transform: uppercase;
     color: #000000;
     margin: 4vh;
-
+    z-index: 1;
 }
-section {
+
+
+main .container {
     position: relative;
-    min-height: 100vh;
-    align-items: center;
-    background-color: #ccc;
-    justify-content: center;
-
-}
-section::before{
-    content: " ";
-    position: absolute;
-    width: 50%;
-    height:100%;
-    top: 0;
-    left: 0;
-    background: #03a9f4;
-
-}
-section .container {
-    position: relative;
-    min-height: 560px;
-    min-width: 1120px;
-    z-index: 1000;
+    min-width: 1200px;
+    min-height: 100%;
     display: flex;
+    z-index: 1000;
+    
+}  
+ main::before {
+     content: "";
+     position: absolute;
+     right:0;
+     top: 20vh;
+     width: 50%;
+     height: 100%;
+     background-color: cadetblue;
+
 }
+
+main .container .contactform {
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    right:0;
+    top: 20vh;
+    width: 50%;
+    height: 100%;   
+}
+
+main .container .contactinfo {
+    position: absolute;
+    min-width: 50%;
+    min-height: 100%;
+    top: 20vh;
+    left:0;
+    width: 350px;
+    height: calc (100 - 20vh);
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(131, 183, 187);
+    
+}
+main .container .contactinfo ul{
+    position: relative;
+    margin: 0 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: cadetblue;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2); 
+}
+main .container .contactinfo ul li{
+    position: relative;
+    margin: 20px 0; 
+    color:white;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+}
+
+main .container .contactinfo ul li span:nth-child(1)
+{
+    filter:invert(1);
+    max-width: 100%;
+    opacity:0.5;
+}
+
+
