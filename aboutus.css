@@ -1,0 +1,15 @@
+h1 {
+    font-size: larger
+}
+
+
+.group_info {
+    text-align: center;
+    font-size: medium;
+    line-height: 5;
+}
+
+.phong_pic, .quan_pic, .kieuanh_pic, .nhat_pic {
+    width: 300px;
+    border-radius: 50%;
+}
