@@ -56,15 +56,15 @@ main .container .contactform
 {
     position: absolute;
     top: 10vh;
-    width: calc(100% - 350px);
+    width: calc(100% - 330px);
     height: 80vh;        
     padding: 40px 50px;
     margin-bottom: 50px;
     background: cornsilk;
-    right: 120px;
+    right: 130px;
     z-index: 1;
-    padding-left: 350px;
-    margin-left: 350px;
+    padding-left: 330px;
+    margin-left: 330px;
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
 }
 main .container .contactform form {
@@ -89,7 +89,10 @@ width: 45%;
 
 main .container .contactform form .inputBox.w60
 {
-width: 45%;
+width: 50%;
+margin-top: 5px;
+padding-top:5px;
+
 } 
 
 main .container .contactform form .inputbox.w100 
@@ -116,6 +119,7 @@ select
     border: none;
     border-bottom: 2px solid rgb(112, 133, 134);
     font-size: 17px;
+    font-family:'Ubuntu Mono', monospace;
     font-weight: 300;
     color:cornsilk;
     padding: 5px 0;
