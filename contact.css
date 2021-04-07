@@ -4,12 +4,13 @@ body {
     font-family: 'Ubuntu Mono', monospace;
     
 }
+#title {color: cornsilk;}
 .intro 
 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: 'Oswald', sans-serif ;
+    font-family: 'Oswald', sans-serif !important;
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: -.02em;
@@ -51,19 +52,22 @@ main .container .contactform
 {
     position: absolute;
     top: 10vh;
-    width: calc(100% - 150px);
-    min-height: 70%;
+    width: calc(100% - 320px);
+    height: 50vh;        
     padding: 70px 50px;
     background: cornsilk;
+
     z-index: 1;
-    width: 350px;
+    padding-left: 320px;
+    margin-left: 320px;
+    
 }
 
 main .container .contactinfo {
     position: absolute;
     
     top:20vh;
-    left:0;
+    left:50px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
     padding: 40px;
     display: flex;
@@ -71,10 +75,11 @@ main .container .contactinfo {
     justify-content: space-between;
     align-items: center;
     background:  rgb(66, 81, 82);
-    
+    z-index: 2;
+    right: 60%;
 }
 
-main .container .contactinfo-ul{
+main .container .contactinfo .contactinfo-ul{
     position: relative;
     margin: 0 20px; 
     display: flex;
@@ -87,10 +92,11 @@ main .container .contactinfo-ul{
 main .container .contactinfo .contactinfo-ul li{
     position: relative;
     margin: 20px 0; 
-    color:white;
+    color:cornsilk;
     cursor: pointer;
     display: flex;
-    align-items: center;
+    
+
     z-index: 1000; 
 }
 
@@ -103,7 +109,7 @@ main .container .contactinfo .contactinfo-ul li span:nth-child(1)
 
 main .container .contactinfo .contactinfo-ul li span:nth-child(2)
 {
-    color: white;
+    color: cornsilk;
     font-weight: 300;
     margin-left: 10px;
     opacity: 0.5;
