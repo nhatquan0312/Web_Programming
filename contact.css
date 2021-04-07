@@ -18,7 +18,9 @@ body{
     margin: 4vh;
     z-index: 1;
 }
-
+main {
+    background-color: cornsilk;
+}
 
 main .container {
     position: relative;
@@ -34,21 +36,30 @@ main .container {
      right:0;
      top: 20vh;
      width: 50%;
-     height: 100%;
+     min-height: 100%;
      background-color: cadetblue;
+     margin-top: 30vh;
 
 }
 
 main .container .contactform {
-    display: flex;
-    z-index: 1;
-    position: absolute;
-    right:0;
+    position: relative;
     top: 20vh;
-    width: 50%;
-    height: 100%;   
+    min-width: 50%;
+    min-height: 100%;
+    left: 30%;
+   
+    background-color: crimson;
+
 }
 
+main .container .contactform form {
+    display: flex;
+    flex-direction: column;
+    margin: 20 px 20px 20px 20px;
+    justify-content: space-around;
+    align-items: center;
+}
 main .container .contactinfo {
     position: absolute;
     min-width: 50%;
@@ -63,7 +74,7 @@ main .container .contactinfo {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(131, 183, 187);
+   
     
 }
 main .container .contactinfo ul{
@@ -76,6 +87,7 @@ main .container .contactinfo ul{
     background-color: cadetblue;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2); 
 }
+
 main .container .contactinfo ul li{
     position: relative;
     margin: 20px 0; 
@@ -86,6 +98,32 @@ main .container .contactinfo ul li{
 }
 
 main .container .contactinfo ul li span:nth-child(1)
+{
+    width: 100%;
+    min-width: 32px;
+}
+
+
+main .container .contactinfo ul li span:nth-child(2)
+{
+    color: white;
+    font-weight: 300;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+main .container .contactinfo ul li:hover span:nth-child(1) img,
+main .container .contactinfo ul li:hover span:nth-child(2) 
+{
+    opacity:1
+}
+
+main .container .contactinfo ul li span:nth-child(3)
+{
+    width: 100%;
+    min-width: 32px;
+}
+main .container .contactinfo ul li span:nth-child(3) img
 {
     filter:invert(1);
     max-width: 100%;
