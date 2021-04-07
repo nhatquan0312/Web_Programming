@@ -1,6 +1,6 @@
 
 body{
-    background: cornsilk;
+    
     font-family: 'Ubuntu Mono', monospace;
 }
 .intro 
@@ -18,53 +18,42 @@ body{
     margin: 4vh;
     z-index: 1;
 }
-main {
-    background-color: cornsilk;
-}
+
 
 main .container {
     position: relative;
     min-width: 1200px;
     min-height: 100%;
     display: flex;
-    z-index: 1000;
-    
+    z-index: 1000;   
 }  
  main::before {
      content: "";
      position: absolute;
      right:0;
-     top: 20vh;
+     top: 10vh;
      width: 50%;
      min-height: 100%;
-     background-color: cadetblue;
-     margin-top: 30vh;
-
+     background-color: rgb(66, 81, 82);
 }
 
 main .container .contactform {
-    position: relative;
+    position: absolute;
     top: 20vh;
     min-width: 50%;
     min-height: 100%;
-    left: 30%;
-   
-    background-color: crimson;
-
+    left:50%;
+    padding: 70px 50px;
+    background: cornsilk;
 }
 
-main .container .contactform form {
-    display: flex;
-    flex-direction: column;
-    margin: 20 px 20px 20px 20px;
-    justify-content: space-around;
-    align-items: center;
-}
+
+
 main .container .contactinfo {
     position: absolute;
     min-width: 50%;
     min-height: 100%;
-    top: 20vh;
+    top: 10vh;
     left:0;
     width: 350px;
     height: calc (100 - 20vh);
@@ -84,7 +73,7 @@ main .container .contactinfo ul{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: cadetblue;
+    background-color:  rgb(66, 81, 82);
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2); 
 }
 
