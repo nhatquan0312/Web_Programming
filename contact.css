@@ -1,7 +1,8 @@
 
-body{
+body {
     
     font-family: 'Ubuntu Mono', monospace;
+    
 }
 .intro 
 {
@@ -17,83 +18,90 @@ body{
     color: #000000;
     margin: 4vh;
     z-index: 1;
+    margin: 0;
+    
 }
-
-
+main {
+    background: rgb(112, 133, 134);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+    
 main .container {
     position: relative;
     min-width: 1200px;
     min-height: 100%;
     display: flex;
-    z-index: 1000;   
-}  
+    z-index: 1000;  
+}
+
  main::before {
      content: "";
      position: absolute;
      right:0;
-     top: 10vh;
+     top: 0;
      width: 50%;
      min-height: 100%;
      background-color: rgb(66, 81, 82);
 }
 
-main .container .contactform {
+main .container .contactform 
+{
     position: absolute;
-    top: 20vh;
-    min-width: 50%;
-    min-height: 100%;
-    left:50%;
+    top: 10vh;
+    width: calc(100% - 150px);
+    min-height: 70%;
     padding: 70px 50px;
     background: cornsilk;
+    z-index: 1;
+    width: 350px;
 }
-
-
 
 main .container .contactinfo {
     position: absolute;
-    min-width: 50%;
-    min-height: 100%;
-    top: 10vh;
+    
+    top:20vh;
     left:0;
-    width: 350px;
-    height: calc (100 - 20vh);
-    z-index: 1;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-   
+    background:  rgb(66, 81, 82);
     
 }
-main .container .contactinfo ul{
+
+main .container .contactinfo-ul{
     position: relative;
     margin: 0 20px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color:  rgb(66, 81, 82);
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2); 
+    
 }
 
-main .container .contactinfo ul li{
+main .container .contactinfo .contactinfo-ul li{
     position: relative;
     margin: 20px 0; 
     color:white;
     cursor: pointer;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    z-index: 1000; 
 }
 
-main .container .contactinfo ul li span:nth-child(1)
+main .container .contactinfo .contactinfo-ul li span:nth-child(1)
 {
     width: 100%;
     min-width: 32px;
 }
 
 
-main .container .contactinfo ul li span:nth-child(2)
+main .container .contactinfo .contactinfo-ul li span:nth-child(2)
 {
     color: white;
     font-weight: 300;
@@ -101,18 +109,18 @@ main .container .contactinfo ul li span:nth-child(2)
     opacity: 0.5;
 }
 
-main .container .contactinfo ul li:hover span:nth-child(1) img,
-main .container .contactinfo ul li:hover span:nth-child(2) 
+main .container .contactinfo .contactinfo-ul li:hover span:nth-child(1) img,
+main .container .contactinfo .contactinfo-ul li:hover span:nth-child(2) 
 {
     opacity:1
 }
 
-main .container .contactinfo ul li span:nth-child(3)
+main .container .contactinfo .contactinfo-ul li span:nth-child(3)
 {
     width: 100%;
     min-width: 32px;
 }
-main .container .contactinfo ul li span:nth-child(3) img
+main .container .contactinfo .contactinfo-ul li span:nth-child(3) img
 {
     filter:invert(1);
     max-width: 100%;
