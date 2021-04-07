@@ -79,7 +79,7 @@ padding-top: 25px;
 main .container .contactform form ,inputBox 
 {
     position: relative;
-    margin: 0 0 25px 0;
+    margin: 10px 0 25px 0;
 }
 
 main .container .contactform form .inputBox.w50
@@ -89,41 +89,66 @@ width: 45%;
 
 main .container .contactform form .inputBox.w60
 {
-width: 50%;
-margin-top: 5px;
-padding-top:5px;
-
+width: 45%;
+padding-top: 15px;
 } 
 
-main .container .contactform form .inputbox.w100 
+main .container .contactform form .inputBox.w100 
 {
 width: 100%;
-
+margin: 20px;
 } 
 
-input
+main .container .contactform form .inputBox input,  
+main .container .contactform form .inputBox textarea
 {
-width: 100%;
+
+width: 100% !important;
+resize: none;
 border: none;
 border-bottom: 2px solid rgb(112, 133, 134);
 font-size: 17px;
 font-weight: 300;
-color:rgb(66, 81, 82);
+color:rgb(112, 133, 134);
 padding: 5px 0;
 background-color: cornsilk;
-
+font-family:'Ubuntu Mono', monospace;
+outline: none;
 }
+
+main .container .contactform form .inputBox textarea
+{
+    min-height: 115px;
+}
+main .container .contactform form .inputBox span {
+    position: absolute;
+    padding: 0;
+   
+    font-size: 17px;
+    font-weight: 300;
+    color:rgb(112, 133, 134);
+    
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+input:focus ~ span,  
+textarea:focus ~ span
+{
+   transform: translate(12px,-50px);
+}
+
 select
 {
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid rgb(112, 133, 134);
-    font-size: 17px;
-    font-family:'Ubuntu Mono', monospace;
-    font-weight: 300;
-    color:cornsilk;
-    padding: 5px 0;
-    background-color: rgb(66, 81, 82);  
+font-family:'Ubuntu Mono', monospace;
+color: rgb(112, 133, 134)!important;
+border: none;
+border-bottom: 2px solid rgb(112, 133, 134);
+font-size: 17px;
+font-weight: 300;
+color:rgb(112, 133, 134);
+padding: 5px 0;
+background-color: cornsilk;
 }
 
 
