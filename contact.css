@@ -76,15 +76,53 @@ flex-wrap: wrap;
 padding-top: 25px;
 }
 
-main .container .contactform form ,inputbox 
+main .container .contactform form ,inputBox 
 {
     position: relative;
-    margin: 0 0 35px 0;
+    margin: 0 0 25px 0;
 }
 
-main .container .contactform form .inputbox1 {
+main .container .contactform form .inputBox.w50
+{
+width: 45%;
+} 
+
+main .container .contactform form .inputBox.w60
+{
+width: 45%;
+} 
+
+main .container .contactform form .inputbox.w100 
+{
+width: 100%;
 
 } 
+
+input
+{
+width: 100%;
+border: none;
+border-bottom: 2px solid rgb(112, 133, 134);
+font-size: 17px;
+font-weight: 300;
+color:rgb(66, 81, 82);
+padding: 5px 0;
+background-color: cornsilk;
+
+}
+select
+{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(112, 133, 134);
+    font-size: 17px;
+    font-weight: 300;
+    color:cornsilk;
+    padding: 5px 0;
+    background-color: rgb(66, 81, 82);  
+}
+
+
 main .container .contactinfo {
     position: absolute;
     
