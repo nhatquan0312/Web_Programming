@@ -4,7 +4,14 @@ body {
     font-family: 'Ubuntu Mono', monospace;
     
 }
-#title {color: cornsilk;}
+main .container .contactinfo h1
+{
+color: cornsilk ;
+font-weight: 1000px ;
+font-size: 40px;
+
+}
+
 .intro 
 {
     display: flex;
@@ -17,10 +24,7 @@ body {
     line-height: 1.4;
     text-transform: uppercase;
     color: #000000;
-    margin: 4vh;
-    z-index: 1;
-    margin: 0;
-    
+    z-index: 1; 
 }
 main {
     background: rgb(112, 133, 134);
@@ -52,17 +56,35 @@ main .container .contactform
 {
     position: absolute;
     top: 10vh;
-    width: calc(100% - 320px);
-    height: 50vh;        
-    padding: 70px 50px;
+    width: calc(100% - 350px);
+    height: 80vh;        
+    padding: 40px 50px;
+    margin-bottom: 50px;
     background: cornsilk;
-
+    right: 120px;
     z-index: 1;
-    padding-left: 320px;
-    margin-left: 320px;
-    
+    padding-left: 350px;
+    margin-left: 350px;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+main .container .contactform form {
+position: relative;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+padding-top: 25px;
 }
 
+main .container .contactform form ,inputbox 
+{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+main .container .contactform form .inputbox1 {
+
+} 
 main .container .contactinfo {
     position: absolute;
     
