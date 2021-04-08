@@ -82,9 +82,9 @@ main .container .contactform form ,inputBox
     margin: 10px 0 25px 0;
 }
 
-main .container .contactform form .inputBox.w50
+main .container .contactform form .inputBox.w50, .submit
 {
-width: 45%;
+width: 35%;
 } 
 
 main .container .contactform form .inputBox.w60
@@ -96,7 +96,7 @@ padding-top: 15px;
 main .container .contactform form .inputBox.w100 
 {
 width: 100%;
-margin: 20px;
+margin: 30px;
 } 
 
 main .container .contactform form .inputBox input,  
@@ -128,14 +128,29 @@ main .container .contactform form .inputBox span {
     font-weight: 300;
     color:rgb(112, 133, 134);
     
-    transition: 0.5s;
+    transition: 1s;
     pointer-events: none;
 }
 
-input:focus ~ span,  
-textarea:focus ~ span
+input:focus ~ span
 {
-   transform: translate(12px,-50px);
+   transform: translate(100px);
+}
+main .container .contactform .inputBox input[type="submit"]
+{
+    position:relative;
+    cursor:pointer;
+    background-color:  rgb(112, 133, 134);
+    margin-top: 20px;
+   border: none;
+max-width: 150px;
+color:cornsilk;
+}
+main .container .contactform .inputBox input[type="submit"]:hover
+{
+background-color: rgb(66, 81, 82);
+
+
 }
 
 select
