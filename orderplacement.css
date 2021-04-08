@@ -1,0 +1,56 @@
+* {
+    font-family: 'Unbuntu mono', monospace;
+}
+.main{
+    background-color: blanchedalmond;
+}
+.flex {
+    display:flex;
+    flex-wrap:nowrap;
+}
+.flex > h2 {
+    width: 350px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 7%;
+}
+.flex > p {
+    width: 350px;
+    line-height: 70px;
+    text-align: center;
+    margin-left: 7%;
+}
+.order-content {
+    margin: 1% 12% 1% 12%;
+    padding: 1%;
+    box-sizing:border-box;
+    box-shadow: 2px 2px 3px grey;
+}
+.img {
+    width: 100px;
+    height: 100px;
+}
+ #number {
+    font-size: 20px;
+    text-align: center;
+    width: 45px;
+    height: 30px;
+}
+.order-bar {
+    padding-left: 10px;
+    margin-top: 3%;
+}
+.order-bar > p {
+ font-size: 36px;
+}
+
+.order-button > a {
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    
+
+}
