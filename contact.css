@@ -202,11 +202,12 @@ main .container .contactinfo .contactinfo-ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    
-    
-
     z-index: 1000; 
+}
+
+
+.icon {
+    background-color: cornsilk;
 }
 
 main .container .contactinfo .contactinfo-ul li span:nth-child(1), main .container .contactinfo .contactinfo-ul li span:nth-child(2),main .container .contactinfo .contactinfo-ul li span:nth-child(3)
@@ -215,7 +216,7 @@ main .container .contactinfo .contactinfo-ul li span:nth-child(1), main .contain
     min-width: 32px;
 }
 
-main .container .contactinfo .contactinfo-ul li span:nth-child(2)
+main .container .contactinfo .contactinfo-ul li span:nth-child(2), .icon
 {
     color: cornsilk;
     font-weight: 300;
@@ -223,7 +224,7 @@ main .container .contactinfo .contactinfo-ul li span:nth-child(2)
     opacity: 0.5;
 }
 
-main .container .contactinfo .contactinfo-ul li:hover span:nth-child(1) img,
+main .container .contactinfo .contactinfo-ul li:hover span:nth-child(1) .icon,
 main .container .contactinfo .contactinfo-ul li:hover span:nth-child(2) 
 {
     opacity:1
@@ -234,7 +235,7 @@ main .container .contactinfo .contactinfo-ul li span:nth-child(3)
     width: 100%;
     min-width: 32px;
 }
-main .container .contactinfo .contactinfo-ul li span:nth-child(3) img
+main .container .contactinfo .contactinfo-ul li span:nth-child(3) .icon
 {
     filter:invert(1);
     max-width: 100%;
