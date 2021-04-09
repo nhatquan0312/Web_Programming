@@ -28,13 +28,6 @@
   height: 50px;
 }
 .products {
- background-color: #f1f1f1;
-  margin: 10px;
-  padding: 10px;
-  font-size: 30px;
-  height: 50px;
-  border: 1px solid gray;
-  border-radius: 12px;
 }
 .col{
     flex-basis: 25%;
