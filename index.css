@@ -27,7 +27,8 @@
   font-size: 30px;
   height: 50px;
 }
-.products {
+.products p{
+    text-decoration: underline;
 }
 .col{
     flex-basis: 25%;
