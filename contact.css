@@ -127,7 +127,6 @@ main .container .contactform form .inputBox span {
     font-size: 17px;
     font-weight: 300;
     color:rgb(112, 133, 134);
-    
     transition: 1s;
     pointer-events: none;
 }
@@ -136,6 +135,7 @@ input:focus ~ span
 {
    transform: translate(100px);
 }
+
 main .container .contactform .inputBox input[type="submit"]
 {
     position:relative;
