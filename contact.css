@@ -57,7 +57,7 @@ main .container .contactform
     position: absolute;
     top: 10vh;
     width: calc(100% - 330px);
-    height: 80vh;        
+    height: 85vh;        
     padding: 40px 50px;
     margin-bottom: 50px;
     background: cornsilk;
@@ -79,7 +79,7 @@ padding-top: 25px;
 main .container .contactform form ,inputBox 
 {
     position: relative;
-    margin: 10px 0 25px 0;
+    margin: 0px 0 25px 0;
 }
 
 main .container .contactform form .inputBox.w50, .submit
@@ -118,7 +118,7 @@ outline: none;
 
 main .container .contactform form .inputBox textarea
 {
-    min-height: 115px;
+    min-height: 100px;
 }
 main .container .contactform form .inputBox span {
     position: absolute;
@@ -133,7 +133,7 @@ main .container .contactform form .inputBox span {
 
 input:focus ~ span
 {
-   transform: translate(100px);
+   transform: translate(70px);
 }
 
 main .container .contactform .inputBox input[type="submit"]
