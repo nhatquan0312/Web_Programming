@@ -21,12 +21,7 @@
     justify-content: space-around;
     align-items: center;
 }
-.stores{
-    background-color: #f1f1f1;
-  margin: 10px;
-  font-size: 30px;
-  height: 50px;
-}
+
 .products p{
     text-decoration: underline;
 }
