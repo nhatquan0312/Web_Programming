@@ -1,0 +1,23 @@
+*{
+    font-family: 'Ubuntu mono', monospace;
+}
+.p {
+    text-align: center;
+    font-size: 256px;
+    padding-top: 5%;
+}
+.img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .p {
+        font-size: 64px;
+    }
+    img {
+        width: 64px;
+        height: 64px;
+    }
+}
