@@ -1,23 +1,30 @@
 *{
     font-family: 'Ubuntu mono', monospace;
 }
-.p {
+.confirmed {
     text-align: center;
-    font-size: 256px;
-    padding-top: 5%;
+    font-size: 100px;
+    padding-top: 3%;
 }
-.img {
-    width: 100px;
-    height: 100px;
-    text-align: center;
+.icon {
+    width: 128px;
+    height: 128px;
+    margin-left: 47%;
+    margin-top: 3%
 }
-
-@media screen and (max-width: 1024px) {
-    .p {
+/* resolution for ipad*/
+@media screen and (max-width: 1023px) {
+    .confirmed {
         font-size: 64px;
     }
-    img {
-        width: 64px;
-        height: 64px;
+    .icon {
+        width: 72px;
+        height: 72px;
+    }
+}
+/*resolution for iphone*/
+@media screen and (max-width:767px ) {
+    .confirmed {
+        font-size: 32px;
     }
 }
