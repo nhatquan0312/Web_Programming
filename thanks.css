@@ -9,7 +9,7 @@
 .icon {
     width: 128px;
     height: 128px;
-    margin-left: 47%;
+    margin-left: 45%;
     margin-top: 3%
 }
 /* resolution for ipad*/
@@ -26,5 +26,8 @@
 @media screen and (max-width:767px ) {
     .confirmed {
         font-size: 32px;
+    }
+    .icon {
+        margin-left: 43%;
     }
 }

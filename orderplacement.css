@@ -1,21 +1,19 @@
 * {
     font-family: 'Unbuntu mono', monospace;
 }
-.main{
-    background-color: blanchedalmond;
-}
+
 .flex {
     display:flex;
     flex-wrap:nowrap;
 }
 .flex > h2 {
-    width: 350px;
+    width: 250px;
     line-height: 35px;
     text-align: center;
     margin-left: 7%;
 }
 .flex > p {
-    width: 350px;
+    width: 250px;
     line-height: 70px;
     text-align: center;
     margin-left: 7%;
@@ -26,10 +24,7 @@
     box-sizing:border-box;
     box-shadow: 2px 2px 3px grey;
 }
-.img {
-    width: 100px;
-    height: 100px;
-}
+
  #number {
     font-size: 20px;
     text-align: center;
@@ -53,4 +48,27 @@
     padding: 10px 20px;
     
 
+}
+/* resolution for iphone*/
+@media screen and (max-width: 1023px) {
+    .flex > p {
+        font-size:smaller;
+        line-height: smaller;
+        margin-left: 4%;
+    }
+    .flex > h2 {
+        font-size: smaller;
+        margin-left: 4%;
+    }
+    #number {
+        font-size: 14px;
+        width: 35px;
+        height: 20px;
+    }
+    .order-bar > p {
+        font-size: 20px;
+    }
+    .order-button > a {
+        font-size: 18px;
+    }
 }
