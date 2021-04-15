@@ -327,6 +327,62 @@ color: rgb(112, 133, 134)!important;
   
 }
 
+my account.css
+main .login-form form .buttonBox 
+{   position: relative;
+    display: flex;
+    justify-content: space-around;
+    
+    width: 230px;
+    box-shadow: 0 0 20px 9px rgb(129, 124, 124);
+    margin: 35px auto;
+    border-radius: 30%;
+}
+
+main .login-form form .buttonBox .toggle 
+{   position: relative;
+    cursor: pointer;
+    border:0;
+    outline: none;
+    display: flex;
+    background-color: none;
+    background: transparent;
+    align-items: center;
+
+}
+
+
+main .login-form form .inputBox.w40, .login-button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+main .login-form 
+{
+    position: relative;
+    min-width: 390px;
+    margin: 6% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 490px;
+    background-color: #ccc;
+    padding: 5px;
+}
+
+main .login-form form {
+    flex-wrap: wrap;
+    margin-top: 10px; 
+    width: 50%;
+    height: 40vh;
+    background-color: white;
+}
+
+
 
 
 
