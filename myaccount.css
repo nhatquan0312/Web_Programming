@@ -1,12 +1,43 @@
 body {
     color: black;
-    
-    background: url(picture1.jpeg);
-    background-size: cover;
-    background-position: center;
-    font-family: san-serif;
 }
 
+main .background-image {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(picture1.jpeg)
+}
+main .login-form form .buttonBox 
+{   position: relative;
+    display: flex;
+    justify-content: space-around;
+    
+    width: 230px;
+    box-shadow: 0 0 20px 9px rgb(129, 124, 124);
+    margin: 35px auto;
+    border-radius: 30%;
+}
+
+main .login-form form .buttonBox .toggle 
+{   position: relative;
+    cursor: pointer;
+    border:0;
+    outline: none;
+    display: flex;
+    background-color: none;
+    background: transparent;
+    align-items: center;
+
+}
+
+
+main .login-form form .inputBox.w40, .login-button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
 
 main .login-form 
 {
@@ -29,7 +60,5 @@ main .login-form form {
     height: 40vh;
     background-color: white;
 }
-main .login-form form .buttonBox 
-{
-    
-}
+
+
