@@ -1,3 +1,47 @@
 body {
     color: black;
+    
+    background: url(picture1.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: san-serif;
 }
+
+
+main .login-form 
+{
+    position: relative;
+    min-width: 390px;
+    margin: 6% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 490px;
+    background-color: #ccc;
+    padding: 5px;
+}
+
+main .login-form form {
+    flex-wrap: wrap;
+    margin-top: 10px; 
+    width: 50%;
+    height: 40vh;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
