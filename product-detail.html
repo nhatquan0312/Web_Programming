@@ -4,60 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="product-detail.css" >
+    <link rel="stylesheet" href="product-detail.css">
     <script src="script.js" defer></script>
+    <title>Muade</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class = "logo">
-                <h4>Muade.</h4>
-                
+        <header>
+            <nav class="navbar">
+                <div class="brand-title">MUADE</div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="fees.html">Fees</a></li>
+                        <li><a href="faqs.html">FAQ</a></li>
+                        <li><a href="myaccount.html">My Account</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
-                
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutus.html">About us</a></li>
-                    <li><a href="fees.html">Fees</a></li>
-                    <li><a href="faqs.html">FAQ</a></li>
-                    <li><a href="myaccount.html">My Account</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                   
-             <div> 
-                    <i class="fas fa-search"></i>
-            </div>
-            <div class="button">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>   
-    
-                </nav> 
-
-                <div class='item_container'>
-                    <img src='https://im.uniqlo.com/images/common/pc/goods/436983/sub/436983_sub13.jpg' width='270px' height='330px'>
-                    <h3>T-shirt 1</h3>
-                    <p class='price'>399.000 VND</p>
-                    <a href='orderplacement.html'><p><button>	&#128722</button></p></a>
-                    <form action="">
-                    <select name="" id="">
-                        <option value="Select Size"> Select Size</option>
-                        <option value="XXL">XXL</option>
-                        <option value="XL">XL</option>
-                        <option value="Large">Large</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Small">Small</option>
-                    </select>
-                    <input type="number" value="1" min="1" >
-                    <button> Submit</button>
-                </form>
-                </div>
+            </nav>
     
     </header>
-</body>
+    <main>
+        <div class='container'>
+            <div class='image'>
+                <img src='img/Uniqlo/Men_UT.jpg' alt='T-shirt'>
+            </div>
+            <div class='information'>
+                <p class='title'>MEN T-shirt</p>
+                <p class='p-price'> 399.000 VND</p><hr>
+                <form action='index.html'>
+                    <input type='number' value='1' min='1' id='number'>
+                    <label for='selection'>Select size: </label>
+                    <select name='selection' id='selection'>
+                        <option value='S'>S</option>
+                        <option value='M'>M</option>
+                        <option value='L'>L</option>
+                        <option value='XL'>XL</option>
+                    </select>
+               </form><hr>     
+               <a href='index.html'><button type='submit'>Add To Cart</button></a>
+               <a href='orderplacement.html'><button type='button'>Buy Now</button></a>                    
+            </div>
+            
+        </div>
+        <div class='description'>
+            <h2>Description</h2><hr>
+            <p>The store owner has yet to add any information about the product.<br><br><br><br></p><hr>
+        </div>
+    </main>
+    <h1>Recommended For You</h1>
+    <div class='recommend'>
+        
+        <div class='rec-item'>
+            <a href='orderplacement.html'><img src='mac1.webp'>
+            <h2>Macbook Pro 13'(2020)</h2>
+            <p class='price'>39.999.000 VND</p></a>
+        </div>
+        <div class='rec-item'>
+            <a href='product3.html'><img src='abi2.jpg'>
+            <h2>kho ga Abi</h2>
+            <p class='price'>35.000 VND</p>
+        </div>
+        <div class='rec-item'>
+            <a href='orderplacement.html'><img src='img/Uniqlo/Child_UT.jpg'>
+            <h2>CHILD T-shirt</h2>
+            <p class='price'>249.000 VND</p>
+        </div>
+        <div class='rec-item'>
+            <a href='product4.html'><img src='mac6.webp'>
+            <h2>MAcbook Air 2020</h2>
+            <p class='price'>28.999.000 VND</p>
+        </div>
+        <div class='rec-item'>
+            <a href='orderplacement.html'><img src='img/Uniqlo/Bag.jpg'>
+            <h2>Bag</h2>
+            <p class='price'>99.000 VND</p>
+        </div>
+    </div><hr>
     <footer>
         <ul>
             <li>
@@ -76,7 +109,9 @@
             <li><a href="tos.html">Terms of Service</a> </li>
             <li><a href="privacy-policy.html">Privacy Policy</a> </li>
         </ul>
-    </footer>
-
+    </footer>   
+        
+    
+</body>
 
 </html>
