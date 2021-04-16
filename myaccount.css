@@ -117,6 +117,7 @@ main .background-image .login-form form .login-button button {
     position: relative;
     cursor: pointer;
     border:none;
+    outline: none;
     background: linear-gradient(to right, cadetblue, #ccc );
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -127,7 +128,7 @@ main .background-image .login-form form .login-button .checkbox span {
     text-align: center;
     margin-top: 20px;
     padding-top: 5px;
-    left: ;
+    
     
 }
 main .background-image .login-form form .login-button .btn 
@@ -135,12 +136,13 @@ main .background-image .login-form form .login-button .btn
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 main .background-image .login-form form .login-button .btn #forgot-btn{
     position: relative;
     left: 30px;
     background: none !important;
-    
+    outline:none;
 }
 
 main .background-image .login-form form .login-button .checkbox
@@ -148,41 +150,22 @@ main .background-image .login-form form .login-button .checkbox
     display: inline-block;
 }
 
-main .background-image .login-form form .inputBox.w40 {
-    display: flex;
+main .background-image .login-form form .inputBox.w40 input{
+    
     top: 30px;
-    align-items: center;
-    justify-content: space-around;
+    
     margin-top: 20px;
-    
-    
-}
-main .background-image .login-form form .inputBox.w40 input {
     border: none;
     border-bottom: 2px solid rgb(112, 133, 134);
-    
-}
-main .background-image .login-form form .inputBox.w40 span {
-    position: absolute;
-    
-    
-    
-    
-}
-
-main .background-image .login-form form .buttonBox .switcher  :hover 
-{
-    background-color: rosybrown !important;
+    outline: none;
     background: transparent;
-    position: absolute;
-    height: 30px;
-    width: 120px;
-    margin: 0;
-    border-radius: 40px;
-    right: 0;
+    
 }
 
-button :focus ~ .switcher
-{
-    transform: translate(70px);
+main .background-image .login-form form .inputBox.w40 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
