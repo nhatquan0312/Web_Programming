@@ -6,7 +6,9 @@
     box-sizing: inherit;
 }
 
-
+h1{
+    text-align: center;
+}
 section{
     width: 100%;
     height: 100vh;
