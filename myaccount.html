@@ -40,8 +40,8 @@
     <main>
     <div class="background-image">
         <h2>Welcome back</h2>
-        <div class="login-form">
-            <form>
+        <div >
+            <form id="login-form" class="myaccount">
             <div class="buttonBox">
                 <div class="switcher"></div>
                 <button type="button" class="toggle">Log In</button>
@@ -61,12 +61,13 @@
                         <button type="button"  class="toggle" id="submit-btn"> Login</button>
                         <button type="button" class="toggle" id="forgot-btn">Forgot password?</button>
                     
-                </div>
+                    </div>
             </div>
+        </div>
         </form>
         <div class="register-form">
             <form>
-                <div class="inputBox w40">
+                <div class="inputBox w20">
                 
                     <input type="text" name=""  placeholder="Email address" required>
                      <input type="text" name="" placeholder="Phone number"  required>
@@ -78,7 +79,7 @@
                      <input type="text" name="" placeholder="Address"  required>
                      <input type="text" name=""  placeholder="City" required>
                      <input type="text" name="" placeholder="Zipcode"  required>
-                     <select name="City" >
+                     <select name="City" placeholder="Country">
                          <option value="AF">Afghanistan</option>
                          <option value="BE">Belgium</option>
                          <option
@@ -106,15 +107,21 @@
                          <option value="WF">Wallis and Futuna</option>
                          <option value="YE">Yemen</option>
                          <option value="ZM">Zambia</option>
-                         
                      </select>
-                     <input type="text" name=""  placeholder="User Id" required>
-                     <input type="text" name="" placeholder="Enter your password"  required>
-                 </div>
+                     <div class="checkbox">
+                         <span>Select account type:</span><br>
+                     <input type="checkbox" >
+                    <span> Store owner</span><br>
+                    <input type="checkbox" >
+                    <span> Shopper</span>
+                </div>
+                
+
+                 
             </form>
         </div>
         
-        </div>
+        
     </div>
     </main>
    </body>
