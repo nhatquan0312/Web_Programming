@@ -53,7 +53,7 @@ main .background-image .login-form form {
     flex-wrap: wrap;
     margin-top: 10px; 
     width: 50%;
-    height: 40vh;
+    height: 35vh;
     background-color: white;
     
 }
@@ -65,7 +65,7 @@ main .background-image .login-form form .buttonBox
     height: 30px;
     width: 240px;
     box-shadow: 0 0 20px 9px rgb(173, 209, 209);
-    margin: 35px auto;
+    margin: 48px auto;
     border-radius: 40px;  
    
 
@@ -102,6 +102,7 @@ main .background-image .login-form .login-button
     align-items: center;
     margin-top:0px;
     height: 15vh;
+    flex-direction: column;
     
 }
 
@@ -110,25 +111,41 @@ main .background-image .login-form form .login-button button {
     background: transparent;
     position: absolute;
     height: 30px;
-    width: 80px;
+    width: 120px;
     margin:0;
     border-radius: 40px;
-    left: 40px;
+    position: relative;
     cursor: pointer;
     border:none;
     background: linear-gradient(to right, cadetblue, #ccc );
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-main .background-image .login-form form .login-button p {
+main .background-image .login-form form .login-button .checkbox span {
     position: relative;
     height: 30px;
     width: 140px;
-   left: calc(100% - 50% - 100px);
     text-align: center;
     margin-top: 20px;
     padding-top: 5px;
+    left: ;
     
+}
+main .background-image .login-form form .login-button .btn 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .background-image .login-form form .login-button .btn #forgot-btn{
+    position: relative;
+    left: 30px;
+    background: none !important;
     
+}
+
+main .background-image .login-form form .login-button .checkbox
+{
+    display: inline-block;
 }
 
 main .background-image .login-form form .inputBox.w40 {
@@ -143,10 +160,11 @@ main .background-image .login-form form .inputBox.w40 {
 main .background-image .login-form form .inputBox.w40 input {
     border: none;
     border-bottom: 2px solid rgb(112, 133, 134);
-    left: 30px;
+    
 }
 main .background-image .login-form form .inputBox.w40 span {
     position: absolute;
+    
     
     
     
