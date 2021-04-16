@@ -3,8 +3,12 @@
     padding: 20px;
 }
 
+h1 {
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .product_container {
+    .products {
       float: left;
       width: 50%;
     }
