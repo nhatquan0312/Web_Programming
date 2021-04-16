@@ -40,7 +40,6 @@
     <main>
     <div class="background-image">
         <h2>Welcome back</h2>
-        <div >
             <form id="login-form" class="myaccount">
             <div class="buttonBox">
                 <div class="switcher"></div>
@@ -63,9 +62,9 @@
                     
                     </div>
             </div>
-        </div>
+       
         </form>
-        <div class="register-form">
+        <form id="register-form" class="myaccount">
             <form>
                 <div class="inputBox w20">
                 
@@ -79,7 +78,8 @@
                      <input type="text" name="" placeholder="Address"  required>
                      <input type="text" name=""  placeholder="City" required>
                      <input type="text" name="" placeholder="Zipcode"  required>
-                     <select name="City" placeholder="Country">
+                     <select name="City" required>
+                        <option value="">Country</option>
                          <option value="AF">Afghanistan</option>
                          <option value="BE">Belgium</option>
                          <option
@@ -108,6 +108,7 @@
                          <option value="YE">Yemen</option>
                          <option value="ZM">Zambia</option>
                      </select>
+                     <br><br>
                      <div class="checkbox">
                          <span>Select account type:</span><br>
                      <input type="checkbox" >
@@ -115,7 +116,13 @@
                     <input type="checkbox" >
                     <span> Shopper</span>
                 </div>
-                
+                <div class="login-button">
+                    
+    
+                        <div class="btn">
+                            <button type="button"  class="toggle" id="register-btn"> Register</button>
+                        </div>
+                </div>
 
                  
             </form>

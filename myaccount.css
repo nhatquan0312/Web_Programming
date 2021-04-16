@@ -170,7 +170,7 @@ main .background-image .myaccount .inputBox.w40 {
     flex-direction: column;
 }
 
-main .background-image .register-form form {
+main .background-image #register-form  {
     position: absolute;
     width: 390px;
     margin: auto;
@@ -185,13 +185,40 @@ main .background-image .register-form form {
 }
 main .background-image .register-form form .inputBox.w20 {
     position: relative;
-    text-wrap: wrap;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     
 }
 main .background-image .register-form form .inputBox.w20 input {
-    margin: 
+    margin: 20px;
+}
+main .background-image .myaccount .inputBox.w20 input{
+    
+    top: 30px;
+    
+    margin-top: 20px;
+    border: none;
+    border-bottom: 2px solid rgb(112, 133, 134);
+    outline: none;
+    background: transparent;
+    
+}
+select
+{
+
+color: rgb(112, 133, 134)!important;
+border: none;
+border-bottom: 2px solid rgb(112, 133, 134);
+
+color:rgb(112, 133, 134);
+
 }
 
+#register-form 
+{left:450px;
+}
+#login-form {
+    left: 50px
+}
