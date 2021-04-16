@@ -47,13 +47,12 @@ main .background-image .login-form form .buttonBox
     justify-content: space-around;
     height: 30px;
     width: 240px;
-    box-shadow: 0 0 20px 9px rgb(129, 124, 124);
+    box-shadow: 0 0 20px 9px rgb(173, 209, 209);
     margin: 35px auto;
     border-radius: 40px;   
 }
 main .background-image .login-form form .buttonBox .switcher 
 {
-background-color: cadetblue ;
 background:linear-gradient(to right, cadetblue, #ccc );
 position: absolute;
 height: 30px;
@@ -74,18 +73,30 @@ main .background-image .login-form form .buttonBox .toggle
     background: transparent;
     align-items: center;
 }
-main .background-image .login-form form .login-button .inputBox.w20 {
+
+main .background-image .login-form form .login-button .inputBox.w20 button {
     background-color: cadetblue ;
     background: transparent;
     position: absolute;
     height: 30px;
-    width: 120px;
-    margin: 0;
+    width: 80px;
+    margin:0;
     border-radius: 40px;
-    left: 0;
     cursor: pointer;
-    background: linear-gradient();
+    border:none;
+    background: linear-gradient(to right, cadetblue, #ccc );
 }
+main .background-image .login-form form .login-button .inputBox.w20 h4 {
+    position: relative;
+    height: 30px;
+    width: 80px;
+    margin:0;
+    border-radius: 40px;
+    cursor: pointer;
+    border:none;
+
+}
+
 main .background-image .login-form form .inputBox.w40, .login-button {
     display: flex;
     margin-top: 10px;
@@ -93,8 +104,8 @@ main .background-image .login-form form .inputBox.w40, .login-button {
     justify-content: space-around;
 }
 
-main .background-image .login-form form .buttonBox .switcher  :hover {
-    
+main .background-image .login-form form .buttonBox .switcher  :hover 
+{
     background-color: rosybrown !important;
     background: transparent;
     position: absolute;
@@ -104,10 +115,8 @@ main .background-image .login-form form .buttonBox .switcher  :hover {
     border-radius: 40px;
     right: 0;
 }
+
 button :focus ~ .switcher
 {
     transform: translate(70px);
 }
-
-
-
