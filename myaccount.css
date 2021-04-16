@@ -53,8 +53,8 @@ main .background-image .login-form form .buttonBox
 }
 main .background-image .login-form form .buttonBox .switcher 
 {
-background-color: cadetblue !important;
-background: transparent;
+background-color: cadetblue ;
+background:linear-gradient(to right, cadetblue, #ccc );
 position: absolute;
 height: 30px;
 width: 120px;
@@ -63,6 +63,7 @@ border-radius: 40px;
 left: 0;
 cursor: pointer;
 }
+
 main .background-image .login-form form .buttonBox .toggle 
 {   position: relative;
     cursor: pointer;
@@ -72,7 +73,18 @@ main .background-image .login-form form .buttonBox .toggle
     background-color: none;
     background: transparent;
     align-items: center;
-
+}
+main .background-image .login-form form .login-button .inputBox.w20 {
+    background-color: cadetblue ;
+    background: transparent;
+    position: absolute;
+    height: 30px;
+    width: 120px;
+    margin: 0;
+    border-radius: 40px;
+    left: 0;
+    cursor: pointer;
+    background: linear-gradient();
 }
 main .background-image .login-form form .inputBox.w40, .login-button {
     display: flex;
