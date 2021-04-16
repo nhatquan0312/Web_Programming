@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="faqs.css">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <title>Website</title>
 </head>
 <body>
@@ -37,28 +38,53 @@
     </header>
 
     <h1>Frequently  Asked Questions</h1>
-    <div class="questions_container">
-        <ul>
-            <li>
-                <div class="icon"><i class="fas fa-map-signs"></i></div>
-                <div class="data">
-                    Sunrise Riverside <br/> Vietnam
+    <section>
+    <div class="container">
+        <div class="accordion">
+            <div class="accordion-item" id="question1">
+                <a class="accordion-link" href="#question1">
+                    What is MUADE?
+                    <ion-icon class="add" name="add-outline"></ion-icon>
+                    <ion-icon class="minus" name="remove-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic id pariatur quos facere neque, reiciendis minima necessitatibus voluptas distinctio quia quasi maiores impedit expedita cum blanditiis repellendus. A, optio consectetur?</p> 
                 </div>
-            </li>
-            <li>
-                <div class="icon"><i class="fas fa-mobile"></i></div>
-                <div class="data">
-                    +84 852640807
+            </div>
+            <div class="accordion-item" id="question2">
+                <a class="accordion-link" href="#question2">
+                    How can i purchase items on the webpage?
+                    <ion-icon class="add" name="add-outline"></ion-icon>
+                    <ion-icon class="minus" name="remove-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic id pariatur quos facere neque, reiciendis minima necessitatibus voluptas distinctio quia quasi maiores impedit expedita cum blanditiis repellendus. A, optio consectetur?</p> 
                 </div>
-            </li>
-            <li>
-                <div class="icon"><i class="fas fa-envelope-square"></i></div>
-                <div class="data">
-                    s3879069@rmit.edu.vn
+            </div>
+            <div class="accordion-item" id="question3">
+                <a class="accordion-link" href="#question3">
+                    How can i start my business on this website?
+                    <ion-icon class="add" name="add-outline"></ion-icon>
+                    <ion-icon class="minus" name="remove-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic id pariatur quos facere neque, reiciendis minima necessitatibus voluptas distinctio quia quasi maiores impedit expedita cum blanditiis repellendus. A, optio consectetur?</p> 
                 </div>
-        </ul>
+            </div>
+            <div class="accordion-item" id="question4">
+                <a class="accordion-link" href="#question4">
+                    How can i keep track of my order?
+                    <ion-icon class="add" name="add-outline"></ion-icon>
+                    <ion-icon class="minus" name="remove-outline"></ion-icon>
+                </a>
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic id pariatur quos facere neque, reiciendis minima necessitatibus voluptas distinctio quia quasi maiores impedit expedita cum blanditiis repellendus. A, optio consectetur?</p> 
+                </div>
+            </div>
+        </div>
+        
     </div>
-    </body>
+</section>
     <footer>
         <nav class="footer-navbar">
             
@@ -75,4 +101,6 @@
         </nav>
      
     </footer>
+    </body>
+    
 </html>
