@@ -7,8 +7,8 @@ main {
     font-size: 13.3333px;
 }
 main .background-image {
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/picture1.jpeg);
     background-position: center;
     background-size: cover;
@@ -19,14 +19,15 @@ main .background-image .login-form
 {
     position: relative;
     min-width: 390px;
-    margin: 6% auto;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 490px;
     background-color: none;
-    padding: 5px;
+
+    
 }
 
 h2 
@@ -41,6 +42,7 @@ main .background-image .login-form form {
     width: 50%;
     height: 40vh;
     background-color: white;
+    
 }
 
 main .background-image .login-form form .buttonBox
@@ -113,6 +115,7 @@ main .background-image .login-form form .login-button p {
     margin-top: 20px;
     padding-top: 5px;
     
+    
 }
 
 main .background-image .login-form form .inputBox.w40 {
@@ -122,10 +125,12 @@ main .background-image .login-form form .inputBox.w40 {
     justify-content: space-around;
     margin-top: 20px;
     
+    
 }
 main .background-image .login-form form .inputBox.w40 input {
     border: none;
     border-bottom: 2px solid rgb(112, 133, 134);
+    left: 30px;
 }
 main .background-image .login-form form .inputBox.w40 span {
     position: absolute;
