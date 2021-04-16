@@ -1,3 +1,4 @@
+
 .title{
     margin: 30px 20px;
     font-size: 30px;
@@ -33,19 +34,10 @@
     justify-content: center;
     align-items: center;
     margin: 15px 15px;
-    background-color: #FFFFFF;
+    background-color: whitesmoke;
+    background: #FFFFFF;
     border-radius: 8px;
-    width: 200px;
-    height: auto;
-    padding: 0px 0px;
 }
-
-.product_info {
-    width: 200px;
-    height: auto;
-    background-color: cadetblue;
-}
-
 .products:hover{
     transform: scale(1.15);
 }
