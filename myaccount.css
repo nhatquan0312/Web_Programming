@@ -32,10 +32,7 @@ main .background-image .login-form
 h2 
 {
     margin: 0;
-    color:white;
-    
-    
-    
+    color:white;  
 }
 
 main .background-image .login-form form {
@@ -115,6 +112,7 @@ main .background-image .login-form form .login-button p {
     text-align: center;
     margin-top: 20px;
     padding-top: 5px;
+    
 }
 
 main .background-image .login-form form .inputBox.w40 {
@@ -123,6 +121,16 @@ main .background-image .login-form form .inputBox.w40 {
     align-items: center;
     justify-content: space-around;
     margin-top: 20px;
+    
+}
+main .background-image .login-form form .inputBox.w40 input {
+    border: none;
+    border-bottom: 2px solid rgb(112, 133, 134);
+}
+main .background-image .login-form form .inputBox.w40 span {
+    position: absolute;
+    
+    
     
 }
 
