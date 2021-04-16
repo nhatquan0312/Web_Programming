@@ -11,12 +11,8 @@ body{
     display: flex;
     justify-content: space-between;
     background-color: cadetblue;
-<<<<<<< HEAD
-    
-=======
     color:white;
     align-items: center;
->>>>>>> 7f3795f57b75d14315a9ebf8a39384c003421f84
 }
 .brand-title{
     color: black;
