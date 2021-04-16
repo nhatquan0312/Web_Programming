@@ -24,7 +24,7 @@ main .background-image .login-form
 {
     position: relative;
     min-width: 390px;
-    margin: 8% auto;
+    margin: auto;
     margin-bottom: auto;
     bottom: 0;
     display: flex;
@@ -44,7 +44,7 @@ h2
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20vh;
+    padding-top: 8vh;
     font-size: 60px;
 
 }
