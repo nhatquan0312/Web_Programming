@@ -2,21 +2,21 @@
     box-sizing:border-box;
 
 }
+/* THIS IS FOR THE HEADER PART*/
 body{
     margin:0;
     padding:0;
 }
-footer ul {
-    margin:0;
-    padding:0;
-    display: flex;
-}
 .navbar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: cadetblue;
+<<<<<<< HEAD
     
+=======
+    color:white;
+    align-items: center;
+>>>>>>> 7f3795f57b75d14315a9ebf8a39384c003421f84
 }
 .brand-title{
     color: black;
@@ -92,4 +92,58 @@ height: 21px;
     .navbar-links.active{
         display: flex;
     }
+    
+    .footer-navbar-links{
+        display: flex;
+        width:100%
+    }
+    .footer-navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-navbar-links ul{
+        width:100%;
+        flex-direction: column;
+    }
+    .footer-navbar-links li{
+        text-align: center;
+    }
+    .footer-navbar-links li a{
+        padding: .5rem 1rem ;
+    }
 }
+<<<<<<< HEAD
+=======
+
+/* THIS IS FOR THE FOOTER PART*/
+.footer-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    color:white;
+    
+}
+.footer-navbar-links ul{
+    margin:0;
+    padding:0;
+    display: flex;
+}
+.footer-navbar-links li{
+    list-style: none;
+}
+.footer-navbar-links li a{
+    text-decoration: none;
+    color:white;
+    padding:1rem;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 0.82rem ;
+}
+.footer-navbar-links li :hover
+{
+background-color: rgb(147, 199, 201);
+}
+>>>>>>> 7f3795f57b75d14315a9ebf8a39384c003421f84
