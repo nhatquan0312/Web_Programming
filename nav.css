@@ -61,6 +61,7 @@ body{
     color: black;
     letter-spacing: 1px;
     font-size: 0.82rem ;
+    font-weight: bold;
 }
 .navbar-links li :hover
 {
