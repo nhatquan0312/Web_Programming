@@ -232,6 +232,16 @@ main .background-image .myaccount .inputBox.w20 .check-box span {
     
     
 }
+
+#submit-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+#forgot-btn a{
+    text-decoration: none;
+    color: black;
+}
 #register-form 
 {
 }
