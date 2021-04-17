@@ -8,7 +8,6 @@ main {
     font-size: 13.3333px;
     align-items: center;
     justify-content: center;
-    min-height: auto;
     min-width: 100%;
 }
 main .background-image {
@@ -25,6 +24,7 @@ main .myaccountform {
     margin-top: 5vh; 
 position: relative;
 width: 50%;
+height: 100%;
 min-height: 100%;
 background-color: none;
 justify-content: center;
@@ -222,7 +222,7 @@ main .background-image .myaccount .inputBox.w20 .check-box
 display: flex;
 justify-content: space-around;
 align-items: center;
-   width: 300px;
+   width: 350px;
    
    
 
