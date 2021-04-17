@@ -2,6 +2,7 @@
 body {
     
     font-family: 'Ubuntu Mono', monospace;
+    background-color: whitesmoke;
     
 }
 main .container .contactinfo h1
@@ -17,7 +18,7 @@ font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: 'Oswald', sans-serif !important;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: -.02em;
@@ -27,12 +28,15 @@ font-size: 40px;
     z-index: 1; 
 }
 main {
-    background: rgb(112, 133, 134);
+    background-color: cadetblue;
     position: relative;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13.3333px;
+   
 }
     
 main .container {
@@ -51,7 +55,7 @@ main .container {
      width: 50%;
      min-height: 100%;
      min-width: 100%;
-     background-color: rgb(66, 81, 82);
+     background-color: white;
 }
 
 main .container .contactform 
@@ -59,7 +63,7 @@ main .container .contactform
     position: absolute;
     top: 10vh;
     width: calc(100% - 330px);
-    height: 85vh;        
+    height: 80vh;        
     padding: 40px 50px;
     margin-bottom: 50px;
     background: cornsilk;
@@ -78,27 +82,79 @@ flex-wrap: wrap;
 padding-top: 25px;
 }
 
-main .container .contactform form ,inputBox 
+main  input 
 {
     position: relative;
-    margin: 0px 0 25px 0;
+   margin-top: 5px;
+   font: 400 13.3333px Arial !important;
 }
+main .container .contactform form .inputBox .w50
+{
+    position: relative;
+    left: 20px;
+}
+main .background-image .myaccount .buttonBox.w50 .toggle {
+position: relative;
+    cursor: pointer;
+    border:0;
+    outline: none;
+    display: flex;
+    background-color: none;
+    background: transparent;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
 
+main .container .contactform form .inputBox.w50 button {
+   
+    background: transparent;
+    position: absolute;
+    height: 30px;
+    width: 120px;
+    margin:0;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background: linear-gradient(to right, cadetblue, #ccc );
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    border: none;}
+
+
+
+main .container .contactform .inputBox.w50 button :hover
+{
+background: rgb(66, 81, 82) !important;
+
+}
+main .container .contactform form .inputBox.w60 {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+main .container .contactform form .cbox
+{
+    
+    
+padding-top: 15px;
+}
 main .container .contactform form .inputBox.w50, .submit
 {
 width: 35%;
-} 
 
-main .container .contactform form .inputBox.w60
-{
-width: 45%;
-padding-top: 15px;
-} 
+}
 
 main .container .contactform form .inputBox.w100 
 {
+    
 width: 100%;
-margin: 30px;
+margin: 20px;
 } 
 
 main .container .contactform form .inputBox input,  
@@ -114,45 +170,13 @@ font-weight: 300;
 color:rgb(112, 133, 134);
 padding: 5px 0;
 background-color: cornsilk;
-font-family:'Ubuntu Mono', monospace;
+font:400 13.3333px Arial ;
 outline: none;
 }
 
 main .container .contactform form .inputBox textarea
 {
     min-height: 100px;
-}
-main .container .contactform form .inputBox span {
-    position: absolute;
-    padding: 0;
-   margin: 0 20px 0 20px;
-    font-size: 17px;
-    font-weight: 300;
-    color:rgb(112, 133, 134);
-    transition: 1s;
-    pointer-events: none;
-}
-
-input:focus ~ span
-{
-   transform: translate(70px);
-}
-
-main .container .contactform .inputBox input[type="submit"]
-{
-    position:relative;
-    cursor:pointer;
-    background-color:  rgb(112, 133, 134);
-    margin-top: 20px;
-   border: none;
-    max-width: 150px;
-    color:cornsilk;
-}
-
-main .container .contactform .inputBox input[type="submit"]:hover
-{
-background-color: rgb(66, 81, 82);
-
 }
 
 select
@@ -180,7 +204,7 @@ main .container .contactinfo {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background:  rgb(66, 81, 82);
+    background:  linear-gradient(to right, cadetblue, #ccc );
     z-index: 2;
     right: 60%;
 }

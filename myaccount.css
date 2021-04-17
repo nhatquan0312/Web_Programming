@@ -53,7 +53,7 @@ main .background-image .myaccount {
     flex-wrap: wrap;
     margin-top: 10px; 
     width: 50%;
-    height: 35vh;
+    min-height: 100vh;
     background-color: white;
     
 }
@@ -183,6 +183,7 @@ main .background-image #register-form  {
     height: 450px;
     background-color: white;
 }
+
 main .background-image .register-form form .inputBox.w20 {
     position: relative;
     display: flex;
