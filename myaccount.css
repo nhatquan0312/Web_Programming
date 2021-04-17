@@ -32,11 +32,15 @@ margin-left: 25%;
 margin-right:25%;
 margin-bottom: 15% ;
 }
+
 #login-form {
     background: white;
     width:350px;
     height:220px;
+<<<<<<< HEAD
     margin-left: 23%;
+=======
+>>>>>>> 0de9cd04edbb9a34351f85d3e4fe7c500c482219
 }
 h2 
 {

@@ -307,13 +307,13 @@ main .container .contactinfo .contactinfo-ul li span:nth-child(3) .icon
          display: flex;
          justify-content: center;
          flex-direction: column;
-         justify-content: space-between;
+         justify-content: space-around;
          box-shadow: 0 20px 25px rgba(0,0,0,0.15);
      }
      .container .contact-info h2{
          
          font-size:24px;
-         font-weight: 500;
+         font-weight: 650;
          text-align: center;
      }
      .container .contact-info ul.info{
@@ -355,7 +355,8 @@ main .container .contactinfo .contactinfo-ul li span:nth-child(3) .icon
      .container .contact-form h2{
          color: #0f3959;
          font-size: 24px;
-         font-weight: 500;
+         font-weight: 650;
+         text-align: center;
      }
      .container .contact-form .form-box{
          position: relative;
@@ -363,9 +364,11 @@ main .container .contactinfo .contactinfo-ul li span:nth-child(3) .icon
          justify-content: space-between;
          flex-wrap: wrap;
          padding-top: 30px;
+         
      }
      .container .contact-form .form-box .input-box.w50{
          width:47%;
+         margin:1.2rem 0;
      }
      .container .contact-form .form-box .input-box.w100{
          width:100%;
