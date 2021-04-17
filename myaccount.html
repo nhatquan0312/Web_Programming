@@ -49,6 +49,7 @@
             <button type="button" class="toggle" onclick="login()">Log In</button>
             <button type="button" class="toggle" onclick="register()">Register</button>
         </div>
+        <div class="myaccountform">
             <form id="login-form" class="myaccount">
             
             <div class="inputBox w40">
@@ -145,19 +146,29 @@
                  
             </form>
         </div>
-        
-        
     </div>
+        
+    
     </main>
     <script>
         var x = document.getElementById("login-form");
         var y = document.getElementById("register-form");
-        var z = document.getElementById("buttonBox");
+        var z = document.getElementById("switcher");
+        
         function register (){
             x.style.left = "-400px";
-            y.style.left = "50px";
-            z.style.left = "110px"
+            y.style.left = "200px";
+            z.style.left = "110px";
         }
+        
+       
+        function login (){
+            y.style.left = "50px";
+            x.style.left = "450px";
+            z.style.left = "0px";
+        }
+        
+
     </script>
    </body>
    <footer>

@@ -18,25 +18,21 @@ main .background-image {
     background-position: center;
     background-size: cover;
     position: relative;
-
+padding-bottom: 10%;
 }
-
-main .background-image .myaccount
-{
-    position: relative;
-    min-width: 390px;
-    
-    
-    bottom: 0;
+main .myaccountform {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
-    background-color: none;
+    margin-top: 5vh; 
 
-    
+width: 60%;
+min-height: 100%;
+background-color: whitesmoke;
+justify-content: center;
+margin-left: 20%;
+margin-right:20%;
+margin-bottom: 10% ;
 }
+
 
 h2 
 {
@@ -50,14 +46,27 @@ h2
 
 }
 
-main .background-image .myaccount {
+main .background-image .myaccount #login-form
+{
+    position: absolute;
+    min-width: 390px;
+    
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 10px; 
-    width: 50%;
-    min-height: 100%;
-    background-color: whitesmoke;
+    min-height: 500px;
+    
+
+    
+}
+main .background-image #register-form  {
+    position: absolute;
+    width: 450px;
+    
+    
+    flex-wrap: wrap;
+    height: 100%;
     
 }
 
@@ -174,18 +183,6 @@ main .background-image .myaccount .inputBox.w40 {
     flex-direction: column;
 }
 
-main .background-image #register-form  {
-    position: relative;
-    width: 400px;
-    
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 450px;
-    background-color: whitesmoke;
-}
 
 main .background-image .myaccount .inputBox.w20
 {
@@ -232,8 +229,8 @@ main .background-image .myaccount .inputBox.w20 .check-box span {
     
 }
 #register-form 
-{left:450px;
-    
+{
+    left: 600px;
 }
 #login-form {
     
