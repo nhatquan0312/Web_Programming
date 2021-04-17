@@ -32,13 +32,13 @@ main {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    min-width: 100%;
+    width: 100%;
 }
     
 main .container {
     position: relative;
-    min-width: 1200px;
-    min-height: 100%;
+    width: 1200px;
+    height: 100%;
     display: flex;
     z-index: 1000;  
 }

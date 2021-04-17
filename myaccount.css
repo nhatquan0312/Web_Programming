@@ -65,7 +65,7 @@ main .background-image .myaccount .buttonBox
     height: 30px;
     width: 240px;
     box-shadow: 0 0 20px 9px rgb(173, 209, 209);
-    margin: 48px auto;
+    margin: 20px auto;
     border-radius: 40px;  
    
 
@@ -209,8 +209,6 @@ main .background-image .myaccount .inputBox.w20 input [type="checkbox"]
 {
     color: rgb(112, 133, 134);  
 }
-
-
 
 #register-form 
 {left:450px;
