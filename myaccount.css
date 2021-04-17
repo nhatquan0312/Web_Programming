@@ -195,7 +195,7 @@ main .background-image .myaccount .inputBox.w20
     text-align:center;
     
 }
-main .background-image .myaccount .inputBox.w20 input [type="checkbox"]
+main .background-image .myaccount .inputBox.w20 input [type="radio"]
 {
     border: none ;
     margin: 10px;
@@ -215,7 +215,7 @@ main .background-image .myaccount .inputBox.w20 .input-field input , select {
     width: 35%;
     padding-top: 5px;
 }
-main .background-image .myaccount .inputBox.w20 .check-box  
+main .background-image .myaccount .inputBox.w20 .radio-box
 
 {position: relative;
 
@@ -227,14 +227,28 @@ align-items: center;
    
 
 }
-main .background-image .myaccount .inputBox.w20 .check-box span {
-    width: 40%;
-    
+main .background-image .myaccount .inputBox.w20 .radio-box span {
+    width: 40%;   
     
 }
-#register-form 
-{
-}
-#login-form {
+
+
+@media (max-width:768px){
+    .main .background-image {
+        width:100%;
+        min-width:auto;
+        
+    }
+    #register-form {
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 50%;
+    }
+    #login-form{
+        width: 100%;
+        height: auto;
+        
+    }
     
 }
