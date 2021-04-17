@@ -1,11 +1,15 @@
 
+main {
+    background-color: whitesmoke;
+    margin-top: -30px;
+}
 .title{
+    width: 100%;
     margin: 30px 20px;
     font-size: 30px;
     text-transform: initial;
     font-family: 'Ubuntu Mono', monospace;
-    
-    
+    color: #252525; 
 }
 .stores_container{
     display: flex;
@@ -14,6 +18,12 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.stores{
+    box-shadow: 4px 4px 5px grey;
+    box-sizing:border-box;
+    border: 1px solid black;
 }
 
 .product_info{
@@ -28,15 +38,26 @@
     flex-wrap: wrap;
 }
 .products{
+    box-shadow: 4px 4px 5px grey;
+    box-sizing:border-box;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     background:none ;
     justify-content: center;
     align-items: center;
     margin: 15px 15px;
-    background-color: whitesmoke;
-    background: #FFFFFF;
+    background: #e9e9e9;
     border-radius: 8px;
+}
+h3 {
+    font-family: 'Inter', sans-serif;
+    color: #252525;
+}
+
+.product_info .price{
+    font-family: 'Inter', sans-serif;
+    color: #252525;
 }
 .products:hover{
     transform: scale(1.15);

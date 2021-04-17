@@ -85,6 +85,7 @@ border:1px solid #f6f6fe;
     }
     .plan{
         flex-direction: row;
-        align-items: flex-start;    
+        align-items: flex-start;
+        margin: auto;  
     }
 }
