@@ -18,14 +18,15 @@ main .background-image {
     background-position: center;
     background-size: cover;
     position: relative;
+
 }
 
 main .background-image .myaccount
 {
     position: relative;
     min-width: 390px;
-    margin: auto;
-    margin-bottom: auto;
+    
+    
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -50,15 +51,17 @@ h2
 }
 
 main .background-image .myaccount {
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 10px; 
     width: 50%;
-    min-height: 100vh;
+    min-height: 100%;
     background-color: whitesmoke;
     
 }
 
-main .background-image .myaccount .buttonBox
+main .background-image  .buttonBox
 {   position: relative;
     display: flex;
     justify-content: space-around;
@@ -67,10 +70,11 @@ main .background-image .myaccount .buttonBox
     box-shadow: 0 0 20px 9px rgb(173, 209, 209);
     margin: 20px auto;
     border-radius: 40px;  
+    background-color: whitesmoke;
    
 
 }
-main .background-image .myaccount .buttonBox .switcher 
+main .background-image .buttonBox .switcher 
 {
 background:linear-gradient(to right, cadetblue, #ccc );
 position: absolute;
@@ -82,7 +86,7 @@ left: 0;
 cursor: pointer;
 }
 
-main .background-image .myaccount .buttonBox .toggle 
+main .background-image .buttonBox .toggle 
 {   position: relative;
     cursor: pointer;
     border:0;
@@ -171,11 +175,10 @@ main .background-image .myaccount .inputBox.w40 {
 }
 
 main .background-image #register-form  {
-    position: absolute;
+    position: relative;
     width: 400px;
-    margin: auto;
-    margin-bottom: auto;
-    bottom: 0;
+    
+    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -229,8 +232,9 @@ main .background-image .myaccount .inputBox.w20 .check-box span {
     
 }
 #register-form 
-{left:500px;
+{left:450px;
+    
 }
 #login-form {
-    left: 10px
+    
 }

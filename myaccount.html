@@ -44,12 +44,13 @@
     <main>
     <div class="background-image">
         <h2>Welcome back</h2>
+        <div class="buttonBox">
+            <div class="switcher"></div>
+            <button type="button" class="toggle" onclick="login()">Log In</button>
+            <button type="button" class="toggle" onclick="register()">Register</button>
+        </div>
             <form id="login-form" class="myaccount">
-            <div class="buttonBox">
-                <div class="switcher"></div>
-                <button type="button" class="toggle">Log In</button>
-                <button type="button" class="toggle">Register</button>
-            </div>
+            
             <div class="inputBox w40">
                 
                <input type="text" name=""  placeholder="User Id" required>
@@ -71,14 +72,22 @@
         <form id="register-form" class="myaccount">
             <form>
                 <div class="inputBox w20">
+                    <div class="input-field" id="upload">
+                    <input type="file" name=""  placeholder="Upload your profile" class="" required>
+                </div>
                 <div class="input-field">
-                    <input type="text" name=""  placeholder="Email address" required>
+                    
+                    
                      <input type="text" name="" placeholder="Phone number"  required>
-                     <input type="text" name=""  placeholder="Password" required>
-                     <input type="text" name="" placeholder="Retype password"  required>
-                     <input type="file" name=""  placeholder="Upload your profile" required>
+                     <input type="text" name=""  placeholder="Email address" required>
+                     
+                     
+                     
                      <input type="text" name="" placeholder="First name"  required>
+                     <input type="text" name=""  placeholder="Password" required>
+                     
                      <input type="text" name=""  placeholder="Last name" required>
+                     <input type="text" name="" placeholder="Retype password"  required>
                      <input type="text" name="" placeholder="Address"  required>
                      <input type="text" name=""  placeholder="City" required>
                      <input type="text" name="" placeholder="Zipcode"  required>
@@ -140,6 +149,16 @@
         
     </div>
     </main>
+    <script>
+        var x = document.getElementById("login-form");
+        var y = document.getElementById("register-form");
+        var z = document.getElementById("buttonBox");
+        function register (){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px"
+        }
+    </script>
    </body>
    <footer>
     <nav class="footer-navbar">
