@@ -2,7 +2,13 @@
 main {
     background-color: whitesmoke;
     margin-top: -10px;
-    margin-bottom: 20px;
+}
+.declare{
+    background-color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 200px 0;
+
 }
 .title{
     width: 100%;
