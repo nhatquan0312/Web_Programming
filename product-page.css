@@ -1,5 +1,5 @@
 * {
-    font-family: 'Ubuntu Mono',monospace;
+    font-family: 'Arial',monospace;
 }
 
 .container {
@@ -18,7 +18,7 @@
     margin: 10px;
 }
 .title {
-    font-size: 50px;
+    font-size: 40px;
 }
 .p-price {
     margin: 10px;
