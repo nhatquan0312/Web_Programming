@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="store.css">
-    <script src="script.js" defer></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -39,88 +39,101 @@
     </header>
     <section class='store-page'>
         <div class='store-logo'>
-            <img src='abi_pic.jpg' height='200px' width='200px'>
+            <img src='img/Uniqlo/uniqlo_logo .jpg' alt='Uniqlo Logo'>
         </div>
         <div class ='store-description'>
-            <h2>Banh trang Abi</h2>            
-            <p>Found in Saigon.</p>
+            <h2>Bánh tráng Abi</h2>            
+            <p>Found in Saigon</p><br>
+            <p></p>
+            <p>
+               <br>
+            </p>
         </div>
     </section>
-    <div style='margin-top:100px'>
-        <h1 style='margin-left:3%'>New Products</h1><br>
+    <section class='store-products'>
+        <div class='p-title' id='all-products'>
+            <h2 class='browse-tlt'> Browse products by: 
+                <div class='browse'>
+                    <button class='dropdown-button'>Categories</button>
+                    <div class='dropdown-content'>
+                        <a href='#feature-products'>Cơm cháy</a>
+                        <a href='#feature-products'>Khô gà</a>
+                        <a href='#feature-products'>Da</a>
+                    </div>
+                </div>
+                <div class='browse'>
+                    <button class='dropdown-button'>Created time</button>
+                    <div class='dropdown-content'>
+                        <a href='#feature-products'>Newest First</a>
+                        <a href='#feature-products'>Oldest First</a>
+                    </div>
+                </div>
+            </h2>
+        </div>                
+        <div class='p-title' id='new-products'>
+            <h1>New Products</h1><br>
+    
+            <div class='new-products'>
+                <div class='item-box'>
+                    <a href='product-u1.html'><img src='img/abi1.jpg' alt='Abi'>
+                    <h2>Cơm cháy siêu vị</h2>
+                    <p class='price'>26.000 VND</p></a>
+                </div>
+                <div class='item-box'>
+                    <a href='product-u1.html'><img src='img/abi2.jpg' alt='Abi'>
+                    <h2>Khô gà Abi</h2>
+                    <p class='price'>35.000 VND</p></a>
+                </div>
+                <div class='item-box'>
+                    <a href='product-u1.html'><img src='img/abi3.jpg' alt='Abi'>
+                    <h2>Da heo</h2>
+                    <p class='price'>35.000 VND</p></a>
+                </div>
+                <div class='item-box'>
+                    <a href='product-u1.html'><img src='img/abi4.jpg' alt='Abi'>
+                    <h2>Da cá trứng muối</h2>
+                    <p class='price'>35.000 VND</p></a>
+                </div>  
+                <div class='item-box'>
+                    <a href='product-u3.html'><img src='img/abi5.jpg' alt='Abi'>
+                    <h2>Khô gà</h2>
+                    <p class='price'>35.000 VND</p></a>  
+                       
+                </div>
+        </div>
+        </div><br><hr>
+        <div class='p-title' id='feature-products'>
+            <h1> Feature Products</h1><br>
+            
+            <div class='new-products'>
+                <div class='item-box'>
+                    <a href='product1.html'><img src='img/abi6.jpg' alt='Abi'>
+                    <h2>Da heo Abi</h2>
+                    <p class='price'>35.000 VND</p></a>
+                </div>
+                <div class='item-box'>
+                    <a href='product1.html'><img src='img/abi1.jpg' alt='Abi'>
+                    <h2>Cơm cháy siêu vị</h2>
+                    <p class='price'>26.000 VND</p></a>
+                </div>
+                <div class='item-box'>
+                    <a href='product1.html'><img src='img/abi1.jpg' alt='Abi'>
+                    <h2>Cơm cháy siêu vị</h2>
+                    <p class='price'>26.000 VND</p></a> 
+                </div>
+                <div class='item-box'>
+                    <a href='product1.html'><img src='img/abi7.jpg' alt='Abi'>
+                    <h2>Bánh tráng bơ</h2>
+                    <p class='price'>26.000 VND</p></a>
+                </div>  
+                <div class='item-box'>
+                    <a href='product-u1.html'><img src='img/abi4.jpg' alt='Abi'>
+                    <h2>Da cá trứng muối</h2> 
+                    <p class='price'>35.000 VND</p></a>
+                </div>
+            </div><br><hr>
     </div>
-    <div class='new-products'>
-        <div class='item-box'>
-            <img src='abi1.jpg' width='270px' height='330px'>
-            <h3>Cơm cháy siêu vị</h3>
-            <p class='price'>26.000 VND</p>
-            <a href='product-detail.html'><p><button>	&#128722</button></p></a>
-        </div>
-        <div class='item-box'>
-            <img src='abi2.jpg' width='270px' height='330px'>
-            <h3>Khô gà Abi</h3>
-            <p class='price'>35.000 VND</p>
-            <a href='product1.html'><p><button>	&#128722</button></p></a>
-        </div>
-        <div class='item-box'>
-            <img src='abi3.jpg' width='270px' height='330px'>
-            <h3>Da heo Abi</h3>
-            <p class='price'>35.000 VND</p>
-            <a href='product1.html'><p><button>	&#128722</button></p></a>        
-        </div>
-        <div class='item-box'>
-            <img src='abi4.jpg' width='270px' height='330px'>
-            <h3>Da cá trứng muối</h3>
-            <p class='price'>35.000 VND</p>
-            <a href='product1.html'><p><button>	&#128722</button></p></a>
-        </div>  
-        <div class='item-box'>
-            <img src='abi5.jpg' width='270px' height='330px'>
-            <h3>Khô gà</h3>
-            <p class='price'>35.000 VND</p>
-            <a href='product1.html'><p><button>	&#128722</button></p></a>     
-        </div>
-    </div><br><hr>
-    <div style='margin-top:50px'>
-        <h1 style='margin-left:3%'> Feature Products</h1><br>
-    </div>
-    <div class='store-page new-products'>
-        <div class='item-box'>
-            <img src='abi3.jpg' width='270px' height='330px'>
-            <h3>Da heo Abi</h3>
-            <p class='price'>35.000 VND</p>
-            <a href='product1.html'><p><button>&#128722</button></p></a>
-        </div>
-        <div class='item-box'>
-            <img src='abi1.jpg' width='270px' height='330px'>
-            <h3>Cơm cháy siêu vị</h3>
-            <p class='price'>26.000 VND</p>
-            <a href='product1.html'><p><button>&#128722</button></p></a>
-        </div>
-        <div class='item-box'>
-            <img src='abi6.jpg' width='270px' height='330px'>
-            <h3>Cơm cháy siêu vị</h3>
-            <p class='price'>26.000 VND</p>
-            <a href='product1.html'><p><button>&#128722</button></p></a>        
-        </div>
-        <div class='item-box'>
-            <img src='abi7.jpg' width='270px' height='330px'>
-            <h3>Bánh tráng bơ</h3>
-            <p class='price'>26.000 VND</p>
-            <a href='product1.html'><p><button>&#128722</button></p></a>
-        </div>  
-        <div class='item-box'>
-            <img src="abi4.jpg" width='270px' height='330px'>
-            <h3>Da cá trứng muối</h3> 
-            <p class='price'>35.000 VND</p>
-            <a href='product1.html'><p><button>&#128722</button></p></a>     
-        </div>
-    </div><br><hr>
-    <div style='margin-top:50px'>
-        <h1 style='margin-left:3%'> All Products (Optional)</h1><br> 
-        <button class='category' type='button' OnClick="alert('*Need Javascript. Coming soon :))')">BROWSE BY CATEGORIES</button>
-        <button class='category' type='button' OnClick="alert('*Need Javascript. Coming soon :))')">BROWSE BY CREATED TIME</button>
-         
+     </section>
 </body>
  <footer>
         <ul>
