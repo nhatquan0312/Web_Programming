@@ -242,11 +242,9 @@ main .background-image .myaccount .inputBox.w20 .radio-box span {
     main .background-image .myaccount .inputBox.w20{
         
 
-        margin-right: 50%;
-        padding-right: 50%;
-        margin-left: 10%;
-margin-right:10%;
-margin-bottom: 15% ;
+        left: 0;
+        margin-right:60%;
+        
     }
     #login-form{
 
@@ -260,9 +258,15 @@ margin-bottom: 15% ;
         
         
     }
-
-    main .myaccountform {
-        margin-left:20% ;
-        width: 450px;
-    }
+    main .background-image #register-form
+    {
+    width: auto;
+    display: flex;
+    position: relative;
+    margin-left: 23%;
+    bottom: 25vh;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    
 }
