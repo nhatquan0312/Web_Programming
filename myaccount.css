@@ -28,8 +28,8 @@ width: 50%;
 background-color: none;
 justify-content: center;
 align-items: center;
-margin-left: 25%;
-margin-right:25%;
+margin-left: 10%;
+margin-right:10%;
 margin-bottom: 15% ;
 }
 
@@ -233,10 +233,10 @@ main .background-image .myaccount .inputBox.w20 .radio-box span {
 }
 
 
-@media (max-width:768px){
-    .main .background-image {
-        width:100%;
-        min-width:auto;
+@media (max-width:667px){
+    .main {
+        width:667px;
+       
         
     }
     main .background-image .myaccount .inputBox.w20{
@@ -258,6 +258,7 @@ main .background-image .myaccount .inputBox.w20 .radio-box span {
         
         
     }
+
     main .myaccountform {
         margin-left:20% ;
         width: 450px;
