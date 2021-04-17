@@ -287,7 +287,7 @@ main .container .contactinfo .contactinfo-ul li span:nth-child(3) .icon
          justify-content: center;
          align-items: center;
          min-height: 100vh;
-         background: #5f9ea0;
+         background: whitesmoke;
      }
      section::before{
          content:'';
@@ -310,7 +310,7 @@ main .container .contactinfo .contactinfo-ul li span:nth-child(3) .icon
          top:40px;
          width:350px;
          height: calc(100% - 80px);
-         background: #5f9ea0;
+         background: whitesmoke;
          z-index:1;
          display: flex;
          justify-content: center;
@@ -319,7 +319,7 @@ main .container .contactinfo .contactinfo-ul li span:nth-child(3) .icon
          box-shadow: 0 20px 25px rgba(0,0,0,0.15);
      }
      .container .contact-info h2{
-         color:#fff;
+         
          font-size:24px;
          font-weight: 500;
          text-align: center;
@@ -342,10 +342,10 @@ main .container .contactinfo .contactinfo-ul li span:nth-child(3) .icon
       }
       .container .contact-info ul.info li span:nth-child(1) img{
           max-width: 100%;
-          filter: invert(1);
+          
       }
       .container .contact-info ul.info li span:nth-child(2){
-         color: #fff;
+         
          margin-left: 10px;
          font-weight: 300;
       }
