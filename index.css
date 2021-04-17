@@ -5,10 +5,10 @@ main {
 }
 .declare{
     background-color: white;
-    font-size: 50px;
+    font-size: 5rem;
     text-align: center;
     padding: 200px 0;
-
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .title{
     width: 100%;
