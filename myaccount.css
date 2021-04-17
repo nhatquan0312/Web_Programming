@@ -37,6 +37,7 @@ margin-bottom: 15% ;
     background: white;
     width:350px;
     height:220px;
+    margin-left: 23%;
 }
 h2 
 {
@@ -192,7 +193,7 @@ main .background-image .myaccount .inputBox.w40 {
     position: relative;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    text-align:center;
     flex-direction: column;
 }
 
@@ -204,7 +205,10 @@ main .background-image .myaccount .inputBox.w20
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
+    margin-left: -25px;
     background-color: white;
+    text-align:center;
+    
 }
 main .background-image .myaccount .inputBox.w20 input [type="checkbox"]
 {
