@@ -63,7 +63,7 @@ main .container .contactform
     position: absolute;
     top: 10vh;
     width: calc(100% - 330px);
-    height: 80vh;        
+    height: 100vh;        
     padding: 40px 50px;
     margin-bottom: 50px;
     background: cornsilk;
