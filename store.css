@@ -127,7 +127,7 @@ a > img {
 /*resolution for iphone*/
 @media screen and (max-width: 767px) {
     .store-page {
-        padding-left: 10%;
+        padding-left: 5%;
     }
     .store-description {
         padding-right: 25%;
