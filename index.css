@@ -63,7 +63,9 @@ h3 {
     font-family: 'Inter', sans-serif;
     color: #252525;
 }
-
+a > img {
+    border-radius: 8px;
+}
 .product_info .price{
     font-family: 'Inter', sans-serif;
     color: #252525;
