@@ -18,7 +18,7 @@ font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: 'Oswald', sans-serif !important;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: -.02em;
@@ -55,7 +55,7 @@ main .container {
      width: 50%;
      min-height: 100%;
      min-width: 100%;
-     background-color: rgb(147, 199, 201);
+     background-color: white;
 }
 
 main .container .contactform 
