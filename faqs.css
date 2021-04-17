@@ -24,10 +24,10 @@ section{
     padding: 0 1.5rem;
 }
 .accordion-item{
-    background-color: black;
+    background-color: #7FB1B3;
     border-radius: .4rem;
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: .5rem;
     box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
 }
 
@@ -35,7 +35,7 @@ section{
     font-size: 1.6rem;
     color: rgba(255,255,255, .8);
     text-decoration: none;
-    background-color: #283042;
+    background-color: #5f9ea0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -56,17 +56,17 @@ section{
     background-color: #212838;
     transition: max-height 650ms;
 }
-.answer::before{
+/* .answer::before{
     content: "";
     position: absolute;
     width: .6rem;
     height: 90%;
-    background-color: #8fc460;
+    background-color: #7FB1B3;
     top: 50%;
     left:0;
     transform: translateY(-50%);
     
-}
+} */
 
 .answer p{
     font-size: 1.4rem;

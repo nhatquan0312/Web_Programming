@@ -44,7 +44,7 @@ body{
 }
 .plan-section .plan .btn{
     display: block;
-    background-color: #696fdd;
+    background-color: #5f9ea0;
     padding: 10px;
     margin-top: 20px;
     color: #f6f6f6;
@@ -53,16 +53,16 @@ body{
 .plan-section .plan .btn:hover{
     background-color: #f6f6f6;
     color:#494c5f;
-    border:1px solid #696fdd;
+    border:1px solid #5f9ea0;
     font-weight: 900;
 }
 .plan-section .plan .btn-blue{
     background-color: #f6f6fe;
-    color:#696fdd;
+    color:#5f9ea0;
 }
 
 .plan-section .plan .btn-blue:hover{
-background-color: #696fdd;
+background-color: #5f9ea0;
 color: #f6f6fe;
 border:1px solid #f6f6fe;
 }
@@ -70,9 +70,21 @@ border:1px solid #f6f6fe;
     background-color: #f6f6f6;
 }
 .plan-section .pro{
-    background-color: #6966fd;
+    background-color: #7FB1B3;
     color:#f6f6fe;
 }
 .plan-section .master{
     background-color: #f6f6f6;
+}
+
+@media only screen and (max-width: 768px){
+    .plan-section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .plan{
+        flex-direction: row;
+        align-items: flex-start;    
+    }
 }

@@ -20,11 +20,11 @@ main .background-image {
     position: relative;
 }
 
-main .background-image .login-form 
+main .background-image .myaccount
 {
     position: relative;
     min-width: 390px;
-    margin: 8% auto;
+    margin: auto;
     margin-bottom: auto;
     bottom: 0;
     display: flex;
@@ -44,33 +44,33 @@ h2
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20vh;
+    padding-top: 8vh;
     font-size: 60px;
 
 }
 
-main .background-image .login-form form {
+main .background-image .myaccount {
     flex-wrap: wrap;
     margin-top: 10px; 
     width: 50%;
-    height: 40vh;
+    height: 35vh;
     background-color: white;
     
 }
 
-main .background-image .login-form form .buttonBox
+main .background-image .myaccount .buttonBox
 {   position: relative;
     display: flex;
     justify-content: space-around;
     height: 30px;
     width: 240px;
     box-shadow: 0 0 20px 9px rgb(173, 209, 209);
-    margin: 35px auto;
+    margin: 48px auto;
     border-radius: 40px;  
    
 
 }
-main .background-image .login-form form .buttonBox .switcher 
+main .background-image .myaccount .buttonBox .switcher 
 {
 background:linear-gradient(to right, cadetblue, #ccc );
 position: absolute;
@@ -82,7 +82,7 @@ left: 0;
 cursor: pointer;
 }
 
-main .background-image .login-form form .buttonBox .toggle 
+main .background-image .myaccount .buttonBox .toggle 
 {   position: relative;
     cursor: pointer;
     border:0;
@@ -94,7 +94,7 @@ main .background-image .login-form form .buttonBox .toggle
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-main .background-image .login-form .login-button 
+main .background-image .myaccount .login-button 
 {
     position: relative;
     display: flex;
@@ -102,69 +102,123 @@ main .background-image .login-form .login-button
     align-items: center;
     margin-top:0px;
     height: 15vh;
+    flex-direction: column;
     
 }
 
-main .background-image .login-form form .login-button button {
+main .background-image .myaccount .login-button button {
     background-color: cadetblue ;
     background: transparent;
     position: absolute;
     height: 30px;
-    width: 80px;
+    width: 120px;
     margin:0;
     border-radius: 40px;
-    left: 40px;
+    position: relative;
     cursor: pointer;
     border:none;
+    outline: none;
     background: linear-gradient(to right, cadetblue, #ccc );
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-main .background-image .login-form form .login-button p {
+main .background-image .myaccount .login-button .checkbox span {
     position: relative;
     height: 30px;
     width: 140px;
-   left: calc(100% - 50% - 100px);
     text-align: center;
     margin-top: 20px;
     padding-top: 5px;
     
     
 }
-
-main .background-image .login-form form .inputBox.w40 {
+main .background-image .myaccount .login-button .btn 
+{
     display: flex;
-    top: 30px;
-    align-items: center;
     justify-content: space-around;
-    margin-top: 20px;
-    
+    align-items: center;
     
 }
-main .background-image .login-form form .inputBox.w40 input {
+main .background-image .myaccount .login-button .btn #forgot-btn{
+    position: relative;
+    left: 30px;
+    background: none !important;
+    outline:none;
+}
+
+main .background-image .myaccount .login-button .checkbox
+{
+    display: inline-block;
+}
+
+main .background-image .myaccount .inputBox.w40 input{
+    
+    top: 30px;
+    
+    margin-top: 20px;
     border: none;
     border-bottom: 2px solid rgb(112, 133, 134);
-    left: 30px;
-}
-main .background-image .login-form form .inputBox.w40 span {
-    position: absolute;
-    
-    
-    
-}
-
-main .background-image .login-form form .buttonBox .switcher  :hover 
-{
-    background-color: rosybrown !important;
+    outline: none;
     background: transparent;
-    position: absolute;
-    height: 30px;
-    width: 120px;
-    margin: 0;
-    border-radius: 40px;
-    right: 0;
+    
 }
 
-button :focus ~ .switcher
+main .background-image .myaccount .inputBox.w40 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .background-image #register-form  {
+    position: absolute;
+    width: 390px;
+    margin: auto;
+    margin-bottom: auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 500px;
+    background-color: white;
+}
+main .background-image .register-form form .inputBox.w20 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+}
+main .background-image .register-form form .inputBox.w20 input {
+    margin: 20px;
+}
+main .background-image .myaccount .inputBox.w20 input{
+    
+    top: 30px;
+    
+    margin-top: 20px;
+    border: none;
+    border-bottom: 2px solid rgb(112, 133, 134);
+    outline: none;
+    background: transparent;
+    
+}
+select
 {
-    transform: translate(70px);
+
+color: rgb(112, 133, 134)!important;
+border: none;
+border-bottom: 2px solid rgb(112, 133, 134);
+
+color:rgb(112, 133, 134);
+
+}
+
+#register-form 
+{left:450px;
+}
+#login-form {
+    left: 50px
 }
