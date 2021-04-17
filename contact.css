@@ -30,13 +30,13 @@ font-size: 40px;
 main {
     background-color: cadetblue;
     position: relative;
-    align-items: center;
+    display: flex;
     justify-content: center;
     min-height: 100vh;
     width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13.3333px;
-   
+    
 }
     
 main .container {
@@ -44,7 +44,7 @@ main .container {
     width: 1200px;
     height: 100%;
     display: flex;
-    z-index: 1000;  
+    z-index: 1000;
 }
 
  main::before {
@@ -63,7 +63,7 @@ main .container .contactform
     position: absolute;
     top: 10vh;
     width: calc(100% - 330px);
-    height: 80vh;        
+    height: 60vh;        
     padding: 40px 50px;
     margin-bottom: 50px;
     background: cornsilk;
