@@ -2,6 +2,7 @@
 body {
     
     font-family: 'Ubuntu Mono', monospace;
+    background-color: whitesmoke;
     
 }
 main .container .contactinfo h1
@@ -17,7 +18,7 @@ font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: 'Oswald', sans-serif !important;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: -.02em;
@@ -27,12 +28,16 @@ font-size: 40px;
     z-index: 1; 
 }
 main {
-    background: rgb(112, 133, 134);
+    background-color: none;
     position: relative;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13.3333px;
+    
+   
 }
     
 main .container {
