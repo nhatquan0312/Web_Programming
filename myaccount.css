@@ -21,7 +21,7 @@ main .background-image {
 padding-bottom: 10%;
 }
 main .myaccountform {
-    display: flex;
+    
     margin-top: 5vh; 
 position: relative;
 width: 50%;
@@ -31,7 +31,7 @@ justify-content: center;
 align-items: center;
 margin-left: 25%;
 margin-right:25%;
-margin-bottom: 15% ;
+margin-bottom: 15%;
 background-color: whitesmoke;
 }
 h2 
@@ -46,7 +46,7 @@ h2
 
 }
 
-main .background-image .myaccount #login-form
+main .background-image  #login-form .myaccount
 {
     position: absolute;
     width: 50%;
@@ -58,17 +58,18 @@ margin-left: 25%;
 margin-right:25%;
 margin-bottom: 15% ;
 
-
-    
 }
-main .background-image #register-form  {
+main .background-image  #register-form  {
     
     width: 450px;
     
     position: absolute;
-    flex-wrap: wrap;
-    height: 100%;
+    top: 3vh;
+    height: 600px;
     background-color: whitesmoke;
+    margin-left: 25%;
+   display: flex;
+   align-items: ;
 }
 
 main .background-image  .buttonBox
