@@ -20,6 +20,12 @@ main {
     flex-wrap: wrap;
 }
 
+.stores{
+    box-shadow: 4px 4px 5px grey;
+    box-sizing:border-box;
+    border: 1px solid black;
+}
+
 .product_info{
     margin: 10px 
 }
@@ -32,6 +38,9 @@ main {
     flex-wrap: wrap;
 }
 .products{
+    box-shadow: 4px 4px 5px grey;
+    box-sizing:border-box;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     background:none ;
