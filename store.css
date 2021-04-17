@@ -24,6 +24,7 @@
 .new-products  {
     display:flex;
     flex-wrap: wrap;
+    background-color: whitesmoke;
 }
 .item-box {
     box-shadow: 4px 4px 5px grey;
