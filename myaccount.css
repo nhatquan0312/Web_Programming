@@ -32,7 +32,11 @@ align-items: center;
 margin-left: 25%;
 margin-right:25%;
 margin-bottom: 15% ;
-background-color: whitesmoke;
+}
+#login-form {
+    background: white;
+    width:350px;
+    height:220px;
 }
 h2 
 {
@@ -191,6 +195,8 @@ main .background-image .myaccount .inputBox.w20
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    box-sizing: border-box;
+    background-color: white;
 }
 main .background-image .myaccount .inputBox.w20 input [type="checkbox"]
 {
