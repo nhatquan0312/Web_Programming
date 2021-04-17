@@ -172,7 +172,7 @@ main .background-image .myaccount .inputBox.w40 {
 
 main .background-image #register-form  {
     position: absolute;
-    width: 390px;
+    width: 400px;
     margin: auto;
     margin-bottom: auto;
     bottom: 0;
@@ -180,7 +180,7 @@ main .background-image #register-form  {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 500px;
+    height: 450px;
     background-color: white;
 }
 main .background-image .register-form form .inputBox.w20 {
@@ -188,33 +188,29 @@ main .background-image .register-form form .inputBox.w20 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     
 }
-main .background-image .register-form form .inputBox.w20 input {
-    margin: 20px;
-}
-main .background-image .myaccount .inputBox.w20 input{
+
+main .background-image .myaccount .inputBox.w20 input, select {
     
-    top: 30px;
-    
-    margin-top: 20px;
+  
     border: none;
     border-bottom: 2px solid rgb(112, 133, 134);
     outline: none;
     background: transparent;
-    
+    margin: 10px;
+    width: 35%;
+    padding-top: 5px;
 }
-select
+
+
+main .background-image .myaccount .inputBox.w20 input [type="checkbox"]
 {
-
-color: rgb(112, 133, 134)!important;
-border: none;
-border-bottom: 2px solid rgb(112, 133, 134);
-
-color:rgb(112, 133, 134);
-
+    color: rgb(112, 133, 134);  
 }
+
+
 
 #register-form 
 {left:450px;
