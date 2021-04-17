@@ -3,6 +3,13 @@ main {
     background-color: whitesmoke;
     margin-top: -10px;
 }
+.declare{
+    background-color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 200px 0;
+
+}
 .title{
     width: 100%;
     margin: 30px 20px;
