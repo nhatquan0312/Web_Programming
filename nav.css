@@ -14,12 +14,33 @@ body{
     color:white;
     align-items: center;
 }
-.brand-title{
+/*.brand-title{
     color: black;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0;
-    font-size: 1.5rem;
+    font-size: 5rem;
+    margin:.5rem;
+    font-family: 'Dosis', sans-serif;
+}*/
+
+.brand-title ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.brand-title li{
+    list-style: none;
+}
+
+.brand-title li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-size: 5rem;
     margin:.5rem;
     font-family: 'Dosis', sans-serif;
 }
