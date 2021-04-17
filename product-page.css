@@ -121,7 +121,7 @@ a > img {
         font-size: 18px;
     }
     button {
-        width: 100px;
+        width: 110px;
         height: 30px;
         font-size: 12px;
         margin: 5px;
@@ -144,7 +144,7 @@ a > img {
     }
     .image > img {
         width: 220px;
-        height: 300px;
+        height: 280px;
     }
     .title  {
         font-size: 20px;
@@ -162,16 +162,16 @@ a > img {
         margin: 10px 0px 5px 5px;
     }
     select {
-        width: 60px;
+        width: 40px;
         height: 15px;
         font-size: 12px;
         margin: 10px;
     }
     h1 {
-        margin-left: 20%;
+        margin-left: 10%;
     }
     .rec-item {
-        margin: 6%;
+        margin: 30%;
         width: 180px;
     }
     a > img {
