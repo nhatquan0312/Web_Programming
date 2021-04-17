@@ -1,10 +1,13 @@
 * {
-    font-family: 'Unbuntu mono', monospace;
+    font-family: 'Arial', monospace;
 }
-
+.background {
+    background-color: whitesmoke;
+}
 .flex {
     display:flex;
     flex-wrap:nowrap;
+    background-color: white;
 }
 .flex > h2 {
     width: 250px;
@@ -23,6 +26,7 @@
     padding: 1%;
     box-sizing:border-box;
     box-shadow: 2px 2px 3px grey;
+    background-color: white;
 }
 
  #number {
@@ -45,12 +49,12 @@
     color: white;
     text-decoration: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 20px ;
     
 
 }
 /* resolution for iphone*/
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
     .flex > p {
         font-size:smaller;
         line-height: smaller;
@@ -69,6 +73,8 @@
         font-size: 20px;
     }
     .order-button > a {
-        font-size: 18px;
+        font-size: 16px;
+        padding:7px 15px;
+        margin: 2px;
     }
 }

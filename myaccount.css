@@ -8,7 +8,6 @@ main {
     font-size: 13.3333px;
     align-items: center;
     justify-content: center;
-    min-height: auto;
     min-width: 100%;
 }
 main .background-image {
@@ -18,25 +17,30 @@ main .background-image {
     background-position: center;
     background-size: cover;
     position: relative;
+padding-bottom: 10%;
 }
-
-main .background-image .myaccount
-{
-    position: relative;
-    min-width: 390px;
-    margin: auto;
-    margin-bottom: auto;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
-    background-color: none;
-
+main .myaccountform {
     
+    margin-top: 5vh; 
+position: relative;
+width: 50%;
+
+background-color: none;
+justify-content: center;
+align-items: center;
+margin-left: 25%;
+margin-right:25%;
+margin-bottom: 15% ;
 }
 
+#login-form {
+    background: white;
+    width:350px;
+    height:220px;
+    margin-left: 23%;
+    justify-content: center;
+align-items: center;
+}
 h2 
 {
     margin: 0;
@@ -49,16 +53,23 @@ h2
 
 }
 
-main .background-image .myaccount {
-    flex-wrap: wrap;
-    margin-top: 10px; 
-    width: 50%;
-    height: 35vh;
-    background-color: white;
+
+main .background-image  #register-form {
     
+    width: 450px;
+    display: flex;
+    position: relative;
+   margin-left: 23%;
+   bottom: 25vh;
+    
+    background-color: whitesmoke;
+    justify-content: center;
+align-items: center;
+
+   
 }
 
-main .background-image .myaccount .buttonBox
+main .background-image  .buttonBox
 {   position: relative;
     display: flex;
     justify-content: space-around;
@@ -67,10 +78,11 @@ main .background-image .myaccount .buttonBox
     box-shadow: 0 0 20px 9px rgb(173, 209, 209);
     margin: 20px auto;
     border-radius: 40px;  
+    background-color: whitesmoke;
    
 
 }
-main .background-image .myaccount .buttonBox .switcher 
+main .background-image .buttonBox .switcher 
 {
 background:linear-gradient(to right, cadetblue, #ccc );
 position: absolute;
@@ -82,7 +94,7 @@ left: 0;
 cursor: pointer;
 }
 
-main .background-image .myaccount .buttonBox .toggle 
+main .background-image .buttonBox .toggle 
 {   position: relative;
     cursor: pointer;
     border:0;
@@ -166,34 +178,33 @@ main .background-image .myaccount .inputBox.w40 {
     position: relative;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    text-align:center;
     flex-direction: column;
 }
 
-main .background-image #register-form  {
-    position: absolute;
-    width: 400px;
-    margin: auto;
-    margin-bottom: auto;
-    bottom: 0;
+
+main .background-image .myaccount .inputBox.w20
+{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 450px;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-left: -25px;
     background-color: white;
-}
-
-main .background-image .register-form form .inputBox.w20 {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    text-align:center;
     
 }
+main .background-image .myaccount .inputBox.w20 input [type="checkbox"]
+{
+    border: none ;
+    margin: 10px;
+    
+    padding-top: 5px;
+}
 
-main .background-image .myaccount .inputBox.w20 input, select {
+
+main .background-image .myaccount .inputBox.w20 .input-field input , select {
     
   
     border: none;
@@ -204,16 +215,26 @@ main .background-image .myaccount .inputBox.w20 input, select {
     width: 35%;
     padding-top: 5px;
 }
+main .background-image .myaccount .inputBox.w20 .check-box  
 
+{position: relative;
 
-main .background-image .myaccount .inputBox.w20 input [type="checkbox"]
-{
-    color: rgb(112, 133, 134);  
+display: flex;
+justify-content: space-around;
+align-items: center;
+   width: 350px;
+   
+   
+
 }
-
+main .background-image .myaccount .inputBox.w20 .check-box span {
+    width: 40%;
+    
+    
+}
 #register-form 
-{left:450px;
+{
 }
 #login-form {
-    left: 50px
+    
 }

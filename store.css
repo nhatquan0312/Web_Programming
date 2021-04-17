@@ -1,5 +1,5 @@
 * {
-    font-family: 'Ubuntu mono', monospace;
+    font-family: 'Arial', 400 ;
 }
 .store-page {
     display: -webkit-flex;
@@ -24,11 +24,14 @@
 .new-products  {
     display:flex;
     flex-wrap: wrap;
+    background-color: whitesmoke;
 }
 .item-box {
     box-shadow: 4px 4px 5px grey;
     box-sizing:border-box;
     border: 1px solid black;
+    border-radius: 8px;
+    background-color: #e9e9e9;
     text-align: center;
     float: left;
     margin: 2% 0% 2% 4%;
@@ -37,6 +40,7 @@
 a > img {
     width: 268px;
     height: 330px;
+    border-radius: 8px;
 }
 .item-box > a{
     color: black;
@@ -45,6 +49,7 @@ a > img {
 .price {
     text-align: center;
     color: gray;
+    text-decoration: none;
 }
 .browse-tlt {
     margin: 50px 20px 50px 20px;
@@ -54,7 +59,7 @@ a > img {
     display:inline-block;
 }
 .dropdown-button {
-    background-color: Black;
+    background-color: black;
     color: white;
     padding: 18px;
     font-size: 21px;
@@ -76,10 +81,13 @@ a > img {
     text-decoration: none;
     display:block;
 }
+button :hover {
+    background-color: rgb(147, 199, 201);
+}
 
 .dropdown-content a:hover {background-color: #ddd;}
 .browse:hover .dropdown-content {display: block;}
-.browse:hover .dropdown-button {background-color: Black;}
+.browse:hover .dropdown-button {background-color: rgb(147, 199, 201) ;}
 /*resolution for ipad*/
 @media screen and (max-width: 1024px) {
     .store-logo > img {
@@ -127,7 +135,7 @@ a > img {
 /*resolution for iphone*/
 @media screen and (max-width: 767px) {
     .store-page {
-        padding-left: 10%;
+        padding-left: 5%;
     }
     .store-description {
         padding-right: 25%;

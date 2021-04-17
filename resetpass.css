@@ -1,0 +1,60 @@
+
+        button {
+    background-color: cadetblue ;
+    background: transparent;
+    position: absolute;
+    height: 30px;
+    width: 120px;
+    margin:0;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background: linear-gradient(to right, cadetblue, #ccc );
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 
+}
+.Box span, input, button{
+   
+    margin: 5px;
+}
+.Box {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    
+     
+    position: relative;
+    min-width: 50%;
+    min-height: 100%;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-right:25%;
+    margin-bottom: 5vh;
+}
+.inputBox .w2 {
+    width: 45%;
+}
+
+.inputBox .w3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 24px;
+    text-transform: uppercase ;
+}
+

@@ -1,5 +1,5 @@
 * {
-    font-family: 'Ubuntu Mono',monospace;
+    font-family: 'Arial',monospace;
 }
 
 .container {
@@ -18,7 +18,7 @@
     margin: 10px;
 }
 .title {
-    font-size: 50px;
+    font-size: 40px;
 }
 .p-price {
     margin: 10px;
@@ -71,11 +71,13 @@ h1 {
 .recommend {
     display:flex;
     flex-wrap: wrap;
+    background-color: whitesmoke;
 }
 .rec-item {
     flex-direction: row;
     box-sizing: border-box;
     border: 1px solid black;
+    border-radius:8px;
     box-shadow: 4px 4px 5px grey;
     text-align: center;
     margin: 1% 0% 1% 4%; 
@@ -87,6 +89,7 @@ h1 {
 a > img {
     width: 270px;
     height: 330px;
+    border-radius: 8px;
 }
 /*resolution for ipad*/
 @media screen and (max-width: 1024px) {
@@ -118,7 +121,7 @@ a > img {
         font-size: 18px;
     }
     button {
-        width: 100px;
+        width: 110px;
         height: 30px;
         font-size: 12px;
         margin: 5px;
@@ -135,20 +138,20 @@ a > img {
     }
 }
 /*resolution for iphone*/
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 767px) {
     .container {
         padding: 1% 5%;
     }
     .image > img {
-        width: 240px;
-        height: 320px;
+        width: 220px;
+        height: 280px;
     }
     .title  {
-        font-size: 25px;
+        font-size: 20px;
     }
     .p-price {
         margin: 5px;
-        font-size: 15px;
+        font-size: 14px;
     }
     #number {
         font-size: 12px;
@@ -159,16 +162,16 @@ a > img {
         margin: 10px 0px 5px 5px;
     }
     select {
-        width: 60px;
+        width: 40px;
         height: 15px;
         font-size: 12px;
         margin: 10px;
     }
     h1 {
-        margin-left: 20%;
+        margin-left: 10%;
     }
     .rec-item {
-        margin: 6%;
+        margin: 30%;
         width: 180px;
     }
     a > img {

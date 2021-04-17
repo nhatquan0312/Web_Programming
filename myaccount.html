@@ -44,12 +44,14 @@
     <main>
     <div class="background-image">
         <h2>Welcome back</h2>
+        <div class="buttonBox">
+            <div class="switcher"></div>
+            <button type="button" class="toggle" onclick="login()">Log In</button>
+            <button type="button" class="toggle" onclick="register()">Register</button>
+        </div>
+        <div class="myaccountform">
             <form id="login-form" class="myaccount">
-            <div class="buttonBox">
-                <div class="switcher"></div>
-                <button type="button" class="toggle">Log In</button>
-                <button type="button" class="toggle">Register</button>
-            </div>
+            
             <div class="inputBox w40">
                 
                <input type="text" name=""  placeholder="User Id" required>
@@ -60,28 +62,37 @@
                 <input type="checkbox" >
                     <span> Remember password</span></div>
 
-                    <div class="btn">
-                        <button type="button"  class="toggle" id="submit-btn"> Login</button>
-                        <button type="button" class="toggle" id="forgot-btn">Forgot password?</button>
                     
-                    </div>
+                        <button type="submit"  class="toggle" id="submit-btn"> Login</button>
+                        <button type="button" class="toggle" id="forgot-btn"><a href="resetpass.html">Forgot password</a></button>
+                    
+                   
             </div>
        
         </form>
         <form id="register-form" class="myaccount">
             <form>
                 <div class="inputBox w20">
-                
-                    <input type="text" name=""  placeholder="Email address" required>
+                    <div class="input-field" id="upload">
+                    <input type="file" name=""  placeholder="Upload your profile" class="" required>
+                </div>
+                <div class="input-field">
+                    
+                    
                      <input type="text" name="" placeholder="Phone number"  required>
-                     <input type="text" name=""  placeholder="Password" required>
-                     <input type="text" name="" placeholder="Retype password"  required>
-                     <input type="file" name=""  placeholder="Upload your profile" required>
+                     <input type="text" name=""  placeholder="Email address" required>
+                     
+                     
+                     
                      <input type="text" name="" placeholder="First name"  required>
+                     <input type="text" name=""  placeholder="Password" required>
+                     
                      <input type="text" name=""  placeholder="Last name" required>
+                     <input type="text" name="" placeholder="Retype password"  required>
                      <input type="text" name="" placeholder="Address"  required>
                      <input type="text" name=""  placeholder="City" required>
                      <input type="text" name="" placeholder="Zipcode"  required>
+                     
                      <select name="City" required>
                         <option value="">Country</option>
                          <option value="AF">Afghanistan</option>
@@ -112,7 +123,9 @@
                          <option value="YE">Yemen</option>
                          <option value="ZM">Zambia</option>
                      </select>
+                    </div>
                      <br><br>
+                    
                      <div class="check-box">
                          <span>You are:</span><br>
                      <input type="checkbox" >
@@ -120,22 +133,46 @@
                     <input type="checkbox" >
                     <span> Shopper</span>    
                 </div>
+                <br>
                 <span class="p">By creating an account you agree to our Terms & Privacy.</span>
                 <div class="login-button">
                     
     
                         <div class="btn">
-                            <button type="button"  class="toggle" id="register-btn"> Register</button>
+                            <button type="submit"  class="toggle" id="register-btn"> Register</button>
                         </div>
                 </div>
 
                  
             </form>
         </div>
-        
-        
     </div>
+        
+    
     </main>
+    <script>
+        var x = document.getElementById("login-form");
+        var y = document.getElementById("register-form");
+        var z = document.getElementById("switcher");
+        
+        
+        function register (){
+            x.style.visibility = "hidden";
+            y.style.visibility = "visible";
+            
+            z.style.left = "110px";
+        }
+        
+       s
+        function login (){
+            x.style.visibility = "visible"; 
+            y.style.visibility = "hidden";
+
+            z.style.left = "0px";
+        }
+        
+
+    </script>
    </body>
    <footer>
     <nav class="footer-navbar">
