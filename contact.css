@@ -55,7 +55,7 @@ main .container {
      width: 50%;
      min-height: 100%;
      min-width: 100%;
-     background-color: white;
+     background-color: whitesmoke;
 }
 
 main .container .contactform 
@@ -118,7 +118,7 @@ main .container .contactform form .inputBox.w50 button {
     outline: none;
     background: linear-gradient(to right, cadetblue, #ccc );
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 20px;
+   
     border: none;}
 
 
