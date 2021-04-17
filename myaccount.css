@@ -28,8 +28,8 @@ width: 50%;
 background-color: none;
 justify-content: center;
 align-items: center;
-margin-left: 10%;
-margin-right:10%;
+margin-left: 25%;
+margin-right:25%;
 margin-bottom: 15% ;
 }
 
@@ -244,15 +244,17 @@ main .background-image .myaccount .inputBox.w20 .radio-box span {
 
         margin-right: 50%;
         padding-right: 50%;
-        
+        margin-left: 10%;
+margin-right:10%;
+margin-bottom: 15% ;
     }
     #login-form{
 
       
-            background: white;
+            
             width:300px;
             height:200px;
-            margin-right:35%;
+            margin-right:60%;
             justify-content: center;
         align-items: center;
         
