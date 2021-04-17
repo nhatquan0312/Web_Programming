@@ -30,17 +30,13 @@ justify-content: center;
 align-items: center;
 margin-left: 25%;
 margin-right:25%;
-<<<<<<< HEAD
-margin-bottom: 15%;
-background-color: whitesmoke;
-=======
 margin-bottom: 15% ;
 }
 #login-form {
     background: white;
     width:350px;
     height:220px;
->>>>>>> 0e9899a8cea568bcf6c4be7d0b5cd9a8bee333a7
+    margin-left: 23%;
 }
 h2 
 {
@@ -191,7 +187,7 @@ main .background-image .myaccount .inputBox.w40 {
     position: relative;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    text-align:center;
     flex-direction: column;
 }
 
@@ -203,7 +199,10 @@ main .background-image .myaccount .inputBox.w20
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
+    margin-left: -25px;
     background-color: white;
+    text-align:center;
+    
 }
 main .background-image .myaccount .inputBox.w20 input [type="checkbox"]
 {
