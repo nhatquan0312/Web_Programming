@@ -183,6 +183,7 @@ main .background-image #register-form  {
     height: 450px;
     background-color: white;
 }
+
 main .background-image .register-form form .inputBox.w20 {
     position: relative;
     display: flex;
