@@ -147,11 +147,11 @@ a > img {
         height: 300px;
     }
     .title  {
-        font-size: 25px;
+        font-size: 20px;
     }
     .p-price {
         margin: 5px;
-        font-size: 15px;
+        font-size: 14px;
     }
     #number {
         font-size: 12px;
