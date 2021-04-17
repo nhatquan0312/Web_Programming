@@ -38,6 +38,8 @@ margin-bottom: 15% ;
     width:350px;
     height:220px;
     margin-left: 23%;
+    justify-content: center;
+align-items: center;
 }
 h2 
 {
@@ -51,19 +53,7 @@ h2
 
 }
 
-main .background-image  #login-form .myaccount
-{
-    position: absolute;
-    width: 50%;
-height: 200px;
 
-justify-content: center;
-align-items: center;
-margin-left: 25%;
-margin-right:25%;
-margin-bottom: 15% ;
-
-}
 main .background-image  #register-form {
     
     width: 450px;
@@ -165,11 +155,6 @@ main .background-image .myaccount .login-button .btn #forgot-btn{
     left: 30px;
     background: none !important;
     outline:none;
-}
-main .background-image .myaccount .login-button .btn a {
-    text-decoration: none;
-    
-    
 }
 
 main .background-image .myaccount .login-button .checkbox
