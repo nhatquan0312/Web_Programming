@@ -71,11 +71,13 @@ h1 {
 .recommend {
     display:flex;
     flex-wrap: wrap;
+    background-color: whitesmoke;
 }
 .rec-item {
     flex-direction: row;
     box-sizing: border-box;
     border: 1px solid black;
+    border-radius:8px;
     box-shadow: 4px 4px 5px grey;
     text-align: center;
     margin: 1% 0% 1% 4%; 
@@ -87,6 +89,7 @@ h1 {
 a > img {
     width: 270px;
     height: 330px;
+    border-radius: 8px;
 }
 /*resolution for ipad*/
 @media screen and (max-width: 1024px) {
@@ -135,13 +138,13 @@ a > img {
     }
 }
 /*resolution for iphone*/
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 767px) {
     .container {
         padding: 1% 5%;
     }
     .image > img {
-        width: 240px;
-        height: 320px;
+        width: 220px;
+        height: 300px;
     }
     .title  {
         font-size: 25px;
