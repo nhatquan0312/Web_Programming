@@ -59,7 +59,7 @@ a > img {
     display:inline-block;
 }
 .dropdown-button {
-    background-color: Black;
+    background-color: black;
     color: white;
     padding: 18px;
     font-size: 21px;
@@ -81,10 +81,13 @@ a > img {
     text-decoration: none;
     display:block;
 }
+button :hover {
+    background-color: rgb(147, 199, 201);
+}
 
 .dropdown-content a:hover {background-color: #ddd;}
 .browse:hover .dropdown-content {display: block;}
-.browse:hover .dropdown-button {background-color: Black;}
+.browse:hover .dropdown-button {background-color: rgb(147, 199, 201) ;}
 /*resolution for ipad*/
 @media screen and (max-width: 1024px) {
     .store-logo > img {
