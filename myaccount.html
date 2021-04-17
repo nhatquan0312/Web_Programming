@@ -155,16 +155,19 @@
         var y = document.getElementById("register-form");
         var z = document.getElementById("switcher");
         
+        
         function register (){
-            x.style.left = "-400px";
-            y.style.left = "200px";
+            x.style.visibility = "hidden";
+            y.style.visibility = "visible";
+            
             z.style.left = "110px";
         }
         
-       
+       s
         function login (){
-            y.style.left = "50px";
-            x.style.left = "450px";
+            x.style.visibility = "visible"; 
+            y.style.visibility = "hidden";
+            
             z.style.left = "0px";
         }
         
