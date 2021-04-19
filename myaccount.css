@@ -279,21 +279,27 @@ main .background-image .myaccountform #register {
         
     }
     #login-form{
-            width:300px;
-            height:200px;
-            margin-right:60%;
+            width:290px;
+            height:190px;
+            right: 43%;
             justify-content: center;
             align-items: center;
-        
+        position: relative;
+        top:5vh;
+        margin-left: 5%;
+        left: 0;
         
     }
+    
     main .background-image #register-form
     {
     width: auto;
     display: flex;
     position: relative;
     margin-left: 23%;
+    padding-right: 1%;
     bottom: 25vh;
+    left: 4vh;
     background-color: whitesmoke;
     justify-content: center;
     align-items: center;
