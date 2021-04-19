@@ -30,7 +30,7 @@ justify-content: center;
 align-items: center;
 margin-left: 25%;
 margin-right:25%;
-margin-bottom: 15% ;
+
 }
 
 #login-form {
@@ -54,20 +54,7 @@ h2
 }
 
 
-main .background-image  #register-form {
-    
-    width: 450px;
-    display: flex;
-    position: relative;
-   margin-left: 23%;
-   bottom: 25vh;
-    
-    background-color: whitesmoke;
-    justify-content: center;
-align-items: center;
 
-   
-}
 
 main .background-image  .buttonBox
 {   position: relative;
@@ -190,10 +177,25 @@ main .background-image .myaccount .inputBox.w20
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
-    margin-left: -25px;
+    
     background-color: white;
     text-align:center;
     
+}
+main .background-image  #register-form {
+    
+    
+    display: flex;
+    position: relative;
+  
+   bottom: 25vh;
+    
+    background-color: whitesmoke;
+    justify-content: center;
+align-items: center;
+
+
+   
 }
 main .background-image .myaccount .inputBox.w20 input [type="radio"]
 {
