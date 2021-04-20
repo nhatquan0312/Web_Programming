@@ -357,4 +357,8 @@ main .background-image .myaccountform #register {
         height: auto;
 
     }
+    .myaccountform {
+        height: 600px;
+        margin-bottom: 0;
+    }
 }
