@@ -17,10 +17,11 @@ The MUADEApp is compatible with devices of all sizes and all OS's, and consisten
 ## Contributors:
 <table>
 	<thead>
-		<tr> <th>
+		<tr> 
+			<th>
 			<a href="#"><img src="img/quan.jpg" alt="Quan.com" style="max-width:100%;"></a>		
 			</th>
-		
+		 </tr>
             <th>
                 <a href="phong-s3879069.github.io"><img src="img/phong.jpg" alt="Phong.com" style="max-width:100%;"></a>	
             </th>
@@ -29,29 +30,11 @@ The MUADEApp is compatible with devices of all sizes and all OS's, and consisten
             </th>
             <th>
                 <a href="tranminhnhat.github.io"><img src="img/nhat.jpg" alt="Phong.com" style="max-width:100%;"></a>	
-            </th>
-
-        </tr>
-		
-	</thead>
-    <tbody> 
-        <thead>
-        <tr> <td>
-            S3819347
-			</td>
-		
-            <td>
-                S3879069
-            </td>
-            <td>
-                S3818552
-            </td>
-            <td>
-                s3877063
-            </td>
-
-        </tr>
-        </thead>
-    </tbody>
+            </th></thead>
+<tbody> <tr>
+	<td> S3819347</td> <td>S3879069 </td> <td>S3818552 </td> <td> s3877063</td>
+	</tr>
+	</tbody>
+		    
 </table>
 
