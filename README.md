@@ -8,13 +8,13 @@
 ## Technologies
 Project is created using Visual Studio Code ver
 
-## Status:
+## Status
 In progress
 
-## Mobile:
+## Mobile support 
 The MUADEApp is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
 
-## Contributors:
+## Team
 <table>
 	<thead>
     <tr><th>
