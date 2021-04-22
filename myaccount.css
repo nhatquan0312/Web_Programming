@@ -342,6 +342,9 @@ main .background-image .myaccountform #register {
         height: 100px;
         position: absolute;}
     
+    .myaccountform {
+       height: fit-content;
+    }
     
 
 }
