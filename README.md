@@ -1,4 +1,4 @@
-# Project name: MUADE Shopping App
+# MUADE Shopping App
 > A private online marketing platform for shopping with cheap but ensured quality goods.
 
 ## General info
