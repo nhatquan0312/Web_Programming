@@ -15,12 +15,43 @@ In progress
 The MUADEApp is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
 
 ## Contributors:
-<table><thread>
-	
-	</thread>
+<table>
+	<thead>
+		<tr> <th>
+			<a href="#"><img src="img/quan.jpg" alt="Quan.com" style="max-width:100%;"></a>		
+			</th>
+		
+            <th>
+                <a href="phong-s3879069.github.io"><img src="img/phong.jpg" alt="Phong.com" style="max-width:100%;"></a>	
+            </th>
+            <th>
+                <a href="kieuahn.github.io"><img src="141133570_101795505181104_5344603997625229000_n.jpg" alt="Kieuanh.com" style="max-width:100%;"></a>	
+            </th>
+            <th>
+                <a href="tranminhnhat.github.io"><img src="img/nhat.jpg" alt="Phong.com" style="max-width:100%;"></a>	
+            </th>
+
+        </tr>
+		
+	</thead>
+    <tbody> 
+        <thead>
+        <tr> <td>
+            S3819347
+			</td>
+		
+            <td>
+                S3879069
+            </td>
+            <td>
+                S3818552
+            </td>
+            <td>
+                s3877063
+            </td>
+
+        </tr>
+        </thead>
+    </tbody>
 </table>
-* Nhat Quan- s3819347
-* Kieu Anh – s3818552
-* Duy Phong – s3879069
-* Nhat Tran  – s3877063
 
