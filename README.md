@@ -3,7 +3,7 @@
 
 ## General info
 * Group Github repo: https://github.com/nhatquan0312/Web_Programming 
-* Here is a working live demo: https://group-18-wp.netlify.app/index.html(#general-info)
+* Here is a working live demo: https://group-18-wp.netlify.app/index.html
 	
 ## Technologies
 Project is created using Visual Studio Code ver
