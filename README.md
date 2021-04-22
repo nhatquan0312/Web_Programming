@@ -1,7 +1,5 @@
 # MUADE Shopping App
-> A private online marketing platform for shopping with cheap but ensured quality goods. 
-
-> ## Group member:
+> A private online marketing platform for shopping with cheap but ensured quality goods. <br> Group member:
 * Nhat Quan- s3819347
 * Kieu Anh – s3818552
 * Duy Phong – s3879069
