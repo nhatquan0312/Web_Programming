@@ -1,29 +1,23 @@
-
-Group Github repo: https://github.com/nhatquan0312/Web_Programming </br>
-Link to our Website:https://group-18-wp.netlify.app/index.html
 # MUADE Shopping App
+> A private online marketing platform for shopping with cheap but ensured quality goods. 
 
+> ## Group member:
+* Nhat Quan- s3819347
+* Kieu Anh – s3818552
+* Duy Phong – s3879069
+* Nhat Tran  – s3877063
 
-## Table of contents
-*
-* [Technologies](#technologies)
-* [Setup](#setup)
-
-## General info
+### General info
 * Group Github repo: https://github.com/nhatquan0312/Web_Programming 
 * Link to our Website:https://group-18-wp.netlify.app/index.html(#general-info)
 	
-## Technologies
-Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
-	
-## Setup
-To run this project, install it locally using npm:
+### Technologies
+Project is created using:
+* HTML5
+* CSS
+* JavaScript
 
-```
-$ cd ../lorem
-$ npm install
-$ npm start
-```
+### Status:
+In progress
+
+
