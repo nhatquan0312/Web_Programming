@@ -1,20 +1,17 @@
-a shopping website</br>
+
 Group Github repo: https://github.com/nhatquan0312/Web_Programming </br>
 Link to our Website:https://group-18-wp.netlify.app/index.html
-# header H1
-## header H2
-### header H3
-#### header H4
-##### header H5
-###### header H6
+# MUADE Shopping App
+
 
 ## Table of contents
-* [General info](#general-info)
+*
 * [Technologies](#technologies)
 * [Setup](#setup)
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
+* Group Github repo: https://github.com/nhatquan0312/Web_Programming 
+* Link to our Website:https://group-18-wp.netlify.app/index.html(#general-info)
 	
 ## Technologies
 Project is created with:
