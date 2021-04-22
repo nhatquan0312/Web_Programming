@@ -17,20 +17,21 @@ The MUADEApp is compatible with devices of all sizes and all OS's, and consisten
 ## Contributors:
 <table>
 	<thead>
-		<tr> 
-			<th>
-			<a href="#"><img src="img/quan.jpg" alt="Quan.com" style="max-width:100%;"></a>		
-			</th>
-		 </tr>
-            <th>
-                <a href="phong-s3879069.github.io"><img src="img/phong.jpg" alt="Phong.com" style="max-width:100%;"></a>	
+    <tr><th>
+            <a href="#"><img src="img/quan.jpg" alt="Quan.com" style="max-width:100%;"></a>		
+        </th> 
+		<th>
+            <a href="phong-s3879069.github.io"><img src="img/phong.jpg" alt="Phong.com" style="max-width:100%;"></a>	
             </th>
-            <th>
-                <a href="kieuahn.github.io"><img src="img/kieuanh.jpg"" alt="Kieuanh.com" style="max-width:100%;"></a>	
+        <th>
+            <a href="kieuahn.github.io"><img src="img/kieuanh.jpg"" alt="Kieuanh.com" style="max-width:100%;"></a>	
             </th>
-            <th>
-                <a href="tranminhnhat.github.io"><img src="img/nhat.jpg" alt="Phong.com" style="max-width:100%;"></a>	
-            </th></thead>
+        <th>
+            <a href="tranminhnhat.github.io"><img src="img/nhat.jpg" alt="Phong.com" style="max-width:100%;"></a>	
+            </th>
+		    </tr>
+</thead>
+
 <tbody> <tr>
 	<td> S3819347</td> 
 	<td>S3879069 </td> 
