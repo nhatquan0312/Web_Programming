@@ -15,6 +15,10 @@ In progress
 The MUADEApp is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
 
 ## Contributors:
+<table><thread>
+	
+	</thread>
+</table>
 * Nhat Quan- s3819347
 * Kieu Anh – s3818552
 * Duy Phong – s3879069
