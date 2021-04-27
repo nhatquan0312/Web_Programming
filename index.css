@@ -109,7 +109,7 @@ a > img {
         transition: 400ms;
         margin: auto;
     }*/
-    .cookie-container.active {
+    /*.cookie-container.active {
         width: 80%;
         height: 38%;
         position: fixed;
@@ -127,8 +127,9 @@ a > img {
     .cookie-container .button-container{
         display: flex;
         flex-direction: column;
-    }
+    }*/
 }
+/*
 .cookie-container {
 
     width: 30%;
@@ -177,4 +178,4 @@ a > img {
 }
 .wrapper.active {
     display: block;
-}
+}*/
