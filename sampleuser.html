@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="sampleuser.css">
+    <link rel="stylesheet" href="cookies.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-        
-        
+
+
     <script src="script.js" defer></script>
     <title>Muade</title>
 </head>
+
 <body>
+    <div class="wrapper">
+
+    </div>
     <header>
         <nav class="navbar">
             <div class="brand-title">
@@ -36,13 +42,15 @@
                     <li><a href="faqs.html">FAQ</a></li>
                     <li><a href="myaccount.html">My Account</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="orderplacement.html"><ion-icon name="cart-outline"></ion-icon></a></li>
+                    <li><a href="orderplacement.html">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </a></li>
                 </ul>
             </div>
         </nav>
 
     </header>
- 
+
     <div class="user">
         <div class="user_left">
             <div class="user_profile">
@@ -60,7 +68,7 @@
                         <li>
                             <div class="icon"><i class="fas fa-map-signs"></i></div>
                             <div class="data">
-                                Address: Sunrise Riverside <br/> Vietnam
+                                Address: Sunrise Riverside <br /> Vietnam
                             </div>
                         </li>
                         <li>
@@ -79,22 +87,40 @@
             </div>
         </div>
     </div>
-</body>
-<footer>
-    <nav class="footer-navbar">
-        
-        <div class="footer-navbar-links">
-            <ul>
-                <li><a href="copyright.html">Copyright</a></li>
-                <li><a href="tos.html">Terms of Service</a></li>
-                <li><a href="privacy-policy.html">Privacy Poilcy</a></li>
-                
-            </ul>
-                       
+    <div class="cookie-container">
+        <div>
+            <p>
+                Our website uses cookies necessary for its basic functioning. By continuing browsing, you consent to my
+                use of
+                cookies and other technologies. To find out more, read our
+                <a href="privacy-policy.html">privacy policy</a> and <a href="#">cookie policy</a>.
+            </p>
         </div>
-        <div class="brand-title"> @2021 MUADE All right reserved</div>
-    </nav>
- 
-</footer>
-</html>
+        <div class="button-container">
+            <button class="cookie-btn">
+                I understand
+            </button>
+            <span><a href="#">Learn more</a></span>
+        </div>
+    </div>
+    <footer>
+        <nav class="footer-navbar">
 
+            <div class="footer-navbar-links">
+                <ul>
+                    <li><a href="copyright.html">Copyright</a></li>
+                    <li><a href="tos.html">Terms of Service</a></li>
+                    <li><a href="privacy-policy.html">Privacy Poilcy</a></li>
+
+                </ul>
+
+            </div>
+            <div class="brand-title"> @2021 MUADE All right reserved</div>
+        </nav>
+
+    </footer>
+    <script src="cookies.js"></script>
+</body>
+
+
+</html>
