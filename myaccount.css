@@ -241,35 +241,18 @@ main .background-image .myaccount .inputBox.w20 .radio-box span {
     
 }
 
-
-.switcher {
+.switcher{
     animation-name: hover-fade;
     animation-duration: 3s;
-    
+    animation-timing-function: ease-out;
 }
+
 @keyframes hover-fade
-{
+{  
     50% {
         left: 50%;
         opacity: 0.1;}
     
-}
-.switcher :hover {
-    animation-name: hover-fade;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-
-main .background-image .myaccountform #register {
-    animation-name: visible;
-    animation-duration: 3s;
-}
-
-@keyframes visible{
-50%{
- opacity: 1;
-}
 }
 
 @media (max-width:667px){
