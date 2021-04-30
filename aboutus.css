@@ -1,4 +1,16 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+p,h2{
+   font-family: 'Roboto', sans-serif;;
+}
+h2{
+  position:relative;
+  
+  font-size: 32px;
+}
+p{
+  font-size: 20px;
+  
+}
   *{
     margin:0;
     padding:0;
@@ -81,20 +93,36 @@
     visibility: hidden;
     transition: visibility 0s opacity 0,5s;
 }
-
+button{
+  margin-top: 50px
+  ;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  color:whitesmoke;
+  background-color: cadetblue;
+  padding:10px 25px;
+}
 .bg-active{
     visibility: visible;
     opacity: 1;
+    z-index: 1;
 }
 
 .modal{
-    background-color: white;
-    width: 30%;
-    height: 30%;
+    background-color: whitesmoke;
+    width: 40%;
+    height: 40%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: #444;
+    padding: 30px 50px;
+    
 }
+
   @media screen and (max-width:600px){
     .teams{
       max-width: 100%;
