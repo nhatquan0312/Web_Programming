@@ -384,6 +384,25 @@ main .login-form form {
 
 
 
+    <div class="wrapper-store">
+      <div class="prev-btn1"><i class="fas fa-chevron-left"></i></div>
+      <div class="stores_container">
+        <div class="stores">
+          <a href='store.html' style='text-decoration: none;'><img src='img/Uniqlo/uniqlo_logo .jpg'></a>
+        </div>
+        <div class="stores">
+          <a href='store2.html' style='text-decoration: none;'><img src='img/abi_pic.jpg'></a>
+        </div>
+        <div class="stores">
+          <a href='store3.html' style='text-decoration: none;'><img src='img/phongvu_pic.png'></a>
+        </div>
+      </div>
+      <div class="next-btn1"><i class="fas fa-chevron-right"></i></div>
+      <div class="store-navigation-dots"></div>
+    </div>
+
+
+
 
 
 

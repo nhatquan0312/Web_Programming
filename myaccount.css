@@ -1,56 +1,58 @@
 body {
     color: black;
 }
+
 main {
-    
-    
+
+
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13.3333px;
     align-items: center;
     justify-content: center;
     min-width: 100%;
 }
+
 main .background-image {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/picture1.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/picture1.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
-padding-bottom: 10%;
+    padding-bottom: 10%;
 }
-main .myaccountform {
-    
-    margin-top: 5vh; 
-position: relative;
-width: 50%;
 
-background-color: none;
-justify-content: center;
-align-items: center;
-margin-left: 25%;
-margin-right:25%;
-margin-bottom: 0;
+main .myaccountform {
+
+    margin-top: 5vh;
+    position: relative;
+    width: 50%;
+
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 0;
 }
 
 #login-form {
     background: white;
-    width:350px;
-    height:230px;
+    width: 350px;
+    height: 230px;
     margin-left: 25%;
     justify-content: center;
-align-items: center;
-margin-top: 8vh;
-top:7vh; 
+    align-items: center;
+    margin-top: 8vh;
+    top: 7vh;
 
-position: relative;
+    position: relative;
 }
 
 
-h2 
-{
+h2 {
     margin: 0;
-    color:white;  
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,35 +64,35 @@ h2
 
 
 
-main .background-image  .buttonBox
-{   position: relative;
+main .background-image .buttonBox {
+    position: relative;
     display: flex;
     justify-content: space-around;
     height: 30px;
     width: 240px;
     box-shadow: 0 0 20px 9px rgb(173, 209, 209);
     margin: 20px auto;
-    border-radius: 40px;  
+    border-radius: 40px;
     background-color: whitesmoke;
-   
+
 
 }
-main .background-image .buttonBox .switcher 
-{
-background:linear-gradient(to right, cadetblue, #ccc );
-position: absolute;
-height: 30px;
-width: 120px;
-margin: 0;
-border-radius: 40px;
-left: 0;
-cursor: pointer;
-}
 
-main .background-image .buttonBox .toggle 
-{   position: relative;
+main .background-image .buttonBox .switcher {
+    background: linear-gradient(to right, cadetblue, #ccc);
+    position: absolute;
+    height: 30px;
+    width: 120px;
+    margin: 0;
+    border-radius: 40px;
+    left: 0;
     cursor: pointer;
-    border:0;
+}
+
+main .background-image .buttonBox .toggle {
+    position: relative;
+    cursor: pointer;
+    border: 0;
     outline: none;
     display: flex;
     background-color: none;
@@ -99,33 +101,33 @@ main .background-image .buttonBox .toggle
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-main .background-image .myaccount .login-button 
-{
+main .background-image .myaccount .login-button {
     position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top:0px;
+    margin-top: 0px;
     height: 15vh;
     flex-direction: column;
-    
+
 }
 
 main .background-image .myaccount .login-button button {
-    background-color: cadetblue ;
+    background-color: cadetblue;
     background: transparent;
     position: absolute;
     height: 30px;
     width: 120px;
-    margin:0;
+    margin: 0;
     border-radius: 40px;
     position: relative;
     cursor: pointer;
-    border:none;
+    border: none;
     outline: none;
-    background: linear-gradient(to right, cadetblue, #ccc );
+    background: linear-gradient(to right, cadetblue, #ccc);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 main .background-image .myaccount .login-button .checkbox span {
     position: relative;
     height: 30px;
@@ -133,88 +135,89 @@ main .background-image .myaccount .login-button .checkbox span {
     text-align: center;
     margin-top: 20px;
     padding-top: 5px;
-    
-    
+
+
 }
-main .background-image .myaccount .login-button .btn 
-{
+
+main .background-image .myaccount .login-button .btn {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 }
-main .background-image .myaccount .login-button .btn #forgot-btn{
+
+main .background-image .myaccount .login-button .btn #forgot-btn {
     position: relative;
     left: 30px;
     background: none !important;
-    outline:none;
+    outline: none;
 }
 
-main .background-image .myaccount .login-button .checkbox
-{
+main .background-image .myaccount .login-button .checkbox {
     display: inline-block;
 }
 
-main .background-image .myaccount .inputBox.w40 input{
-    
+main .background-image .myaccount .inputBox.w40 input {
+
     top: 30px;
-    
+
     margin-top: 20px;
     border: none;
     border-bottom: 2px solid rgb(112, 133, 134);
     outline: none;
     background: transparent;
-    
+
 }
 
 main .background-image .myaccount .inputBox.w40 {
     position: relative;
     display: flex;
     justify-content: space-around;
-    text-align:center;
+    text-align: center;
     flex-direction: column;
 }
 
 
-main .background-image .myaccount .inputBox.w20
-{
+main .background-image .myaccount .inputBox.w20 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
-    
+
     background-color: white;
-    text-align:center;
-    
+    text-align: center;
+
 }
-main .background-image  #register-form {
-    
-    
+
+main .background-image #register-form {
+
+
     display: flex;
     position: relative;
-  
-   bottom: 25vh;
-    
+
+    bottom: 25vh;
+
     background-color: whitesmoke;
     justify-content: center;
-align-items: center;
+    align-items: center;
 
 
-   
+
 }
-main .background-image .myaccount .inputBox.w20 input [type="radio"]
-{
-    border: none ;
+
+main .background-image .myaccount .inputBox.w20 input [type="radio"] {
+    border: none;
     margin: 10px;
-    
+
     padding-top: 5px;
 }
 
 
-main .background-image .myaccount .inputBox.w20 .input-field input , select {
-    
-  
+main .background-image .myaccount .inputBox.w20 .input-field input,
+select {
+
+
     border: none;
     border-bottom: 2px solid rgb(112, 133, 134);
     outline: none;
@@ -223,37 +226,39 @@ main .background-image .myaccount .inputBox.w20 .input-field input , select {
     width: 35%;
     padding-top: 5px;
 }
-main .background-image .myaccount .inputBox.w20 .radio-box
 
-{position: relative;
+main .background-image .myaccount .inputBox.w20 .radio-box {
+    position: relative;
 
-display: flex;
-justify-content: space-around;
-align-items: center;
-   width: 350px;
-   
-   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+
+
 
 }
 
 main .background-image .myaccount .inputBox.w20 .radio-box span {
-    width: 40%;   
-    
+    width: 40%;
+
 }
 
 
 .switcher {
     animation-name: hover-fade;
     animation-duration: 3s;
-    
+
 }
-@keyframes hover-fade
-{
+
+@keyframes hover-fade {
     50% {
         left: 50%;
-        opacity: 0.1;}
-    
+        opacity: 0.1;
+    }
+
 }
+
 .switcher :hover {
     animation-name: hover-fade;
     animation-duration: 1s;
@@ -266,102 +271,110 @@ main .background-image .myaccountform #register {
     animation-duration: 3s;
 }
 
-@keyframes visible{
-50%{
- opacity: 1;
-}
+@keyframes visible {
+    50% {
+        opacity: 1;
+    }
 }
 
-@media (max-width:667px){
+@media (max-width:667px) {
     .main {
-        width:667px;
-       
-        
+        width: 667px;
+
+
     }
+
     h2 {
         font-size: 40px;
     }
-    main .background-image .myaccount .inputBox.w20{
-        
+
+    main .background-image .myaccount .inputBox.w20 {
+
 
         left: 0;
-        margin-right:60%;
-        
+        margin-right: 60%;
+
     }
-    #login-form{
-            width:250px;
-            height:200px;
-            
-            justify-content: center;
-            align-items: center;
+
+    #login-form {
+        width: 250px;
+        height: 200px;
+
+        justify-content: center;
+        align-items: center;
         position: relative;
-        top:11vh;
+        top: 11vh;
         right: 60px;
         margin: auto;
         margin-top: 21px;
     }
-    
-    main .background-image #register-form
-    {
-    width: auto;
-    display: flex;
-    position: relative;
-   left: 57px;
-    margin-top:-35px;
-    
-    
-    
-    
-    justify-content: center;
-    align-items: center;
-    
-}
-.myaccountform {
-    width: auto;
-}
-}
-@media (max-width:1024px)
-{
-    #login-form{
-    width: auto;
-   margin: auto;
-    height: 280px;
 
-   }
-    
+    main .background-image #register-form {
+        width: auto;
+        display: flex;
+        position: relative;
+        left: 57px;
+        margin-top: -35px;
+
+
+
+
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .myaccountform {
+        width: auto;
+    }
+}
+
+@media (max-width:1024px) {
+    #login-form {
+        width: auto;
+        margin: auto;
+        height: 280px;
+
+    }
+
     #register-form {
         margin-top: 5vh;
     }
+
     .inputBox.w40 {
         width: auto;
         height: auto;
         position: absolute;
     }
-    .login-button{
-    width: auto;
+
+    .login-button {
+        width: auto;
         height: 100px;
-        position: absolute;}
-    
-    .myaccountform {
-       height: fit-content;
+        position: absolute;
     }
-    
+
+    .myaccountform {
+        height: fit-content;
+    }
+
 
 }
-@media (max-width:768px)
-{
+
+@media (max-width:768px) {
     #login-form {
         width: 300px;
-        height:240px;
+        height: 240px;
         margin: auto;
         position: relative;
-        
+
     }
-    .inputBox.w40{
+
+    .inputBox.w40 {
         width: auto;
         height: auto;
 
     }
+
     .myaccountform {
         height: 600px;
         margin-bottom: 0;
