@@ -52,9 +52,9 @@
     <div class="header">
       GROUP 18
     </div>
-    <div class="sub-container">
+    <div class="sub-container" id="blur">
       <div class="teams">
-        <img src="img/quan.jpg" alt="">
+        <a href="#" class="modal-btn"><img src="img/quan.jpg" alt=""></a>
         <div class="name">Nhat Quan</div>
         <div class="design">Student</div>
         <div class="about">Student ID:s3819347</div>
@@ -70,9 +70,16 @@
             <ion-icon name="logo-github"></ion-icon>
           </a>
         </div>
+        <div class="modal-bg">
+          <div class="modal">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sed delectus magnam maxime exercitationem obcaecati necessitatibus quam assumenda, corporis, ex quae sint eveniet, corrupti expedita! Sunt sit earum natus quidem!</p>
+            <button class="modal-close-btn">Close</button>
+          </div>
+        </div>
       </div>
       <div class="teams">
-        <img src="img/phong.jpg" alt="">
+        <a href="#" class="modal-btn-2"><img src="img/phong.jpg" alt=""></a>
         <div class="name">Duy Phong</div>
         <div class="design">Student</div>
         <div class="about">Student ID: s3879069</div>
@@ -88,9 +95,16 @@
             <ion-icon name="logo-github"></ion-icon>
           </a>
         </div>
+        <div class="modal-bg-2">
+          <div class="modal">
+            <h1>Hello 2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sed delectus magnam maxime exercitationem obcaecati necessitatibus quam assumenda, corporis, ex quae sint eveniet, corrupti expedita! Sunt sit earum natus quidem!</p>
+            <button class="modal-close-btn-2">Close</button>
+          </div>
+        </div>
       </div>
       <div class="teams">
-        <img src="img/kieuanh.jpg" alt="">
+        <a href="#" class="modal-btn-3"><img src="img/kieuanh.jpg" alt=""></a>   
         <div class="name">Kieu Anh</div>
         <div class="design">Student</div>
         <div class="about">Student ID: s3811552</div>
@@ -106,9 +120,16 @@
             <ion-icon name="logo-github"></ion-icon>
           </a>
         </div>
+        <div class="modal-bg-3">
+          <div class="modal">
+            <h1>Hello 3</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sed delectus magnam maxime exercitationem obcaecati necessitatibus quam assumenda, corporis, ex quae sint eveniet, corrupti expedita! Sunt sit earum natus quidem!</p>
+            <button class="modal-close-btn-3">Close</button>
+          </div>
+        </div>
       </div>
       <div class="teams">
-        <img src="img/nhat.jpg" alt="">
+        <a href="#" class="modal-btn-4"><img src="img/nhat.jpg" alt=""></a>        
         <div class="name">Minh Nhat</div>
         <div class="design">Student</div>
         <div class="about">Student ID: s3877063</div>
@@ -123,6 +144,13 @@
           <a href="#">
             <ion-icon name="logo-github"></ion-icon>
           </a>
+        </div>
+        <div class="modal-bg-4">
+          <div class="modal">
+            <h1>Hello 4</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sed delectus magnam maxime exercitationem obcaecati necessitatibus quam assumenda, corporis, ex quae sint eveniet, corrupti expedita! Sunt sit earum natus quidem!</p>
+            <button class="modal-close-btn-4">Close</button>
+          </div>
         </div>
       </div>
     </div>
@@ -158,7 +186,14 @@
     </nav>
 
   </footer>
+  <script src="aboutus.js"></script>
   <script src="cookies.js"></script>
+  <script type="text/javascript">
+       function toggle(){
+         var blur = document.getElementById('blur')
+         blur.classList.toggle('active')
+       }
+  </script>
 
 
 </body>
