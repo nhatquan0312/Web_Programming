@@ -4,15 +4,19 @@
 
 .confirmed {
     text-align: center;
-    font-size: 100px;
-    padding-top: 3%;
+    font-size: 90px;
 }
 
 .icon {
-    width: 128px;
-    height: 128px;
+    width: 120px;
+    height: 120px;
     margin-left: 45%;
-    margin-top: 3%
+}
+
+.alert {
+    text-align: center;
+    font-size: 50px;
+
 }
 
 /* resolution for ipad*/
