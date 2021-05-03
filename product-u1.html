@@ -69,9 +69,14 @@
                     </select>
                 </form>
                 <hr>
-                <a href='index.html'><button type='submit'>Add To Cart</button></a>
+                <a href='index.html'><button onclick='AddFunction()'>Add To Cart</button></a>
                 <a href='orderplacement.html'><button type='button'>Buy Now</button></a>
             </div>
+            <script type="text/javascript">
+                function AddFunction() {
+                    setTimeout(function() {alert("Added to your cart") },3000); 
+                };
+            </script>
 
         </div>
         <div class='description'>
