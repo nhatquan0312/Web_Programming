@@ -190,70 +190,62 @@ main {
 
 
 
-.product_info {
-    margin: 10px
-}
-
-.product_container {
+.new-products {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    background-color: whitesmoke;
 }
 
-.products {
+.item-box {
     box-shadow: 4px 4px 5px grey;
     box-sizing: border-box;
     border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    background: none;
-    justify-content: center;
-    align-items: center;
-    margin: 15px 15px;
-    background: #e9e9e9;
     border-radius: 8px;
-}
-
-h3 {
-    font-family: 'Inter', sans-serif;
-    color: #252525;
+    background-color: #e9e9e9;
+    text-align: center;
+    float: left;
+    margin: 2% 0% 2% 4%;
+    width: 270px;
 }
 
 a>img {
+    width: 268px;
+    height: 330px;
     border-radius: 8px;
 }
 
-.product_info .price {
-    font-family: 'Inter', sans-serif;
-    color: #252525;
-}
-
-.products:hover {
-    transform: scale(1.15);
+.item-box>a {
+    color: black;
+    text-decoration: none;
 }
 
 .price {
-    text-decoration: underline;
+    text-align: center;
+    color: gray;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
-    .product_container {
-        flex-direction: column;
-        align-items: flex-start;
+    .item-box {
+        margin: 0.5% 0.5% 3% 30%;
+        width: 180px;
     }
 
-    .products {
-        flex-direction: row;
-        align-items: flex-start;
+    a>img {
+        width: 178px;
+        height: 180px;
     }
 
-    .product_info {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
+    .item-box button {
+        font-size: 12px;
+    }
+
+    .item-box>h3 {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 12px;
     }
     .store-image img {
         width: 100%;
@@ -267,6 +259,30 @@ a>img {
         top: 490%;
     }
 
+}
+
+@media screen and (max-width: 1024px) {
+    .item-box {
+        margin: 1% 1% 3% 1%;
+        width: 180px;
+    }
+
+    a>img {
+        width: 178px;
+        height: 220px;
+    }
+
+    .item-box button {
+        font-size: 16px;
+    }
+
+    .item-box>h3 {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
 }
 
     /*    .cookie-container{
