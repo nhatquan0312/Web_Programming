@@ -1,32 +1,42 @@
-*{
+* {
     font-family: 'Arial', monospace;
 }
+
 .confirmed {
     text-align: center;
-    font-size: 100px;
-    padding-top: 3%;
+    font-size: 90px;
 }
+
 .icon {
-    width: 128px;
-    height: 128px;
+    width: 120px;
+    height: 120px;
     margin-left: 45%;
-    margin-top: 3%
 }
+
+.alert {
+    text-align: center;
+    font-size: 50px;
+
+}
+
 /* resolution for ipad*/
 @media screen and (max-width: 1023px) {
     .confirmed {
         font-size: 64px;
     }
+
     .icon {
         width: 72px;
         height: 72px;
     }
 }
+
 /*resolution for iphone*/
-@media screen and (max-width:767px ) {
+@media screen and (max-width:767px) {
     .confirmed {
         font-size: 32px;
     }
+
     .icon {
         margin-left: 43%;
     }

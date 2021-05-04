@@ -1,15 +1,18 @@
 * {
-    font-family: 'Arial', 400 ;
+    font-family: 'Arial', 400;
 }
+
 .store-page {
     display: -webkit-flex;
     display: flex;
 }
+
 .store-logo {
     -webkit-box-flex: 1;
     flex: 1;
     margin: 3%;
 }
+
 .store-description {
     box-sizing: border-box;
     margin-right: 35%;
@@ -17,18 +20,21 @@
     flex: 5;
     font-size: 20px;
 }
-.p-title > h1 {
+
+.p-title>h1 {
     margin-top: 25px;
     margin-left: 3%;
 }
-.new-products  {
-    display:flex;
+
+.new-products {
+    display: flex;
     flex-wrap: wrap;
     background-color: whitesmoke;
 }
+
 .item-box {
     box-shadow: 4px 4px 5px grey;
-    box-sizing:border-box;
+    box-sizing: border-box;
     border: 1px solid black;
     border-radius: 8px;
     background-color: #e9e9e9;
@@ -37,27 +43,33 @@
     margin: 2% 0% 2% 4%;
     width: 270px;
 }
-a > img {
+
+a>img {
     width: 268px;
     height: 330px;
     border-radius: 8px;
 }
-.item-box > a{
+
+.item-box>a {
     color: black;
     text-decoration: none;
 }
+
 .price {
     text-align: center;
     color: gray;
     text-decoration: none;
 }
+
 .browse-tlt {
     margin: 50px 20px 50px 20px;
 }
+
 .browse {
     position: relative;
-    display:inline-block;
+    display: inline-block;
 }
+
 .dropdown-button {
     background-color: black;
     color: white;
@@ -67,66 +79,88 @@ a > img {
     margin-left: 10px;
 
 }
+
 .dropdown-content {
     display: none;
-    position:absolute;
+    position: absolute;
     background-color: White;
     min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     margin-left: 25px;
 }
+
 .dropdown-content a {
     color: Black;
     padding: 10px 14px;
     text-decoration: none;
-    display:block;
+    display: block;
 }
+
 button :hover {
     background-color: rgb(147, 199, 201);
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
-.browse:hover .dropdown-content {display: block;}
-.browse:hover .dropdown-button {background-color: rgb(147, 199, 201) ;}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.browse:hover .dropdown-content {
+    display: block;
+}
+
+.browse:hover .dropdown-button {
+    background-color: rgb(147, 199, 201);
+}
+
 /*resolution for ipad*/
 @media screen and (max-width: 1024px) {
-    .store-logo > img {
+    .store-logo>img {
         width: 130px;
         height: 130px;
     }
+
     .store-description {
         font-size: 16px;
     }
+
     .browse-tlt {
         font-size: 20px;
         margin-left: 1%;
     }
+
     .dropdown-button {
         font-size: 16px;
         padding: 10px;
     }
+
     .dropdown-content {
         min-width: 130px;
         margin-left: 20px;
     }
-    .p-title > h1 {
-        margin-top : 20px;
+
+    .p-title>h1 {
+        margin-top: 20px;
         margin-left: 3%;
     }
+
     .item-box {
         margin: 1% 1% 3% 1%;
         width: 180px;
     }
-    a > img {
+
+    a>img {
         width: 178px;
         height: 220px;
     }
+
     .item-box button {
         font-size: 16px;
     }
-    .item-box > h3 {
+
+    .item-box>h3 {
         font-size: 16px;
     }
+
     .price {
         font-size: 16px;
     }
@@ -137,48 +171,60 @@ button :hover {
     .store-page {
         padding-left: 5%;
     }
+
     .store-description {
         padding-right: 25%;
     }
-    .store-logo > img {
+
+    .store-logo>img {
         width: 70px;
         height: 70px;
     }
+
     .store-description {
         font-size: 12px;
         flex-direction: column;
         align-items: flex-start;
     }
+
     .browse-tlt {
         font-size: 16px;
         margin-left: 5%;
     }
+
     .dropdown-button {
         font-size: 12px;
         padding: 6px;
     }
+
     .dropdown-content {
         min-width: 70px;
         margin-left: 10px;
     }
-    .p-title > h1 {
+
+    .p-title>h1 {
         margin-top: 15px;
         margin-left: 30%;
     }
+
     .item-box {
         margin: 0.5% 0.5% 3% 30%;
         width: 180px;
     }
-    a > img {
+
+    a>img {
         width: 178px;
         height: 180px;
     }
+
     .item-box button {
         font-size: 12px;
     }
-    .item-box > h3 {
+
+    .item-box>h3 {
         font-size: 12px;
     }
+
     .price {
         font-size: 12px;
     }
