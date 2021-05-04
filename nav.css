@@ -182,7 +182,7 @@ body {
 }
 
 .footer-navbar-links li :hover {
-    background-color: rgb(147, 199, 201);
+    color: rgb(147, 199, 201);
 }
 
 @media only screen and (max-width: 768px) {
