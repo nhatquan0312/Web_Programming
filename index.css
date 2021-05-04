@@ -19,7 +19,7 @@ main {
     font-family: 'Ubuntu Mono', monospace;
     color: #252525;
 }
-.wrapper-stores {
+.wrapper-store {
     width: 100%;
     overflow: hidden;
 }
@@ -29,10 +29,35 @@ main {
     position: relative;
 }
 
+.stores-container input {
+    display: none;
+}
+
+
+
 .store-image {
     height: 100%;
     width: 100%;
     position: absolute;
+    transition: 2s;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content:center;
+
+}
+
+.manual-btn {
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
 }
 
 .store-image img {
@@ -225,7 +250,7 @@ a>img {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .item-box {
         margin: 0.5% 0.5% 3% 30%;
         width: 180px;
@@ -370,8 +395,4 @@ a>img {
 .wrapper.active {
     display: block;
 }*/
-
-.wrapper-stores {
-    width: 100%;
-}
 

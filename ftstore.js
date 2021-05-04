@@ -1,15 +1,15 @@
-const ftstoreImage = document.querySelectorAll(".ftstore-image");
+const storeImage = document.querySelectorAll(".ftstore-image");
 
-const ftstoresContainer = document.querySelector(".ftstores-container");
+const storesContainer = document.querySelector(".ftstores-container");
 
-const ftnextBtn = document.querySelector(".ftnext-btn");
-const ftprevBtn = document.querySelector(".ftprev-btn");
+const nextBtn = document.querySelector(".ftnext-btn");
+const prevBtn = document.querySelector(".ftprev-btn");
 
-const ftnavigationDots = document.querySelector(".ftnavgation-dots");
+const navigationDots = document.querySelector(".ftnavgation-dots");
 
 
-let numberOfImages = ftstoreImage.length;
-let storeWidth = ftstoreImage[0].clientWidth;
+let numberOfImages = storeImage.length;
+let storeWidth = storeImage[0].clientWidth;
 let currentStore = 0;
 
 // Set up the slider
@@ -21,11 +21,11 @@ function init() {
     storeImage[2] = 200%
     */
 
-    ftstoreImage.forEach((img, i) => {
+    storeImage.forEach((img, i) => {
         img.style.left = i * 100 + "%";
     });
 
-    ftstoreImage[0].classList.add("active");
+    storeImage[0].classList.add("active");
 
 }
 
@@ -35,19 +35,19 @@ init();
 
 function createNavigationDots() {
     for (let i = 0; i < numberOfImages; i++) {
-        const ftdot = document.createElement("div");
-        ftdot.classList.add("single-dot");
-        ftnavigationDots.appendChild(dot);
+        const dot = document.createElement("div");
+        dot.classList.add("single-dot");
+        navigationDots.appendChild(dot);
 
-        ftdot.addEventListener("click", () => {
+        dot.addEventListener("click", () => {
             goToStore(i);
         })
     }
 
-    ftnavigationDots.children[0].classList.add("active");
+    navigationDots.children[0].classList.add("active");
 }
 // Next Button
-ftnextBtn.addEventListener("click", () => {
+nextBtn.addEventListener("click", () => {
     if(currentStore >= numberOfImages -1) {
         goToStore(0);
         return;
@@ -58,7 +58,7 @@ ftnextBtn.addEventListener("click", () => {
 
 // Prev Button
 
-ftprevBtn.addEventListener("click", () => {
+prevBtn.addEventListener("click", () => {
     if(currentStore <= 0) {
         goToStore(numberOfImages - 1);
         return;
@@ -70,7 +70,7 @@ ftprevBtn.addEventListener("click", () => {
 // Go to Store
 
 function goToStore(storeNumber) {
-    ftstoresContainer.style.transform = "translateX(-" + storeWidth * storeNumber + "px)";
+    storesContainer.style.transform = "translateX(-" + storeWidth * storeNumber + "px)";
 
     currentStore = storeNumber;
 
@@ -84,14 +84,24 @@ function setActiveClass() {
 
     let currentActive = document.querySelector(".ftstore-image.active");
     currentActive.classList.remove("active");
-    ftstoreImage[currentStore].classList.add("active");
+    storeImage[currentStore].classList.add("active");
 
     //set active class for navigation dots
 
     let currentDot = document.querySelector(".ftsingle-dot.active");
     currentDot.classList.remove("active");
-    ftnavigationDots.children[currentStore].classList.add("active");
+    navigationDots.children[currentStore].classList.add("active");
 }
 
+var imgtag = document.getElementById("str-img");
+var imgarr = ["img/Uniqlo-logo(1).jpg", "img/MLB-OG(1).png", "img/990__1511456189_555_McDonalds.png"];
 
+var i = 0;
+function auto_slide() {
+    imgtag.setAttribute("src", imgarr[i]);
+    i++;
+    if (i==imgarr.length) i = 0; 
+}
+
+setInterval(auto_slide,3000);
 

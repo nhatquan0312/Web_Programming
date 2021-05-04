@@ -93,5 +93,15 @@ function setActiveClass() {
     navigationDots.children[currentStore].classList.add("active");
 }
 
+var imgtag = document.getElementById("str-img");
+var imgarr = ["img/Uniqlo-logo(1).jpg", "img/MLB-OG(1).png", "img/990__1511456189_555_McDonalds.png"];
 
+var i = 0;
+function auto_slide() {
+    imgtag.setAttribute("src", imgarr[i]);
+    i++;
+    if (i==imgarr.length) i = 0; 
+}
+
+setInterval(auto_slide,3000);
 
