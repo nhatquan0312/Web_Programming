@@ -1,4 +1,4 @@
-*,
+/* *,
 *::before,
 *::after {
     margin: 0;
@@ -63,7 +63,7 @@ section {
     transition: max-height 650ms;
 }
 
-/* .answer::before{
+.answer::before{
     content: "";
     position: absolute;
     width: .6rem;
@@ -73,7 +73,7 @@ section {
     left:0;
     transform: translateY(-50%);
     
-} */
+}
 
 .answer p {
     font-size: 1.4rem;
@@ -91,4 +91,4 @@ section {
 
 .accordion-item:target .accordion-link .minus {
     display: block;
-}
+} */

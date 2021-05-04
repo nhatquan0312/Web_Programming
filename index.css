@@ -10,11 +10,6 @@ main {
     padding: 200px 0;
     font-family: 'Noto Sans JP', sans-serif;
 }
-.searchbar input{
-    height: 45px;
-    width: 800px;
-    border-radius: 10px;
-}
 .title {
     width: 100%;
     margin: 30px 20px;
