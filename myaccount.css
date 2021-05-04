@@ -3,8 +3,11 @@ body {
 }
 
 main {
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13.3333px;
     align-items: center;
@@ -21,6 +24,35 @@ main .background-image {
     position: relative;
     padding-bottom: 10%;
 }
+<<<<<<< HEAD
+main .myaccountform 
+{
+margin-top: 5vh; 
+position: relative;
+width: 80%;
+background-color: none;
+justify-content: center;
+align-items: center;
+margin-left: 10%;
+margin-right:10%;
+margin-bottom: 0;
+
+}
+
+
+h1{
+    display: block;
+    font-size: 2em;
+    margin: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h2 
+{
+    margin: 0;
+    color:whitesmoke;  
+=======
 
 main .myaccountform {
 
@@ -53,19 +85,24 @@ main .myaccountform {
 h2 {
     margin: 0;
     color: white;
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 8vh;
     font-size: 60px;
-
 }
 
+<<<<<<< HEAD
+main .background-image  .buttonBox
+{   position: relative;
+=======
 
 
 
 main .background-image .buttonBox {
     position: relative;
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
     display: flex;
     justify-content: space-around;
     height: 30px;
@@ -103,6 +140,19 @@ main .background-image .buttonBox .toggle {
 
 main .background-image .myaccount .login-button {
     position: relative;
+<<<<<<< HEAD
+    display:block;
+    width: 100%;
+    
+}
+
+main .background-image .myaccount .login-button button {
+    background: cadetblue;
+    font-size: 26px;
+    height: 50%;
+    width: 63%;
+    border-radius: 15px;
+=======
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -120,12 +170,20 @@ main .background-image .myaccount .login-button button {
     width: 120px;
     margin: 0;
     border-radius: 40px;
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
     position: relative;
     cursor: pointer;
     border: none;
     outline: none;
+<<<<<<< HEAD
+    display: block;
+    margin: auto;
+    top: 1vh;
+    font-family: inherit;
+=======
     background: linear-gradient(to right, cadetblue, #ccc);
     font-family: Georgia, 'Times New Roman', Times, serif;
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
 }
 
 main .background-image .myaccount .login-button .checkbox span {
@@ -135,6 +193,12 @@ main .background-image .myaccount .login-button .checkbox span {
     text-align: center;
     margin-top: 20px;
     padding-top: 5px;
+<<<<<<< HEAD
+    
+}
+
+main .background-image .myaccount .login-button .btn #forgot-btn{
+=======
 
 
 }
@@ -147,6 +211,7 @@ main .background-image .myaccount .login-button .btn {
 }
 
 main .background-image .myaccount .login-button .btn #forgot-btn {
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
     position: relative;
     left: 30px;
     background: none !important;
@@ -157,6 +222,25 @@ main .background-image .myaccount .login-button .checkbox {
     display: inline-block;
 }
 
+<<<<<<< HEAD
+#login-form {
+background: white;
+justify-content: center;
+align-items: center;
+top:10vh; 
+position: relative;
+margin: 50px;
+padding: 50px;
+}
+
+main .background-image .myaccount .inputBox.w40 input{
+        height:40px;
+        margin-top: 20px;
+        padding-left: 10px;
+        border:1px solid #777;
+        border-radius: 14px;
+        outline: none;
+=======
 main .background-image .myaccount .inputBox.w40 input {
 
     top: 30px;
@@ -167,6 +251,7 @@ main .background-image .myaccount .inputBox.w40 input {
     outline: none;
     background: transparent;
 
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
 }
 
 main .background-image .myaccount .inputBox.w40 {
@@ -176,6 +261,25 @@ main .background-image .myaccount .inputBox.w40 {
     text-align: center;
     flex-direction: column;
 }
+<<<<<<< HEAD
+main .background-image .myaccount .inputBox.w20
+{   width:100%;
+    padding: 50px;
+   
+    
+ 
+    background-color: white;
+  
+   
+
+}
+main .background-image .myaccount .inputBox.w20 .input-field {
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+#register-form {
+=======
 
 
 main .background-image .myaccount .inputBox.w20 {
@@ -193,8 +297,33 @@ main .background-image .myaccount .inputBox.w20 {
 main .background-image #register-form {
 
 
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
     display: flex;
+    flex-direction: column;
     position: relative;
+<<<<<<< HEAD
+    bottom: 25vh;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+main .background-image .myaccount .inputBox.w20 .inputbox input, select {
+    width:80%;
+    height:40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border:2.5px solid #f0f0f0;
+    margin: auto;
+    padding: auto;
+    display: block;
+    
+}
+
+main .background-image .myaccount .inputBox.w20 .inputbox.success input {
+  border-color: cadetblue;
+}
+=======
 
     bottom: 25vh;
 
@@ -202,8 +331,47 @@ main .background-image #register-form {
     justify-content: center;
     align-items: center;
 
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
+
+main .background-image .myaccount .inputBox.w20 .inputbox.error input {
+    border-color: #e74c3c;
+  }
+
+<<<<<<< HEAD
+main .background-image .myaccount .inputBox.w20 .inputbox.success small {
+   
+   visibility: hidden;
+   position: absolute;
+}
+
+main .background-image .myaccount .inputBox.w20 .inputbox small {
+    
+    bottom: 0;
+     display: block;
+   
+     margin: auto;
+     padding-left: 35.313px;
+    
+ }
+
+main .background-image .myaccount .inputBox.w20 .inputbox {
+    width: 50%;
+    margin: 20px auto;
+}
 
 
+main .background-image .myaccount .inputBox.w20 .radio-box
+
+{position: relative;
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 50%;
+}
+
+main .background-image .myaccount .inputBox.w20 .radio-box span {
+    width: 40%;   
+=======
 }
 
 main .background-image .myaccount .inputBox.w20 input [type="radio"] {
@@ -242,22 +410,36 @@ main .background-image .myaccount .inputBox.w20 .radio-box {
 main .background-image .myaccount .inputBox.w20 .radio-box span {
     width: 40%;
 
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
 }
 
-
-.switcher {
+.switcher :hover {
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+.switcher{
     animation-name: hover-fade;
     animation-duration: 3s;
+<<<<<<< HEAD
+    animation-timing-function: ease-out;
+}
+
+@keyframes hover-fade
+{  
+=======
 
 }
 
 @keyframes hover-fade {
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
     50% {
         left: 50%;
         opacity: 0.1;
     }
 
 }
+<<<<<<< HEAD
+=======
 
 .switcher :hover {
     animation-name: hover-fade;
@@ -276,6 +458,7 @@ main .background-image .myaccountform #register {
         opacity: 1;
     }
 }
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
 
 @media (max-width:667px) {
     .main {
@@ -308,6 +491,31 @@ main .background-image .myaccountform #register {
         margin: auto;
         margin-top: 21px;
     }
+<<<<<<< HEAD
+    
+    main .background-image #register-form
+    {
+    width: auto;
+    display: flex;
+    position: relative;
+   left: 57px;
+    margin-top:-35px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.myaccountform {
+    width: auto;
+}
+}
+@media (max-width:1024px)
+{
+    #login-form{
+    
+    height: 400px;
+   }
+    
+=======
 
     main .background-image #register-form {
         width: auto;
@@ -337,6 +545,7 @@ main .background-image .myaccountform #register {
 
     }
 
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
     #register-form {
         margin-top: 5vh;
     }
@@ -346,8 +555,12 @@ main .background-image .myaccountform #register {
         height: auto;
         position: absolute;
     }
+<<<<<<< HEAD
+    .login-button{
+=======
 
     .login-button {
+>>>>>>> 9fd0e6ed686e5e160cb6846f1d2a95941b636ad4
         width: auto;
         height: 100px;
         position: absolute;

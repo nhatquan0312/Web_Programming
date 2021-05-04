@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,7 +46,6 @@
                 </ul>
             </div>
         </nav>
-
     </header>
     <main>
         <div class="background-image">
@@ -59,9 +57,10 @@
             </div>
             <div class="myaccountform">
                 <form id="login-form" class="myaccount">
-
+                    <h1 class="title"> 
+                        Log In 
+                    </h1>
                     <div class="inputBox w40">
-
                         <input type="text" name="" placeholder="User Id" required>
                         <input type="text" name="" placeholder="Enter your password" required>
                     </div>
@@ -69,39 +68,59 @@
                         <div class="checkbox">
                             <input type="checkbox">
                             <span> Remember password</span></div>
-
-
                         <button type="submit" class="toggle" id="submit-btn"><a
                                 href="sampleuser.html">Login</a></button>
                         <button type="button" class="toggle" id="forgot-btn"><a href="resetpass.html">Forgot
                                 password</a></button>
                     </div>
-
                 </form>
+                
                 <form id="register-form" class="myaccount">
-                    <form>
+                    <h1 class="title"> 
+                        Register
+                    </h1>
+                    <div class="upload">
+                        <input type="file" id="upload" name="" placeholder="Upload your profile" class="" required>
+                        </div> 
                         <div class="inputBox w20">
-                            <div class="input-field" id="upload">
-                                <input type="file" name="" placeholder="Upload your profile" class="" required>
-                            </div>
-                            <div class="input-field">
-
-
-                                <input type="text" name="" placeholder="Phone number" required>
-                                <input type="text" name="" placeholder="Email address" required>
-
-
-
-                                <input type="text" name="" placeholder="First name" required>
-                                <input type="text" name="" placeholder="Password" required>
-
-                                <input type="text" name="" placeholder="Last name" required>
-                                <input type="text" name="" placeholder="Retype password" required>
-                                <input type="text" name="" placeholder="Address" required>
-                                <input type="text" name="" placeholder="City" required>
-                                <input type="text" name="" placeholder="Zipcode" required>
-
-                                <select name="City" required>
+                             <div class="input-field">
+                            <div class="inputbox success" >
+                                
+                                <input type="text" name="" id="phone" placeholder="Phone number" pattern="[a-z]{1,15}" title="Should only contain letters and numbers" required>
+                               <small>Error message</small>
+                                </div>
+                               <div class="inputbox error" >
+                                <input type="text" name="" id="email" placeholder="Email " pattern="[a-z]{1,15}" title="Should only contain letters and numbers" required>
+                                <small>Error message</small>
+                               </div>
+                                <div class="inputbox" >
+                                     <input type="text" name="" id="fname" placeholder="First name" required>
+                                <small>Error message</small>
+                                </div>
+                                <div class="inputbox" > 
+                                    <input type="text" name="" id="password" placeholder="Password" required>
+                                <small>Error message</small>
+                                </div>
+                                <div class="inputbox" >
+                                    <input type="text" name="" id="lname" placeholder="Last name" required>
+                                <small>Error message</small>
+                                </div>
+                                <div class="inputbox" >
+                                    <input type="text" name="" id="retype" placeholder="Retype password" required>
+                                <small>Error message</small>
+                                </div>
+                                <div class="inputbox" > 
+                                    <input type="text" name="" id="address" placeholder="Address" required>
+                                <small>Error message</small>
+                                </div>
+                                <div class="inputbox" >
+                                    <input type="text" name="" id="city" placeholder="City" required>
+                                <small>Error message</small></div>
+                                <div class="inputbox" >
+                                    <input type="text" name="" id="zipcode" placeholder="Zipcode" required>
+                                <small>Error message</small></div>
+                                <div class="inputbox"> 
+                                    <select name="City" required>
                                     <option value="">Country</option>
                                     <option value="AF">Afghanistan</option>
                                     <option value="BE">Belgium</option>
@@ -114,7 +133,6 @@
                                     <option value="IN">India</option>
                                     <option value="JP">Japan</option>
                                     <option value="KE">Kenya</option>
-
                                     <option value="LR">Liberia</option>
                                     <option value="MY">Malaysia</option>
                                     <option value="NG">Nigeria</option>
@@ -130,9 +148,9 @@
                                     <option value="YE">Yemen</option>
                                     <option value="ZM">Zambia</option>
                                 </select>
+                                <br><br><br>
                             </div>
-                            <br><br>
-
+                        </div>
                             <div class="radio-box">
                                 <span>You are:</span><br>
                                 <input type="radio" value="Store owner" name="accounttype" id="Store owner">
@@ -140,38 +158,25 @@
                                 <input type="radio" value="Shopper" name="accounttype" id="Shopper">
                                 <span> Shopper</span>
                             </div>
-                            <br>
+                            
                             <span class="p">By creating an account you agree to our Terms & Privacy.</span>
                             <div class="login-button">
-
-
-                                <div class="btn">
-                                    <button type="submit" class="toggle" id="register-btn"> Register</button>
-                                </div>
+                                    <button type="submit" class="toggle" id="register-btn"> Submit</button>
                             </div>
-
-
                     </form>
             </div>
         </div>
-
-
     </main>
     <script>
         var x = document.getElementById("login-form");
         var y = document.getElementById("register-form");
         var z = document.getElementById("switcher");
-
-
         function register() {
             x.style.visibility = "hidden";
             y.style.visibility = "visible";
 
             z.style.left = "110px";
         }
-
-        s
-
         function login() {
             x.style.visibility = "visible";
             y.style.visibility = "hidden";
@@ -203,16 +208,11 @@
                     <li><a href="copyright.html">Copyright</a></li>
                     <li><a href="tos.html">Terms of Service</a></li>
                     <li><a href="privacy-policy.html">Privacy Poilcy</a></li>
-
                 </ul>
-
             </div>
             <div class="brand-title"> @2021 MUADE All right reserved</div>
         </nav>
-
     </footer>
     <script src="cookies.js"></script>
 </body>
-
-
 </html>
