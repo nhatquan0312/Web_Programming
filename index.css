@@ -66,9 +66,6 @@ input {
     position: relative;
 }
 
-.stores-container input {
-    display: none;
-}
 
 
 
@@ -79,23 +76,6 @@ input {
     transition: 2s;
 }
 
-.navigation-manual {
-    position: absolute;
-    width: 100%;
-    margin-top: -40px;
-    display: flex;
-    justify-content:center;
-
-}
-
-.manual-btn {
-    border: 2px solid;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-    
-}
 
 .store-image img {
     width: 100%;
@@ -128,7 +108,7 @@ input {
 
 /* 222*/
 
-.wrapper-ftstores {
+.wrapper-ftstore {
     width: 100%;
     overflow: hidden;
 }
@@ -142,6 +122,7 @@ input {
     height: 100%;
     width: 100%;
     position: absolute;
+    transition: 2s;
 }
 
 .ftstore-image img {
@@ -153,7 +134,7 @@ input {
 .ftprev-btn {
     padding: 16px;
     position: absolute;
-    top: 250%;
+    top: 125%;
     transform: translateY(-50%);
     font-size: 20px;
     z-index: 100;
