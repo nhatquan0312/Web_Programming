@@ -71,7 +71,7 @@ body {
 }
 
 .navbar-links li :hover {
-    background-color: rgb(147, 199, 201);
+    color: rgb(147, 199, 201);
 }
 
 .toggle-button {
