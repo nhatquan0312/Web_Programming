@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 /* *,
 *::before,
 *::after {
@@ -92,3 +93,16 @@ section {
 .accordion-item:target .accordion-link .minus {
     display: block;
 } */
+.container{
+    font-family:'Roboto', sans-serif;
+    margin: 30px auto 100px;
+    width: 80%;
+    background-color: white;
+    font-size: 20px;
+}
+
+.title{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Roboto',sans-serif;
+}
