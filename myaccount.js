@@ -33,4 +33,3 @@ if (usernameValue === '') {
 } else {
     setSuccessFor(username);
 }
-}

@@ -169,6 +169,18 @@ main {
     width: 270px;
 }
 
+.ftitem-box {
+    box-shadow: 4px 4px 5px grey;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #e9e9e9;
+    text-align: center;
+    float: left;
+    margin: 2% 0% 2% 4%;
+    width: 270px;
+}
+
 a>img {
     width: 268px;
     height: 330px;
