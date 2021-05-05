@@ -35,7 +35,6 @@ main {
 .store-image {
     height: 100%;
     width: 100%;
-    position: relative;
 
     position: absolute;
     transition: 2s;
@@ -124,6 +123,7 @@ main {
 
 .pronext-btn,
 .proprev-btn {
+    display: none;
     padding: 16px;
     position: absolute;
     top: 190%;
@@ -146,54 +146,6 @@ main {
     right: 0;
 }
 
-/* Navigation Dots */
-
-.navigation-dots {
-    display: flex;
-    height: 32px;
-    align-items: center;
-    justify-content: center;
-    margin: 16px 0;
-}
-
-.single-dot {
-    background: #333;
-    height: 16px;
-    width: 16px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    margin: 0 8px;
-    cursor: pointer;
-    transition: 400ms;
-}
-
-.single-dot.active {
-    background: #eee;
-}
-
-/*222 */
-.ftnavigation-dots {
-    display: flex;
-    height: 32px;
-    align-items: center;
-    justify-content: center;
-    margin: 16px 0;
-}
-
-.ftsingle-dot {
-    background: #333;
-    height: 16px;
-    width: 16px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    margin: 0 8px;
-    cursor: pointer;
-    transition: 400ms;
-}
-
-.ftsingle-dot.active {
-    background: #eee;
-}
 
 
 
