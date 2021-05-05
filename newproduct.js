@@ -43,8 +43,8 @@ proprevBtn.addEventListener("click", () => {
 // Go to Product
 
 function goToProduct(productNumber) {
-    var percent = 100 * productNumber
-    productImage.style.transform = "translateX(-" + percent + "%)";
+    var productpercent = 270 * productNumber
+    productsContainer.style.transform = "translateX(-" + productpercent + "px)";
     currentProduct = productNumber;
     setproActiveClass();
 }

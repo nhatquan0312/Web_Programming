@@ -26,8 +26,7 @@ main {
 .stores-container {
     height: 500px;
     transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
-    position: relative;
-    
+    position: relative;    
 }
 
 
@@ -147,12 +146,14 @@ main {
 }
 
 
-
+.wrapper-product {
+    width: 100%;
+    overflow: hidden;
+}
 
 
 .new-products {
     display: flex;
-    overflow-x: scroll;
     background-color: whitesmoke;
 }
 
@@ -183,6 +184,14 @@ a>img {
     text-align: center;
     color: gray;
     text-decoration: none;
+}
+
+.featured-products {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    background-color: whitesmoke;
+    align-items: center;
 }
 
 @media only screen and (max-width: 767px) {
