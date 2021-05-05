@@ -73,10 +73,12 @@
   color: #444;
 }
 
-/* @media screen and (max-width:600px) {
+@media only screen and (max-width:768px) {
   .teams {
     max-width: 100%;
-  } */
+  }
+  
+}
 
 .modal-bg,.modal-bg-2,.modal-bg-3,.modal-bg-4 {
     position: fixed;
@@ -90,7 +92,6 @@
     align-items: center;
     opacity: 0;
     visibility:hidden;
-    transition: visibility 0s opacity 0, 5s;
 }
 
 button {
@@ -107,12 +108,13 @@ button {
     visibility: visible;
     opacity: 1;
     z-index: 1;
+    transition: 0.5s;
   }
 
 .modal {
     background-color: whitesmoke;
-    width: 40%;
-    height: 40%;
+    width: 40vw;
+    height: 40vh;
     display: flex;
     align-items: center;
     flex-direction: column;
