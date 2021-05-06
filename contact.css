@@ -17,9 +17,9 @@ footer{
     background-color: #fff;
     box-shadow: 0 0 20px 0 #999;
     top:50%;
-    left:50%;
+    left:50%;  
     transform: translate(-50%,-50%);
-    position: absolute;
+    position:absolute
     
 }
 form{
@@ -91,4 +91,35 @@ button{
     border:1px solid #777;
     border-radius: 14px;
     outline: none;
+}
+@media screen and (max-width: 768px) {
+    .contact-box{
+       width: 100%;
+    }
+    h1{
+        text-align: center;
+    }
+    .input input{
+        display: block;
+        width: 100%;
+    }
+    .method{
+        display: block;
+        text-align: center;
+    }
+    .method h4{
+      text-align: center;
+    }
+    .method .radio{
+        display: inline-block;
+    }
+    .contact-days{
+       display:block;
+       text-align: center;
+       
+    }
+    .contact-days h4{
+        text-align: center;
+    }
+    
 }
