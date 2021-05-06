@@ -43,7 +43,7 @@ proprevBtn.addEventListener("click", () => {
 // Go to Product
 
 function goToProduct(productNumber) {
-    var productpercent = 130 * productNumber
+    var productpercent = 180 * productNumber
     productsContainer.style.transform = "translateX(-" + productpercent + "px)";
     currentProduct = productNumber;
     setproActiveClass();
@@ -58,22 +58,22 @@ function setproActiveClass() {
     productImage[currentProduct].classList.add("active");
 }
 
-var hover = false
+var producthover = false
 productsContainer.addEventListener('mouseover', function () {
-    hover = true
+    producthover = true
 })
 productsContainer.addEventListener('mouseout', function () {
-    hover = false
+    producthover = false
 })
 
 
 // var imgtag = document.getElementById("str-img");
 // var i = 0;
 function auto_product_slide() {
-    if (!hover) {
+    if (!producthover) {
         currentProduct++;
         if (currentProduct == numberOfproImages) currentProduct = 0;
-        hover = false
+        producthover = false
         goToProduct(currentProduct);
     } else {
 

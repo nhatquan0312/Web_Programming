@@ -1,3 +1,7 @@
+body {
+    width: 100%;
+}
+
 main {
     background-color: whitesmoke;
     margin-top: 0px;
@@ -7,7 +11,7 @@ main {
     background-color: white;
     font-size: 5rem;
     text-align: center;
-    padding: 200px 0;
+    padding: 100px 0;
     font-family: 'Noto Sans JP', sans-serif;
 }
 .title {
@@ -17,7 +21,16 @@ main {
     text-transform: initial;
     font-family: 'Ubuntu Mono', monospace;
     color: #252525;
-    text-align: center;
+    margin-left: 10%;
+}
+
+.title span a{
+    font-size: 20px;
+    text-transform: initial;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #eb5e28;
+    margin-left:10px ;
+    margin: 30px 20px;
 }
 .wrapper-store {
     width: 100%;
@@ -42,12 +55,14 @@ main {
 
 
 .store-image img {
-    width: 100%;
+    width: 80%;
     height: 500px;
     object-fit: cover;
+    margin-left: 10%;
 }
 .next-btn,
 .prev-btn {
+    display: none;
     padding: 16px;
     position: absolute;
     top: 125%;
@@ -89,12 +104,14 @@ main {
 }
 
 .ftstore-image img {
-    width: 100%;
+    width: 80%;
     height: 500px;
     object-fit: cover;
+    margin-left: 10%;
 }
 .ftnext-btn,
 .ftprev-btn {
+    display: none;
     padding: 16px;
     position: absolute;
     top: 250%;
@@ -147,8 +164,9 @@ main {
 
 
 .wrapper-product {
-    width: 100%;
+    width: 80%;
     overflow: hidden;
+    margin-left:10% ;
 }
 
 
@@ -214,11 +232,13 @@ a>img {
 }
 
 .featured-products {
-    width: 100%;
+    width: 80%;
     display: flex;
     overflow-x: scroll;
     background-color: whitesmoke;
     align-items: center;
+    margin-left: 10% ;
+    margin-bottom: 2%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -247,12 +267,36 @@ a>img {
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin-left: 0%;
+    }
+    .ftstore-image img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
     }
     .prev-btn, .next-btn {
         top: 220%;
     }
     .ftprev-btn, .ftnext-btn {
         top: 490%;
+    }
+    .wrapper-product{
+        width: 100%;
+        overflow: hidden;
+        margin-left:0% ;
+
+    }
+    .featured-products{
+        width: 100%;
+        margin-left:0% ;
+    }
+    .title{
+        margin-left: 5%;
+        font-size: 25px;
+    }
+    .declare{
+        font-size: 2rem;
     }
 
 }

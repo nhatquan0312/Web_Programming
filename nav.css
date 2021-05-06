@@ -15,7 +15,7 @@ body {
 }
 .searchbar input{
     height: 45px;
-    width: 800px;
+    width: 700px;
     border-radius: 10px;
     border: 2px black solid;
 }

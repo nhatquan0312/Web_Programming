@@ -82,7 +82,7 @@ function auto_ftslide() {
     }
 }
 
-setInterval(auto_ftslide, 4000);
+setInterval(auto_ftslide, 10000);
 
 
 
