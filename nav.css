@@ -156,6 +156,12 @@ body {
     .footer-navbar-links li a {
         padding: .5rem 1rem;
     }
+    .searchbar input{
+        height: 45px;
+        width: 375px;
+        border-radius: 10px;
+        border: 2px black solid;
+    }
 }
 
 /* THIS IS FOR THE FOOTER PART*/

@@ -53,6 +53,7 @@ if (emailValue === '') {
 {
 setErrorFor(email, 'Email is not valid');
 }
+<<<<<<< HEAD
 else { 
     setSuccessFor(email)
 }
@@ -79,3 +80,5 @@ function setSuccessFor(input) {
     const inputBox = input.parentElement;
     form.className = "inputbox success"
 }
+=======
+>>>>>>> 2b323cb0eee8f4607a29fe16722a7cd6ad0f371b
