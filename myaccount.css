@@ -190,7 +190,7 @@ main .background-image .myaccount .inputBox.w20 .inputbox input, select {
     height:40px;
     margin-top: 20px;
     padding-left: 10px;
-    border:2.5px solid #f0f0f0;
+    border:2.5px solid black;
     margin: auto;
     padding: auto;
     display: block;
@@ -204,22 +204,29 @@ main .background-image .myaccount .inputBox.w20 .inputbox.success input {
 main .background-image .myaccount .inputBox.w20 .inputbox.error input {
     border-color: #e74c3c;
   }
-
-main .background-image .myaccount .inputBox.w20 .inputbox.success small {
-   
-   visibility: hidden;
-   position: absolute;
-}
-
-main .background-image .myaccount .inputBox.w20 .inputbox small {
+  main .background-image .myaccount .inputBox.w20 .inputbox small {
     
     bottom: 0;
      display: block;
-   
+     position: absolute;
      margin: auto;
      padding-left: 35.313px;
     
  }
+main .background-image .myaccount .inputBox.w20 .inputbox.success small {
+   
+   visibility: hidden;
+  
+   
+}
+main .background-image .myaccount .inputBox.w20 .inputbox.error small {
+   
+    visibility: visible;
+   
+    color: #e74c3c;
+    
+ }
+
 
 main .background-image .myaccount .inputBox.w20 .inputbox {
     width: 50%;

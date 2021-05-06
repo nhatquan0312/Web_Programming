@@ -27,10 +27,55 @@ const addressValue = address.value.trim();
 const cityValue = city.value.trim();
 const zipcodeValue = zipcode.value.trim();
 
-}
-if (usernameValue === '') {
-    setErrorFor(username, 'Username cannot be blank');
+
+if (fnameValue === '') {
+    setErrorFor(fname, 'First name can not be blank');
 } else {
-    setSuccessFor(username);
+    setSuccessFor(fname);
 }
+
+
+if (lnameValue === '') {
+    setErrorFor(fname, 'First name can not be blank');
+} else {
+    setSuccessFor(lname);
+}
+
+if (fnameValue === '') {
+    setErrorFor(fname, 'Last name can not be blank');
+} else {
+    setSuccessFor(fname);
+}
+
+if (emailValue === '') {
+    setErrorFor(email, 'Email can not be blank');
+} else if (isEmail(emailValue))
+{
+setErrorFor(email, 'Email is not valid');
+}
+else { 
+    setSuccessFor(email)
+}
+}
+
+if (fnameValue === '') {
+    setErrorFor(fname, 'First name can not be blank');
+} else {
+    setSuccessFor(fname);
+}
+
+if (emailValue === '') {
+    setErrorFor(emial)
+}
+
+function setErrorFor(input,message) {
+    const inputBox = input.parentElement;
+    const small = form.querySelector('small');
+    small.innerText = message;
+    form.className = "inputbox error"
+}
+
+function setSuccessFor(input) {
+    const inputBox = input.parentElement;
+    form.className = "inputbox success"
 }

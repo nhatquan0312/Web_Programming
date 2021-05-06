@@ -77,29 +77,28 @@
                     </div>
                 </form>
                 
-                <form id="register-form" class="myaccount">
+                <form id="register-form" class="myaccount" method="POST">
                     <h1 class="title"> 
                         Register
                     </h1>
                     <div class="upload">
-                        <input type="file" id="upload" name="" placeholder="Upload your profile" class="" required>
+                        <input type="file" id="upload" name="" placeholder="Upload your profile" class="" >
                         </div> 
                         <div class="inputBox w20">
                              <div class="input-field">
                             <div class="inputbox success" >
-                                
-                                <input type="text" name="" id="phone" placeholder="Phone number" pattern="[a-z]{1,15}" title="Should only contain letters and numbers" required>
+                                <input type="text" name="" id="phone" placeholder="Phone number" >
                                <small>Error message</small>
                                 </div>
                                <div class="inputbox error" >
-                                <input type="text" name="" id="email" placeholder="Email " pattern="[a-z]{1,15}" title="Should only contain letters and numbers" required>
+                                <input type="text" name="" id="email" placeholder="Email " >
                                 <small>Error message</small>
                                </div>
-                                <div class="inputbox" >
-                                     <input type="text" name="" id="fname" placeholder="First name" required>
+                                <div class="inputbox success" >
+                                     <input type="text" name="" id="fname" placeholder="First name" >
                                 <small>Error message</small>
                                 </div>
-                                <div class="inputbox" > 
+                                <div class="inputbox error" > 
                                     <input type="text" name="" id="password" placeholder="Password" required>
                                 <small>Error message</small>
                                 </div>
@@ -112,17 +111,17 @@
                                 <small>Error message</small>
                                 </div>
                                 <div class="inputbox" > 
-                                    <input type="text" name="" id="address" placeholder="Address" required>
+                                    <input type="text" name="" id="address" placeholder="Address" >
                                 <small>Error message</small>
                                 </div>
                                 <div class="inputbox" >
-                                    <input type="text" name="" id="city" placeholder="City" required>
+                                    <input type="text" name="" id="city" placeholder="City" >
                                 <small>Error message</small></div>
                                 <div class="inputbox" >
-                                    <input type="text" name="" id="zipcode" placeholder="Zipcode" required>
+                                    <input type="text" name="" id="zipcode" placeholder="Zipcode" >
                                 <small>Error message</small></div>
                                 <div class="inputbox"> 
-                                    <select name="City" required>
+                                    <select name="City" >
                                     <option value="">Country</option>
                                     <option value="AF">Afghanistan</option>
                                     <option value="BE">Belgium</option>
@@ -169,9 +168,7 @@
             </div>
         </div>
     </main>
-    <script>
-        console.log(5 + 6);
-        </script>
+    
     <div class="cookie-container">
         <div>
             <p>
