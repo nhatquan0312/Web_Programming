@@ -53,7 +53,6 @@ if (emailValue === '') {
 {
 setErrorFor(email, 'Email is not valid');
 }
-<<<<<<< HEAD
 else { 
     setSuccessFor(email)
 }
@@ -66,19 +65,17 @@ if (fnameValue === '') {
 }
 
 if (emailValue === '') {
-    setErrorFor(emial)
+    setErrorFor(email)
 }
 
 function setErrorFor(input,message) {
-    const inputBox = input.parentElement;
+    const form = input.parentElement;
     const small = form.querySelector('small');
     small.innerText = message;
     form.className = "inputbox error"
 }
 
 function setSuccessFor(input) {
-    const inputBox = input.parentElement;
+    const form = input.parentElement;
     form.className = "inputbox success"
 }
-=======
->>>>>>> 2b323cb0eee8f4607a29fe16722a7cd6ad0f371b
