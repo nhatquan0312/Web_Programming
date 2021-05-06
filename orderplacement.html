@@ -15,10 +15,10 @@
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js" defer></script>
     <script src="coupon.js"></script>
+    <script src='products-cart.js' async></script>
     <title>Order Placement</title>
 </head>
-
-<body onload='total()'>
+<body>
     <div class="wrapper">
 
     </div>
@@ -57,35 +57,42 @@
             <h2>Quantity</h2>
             <h2>Remove</h2>
         </div>
-        <div class='order-content'>
-            <div class='flex'>
-                <p>MEN T-shirt</p>
-                <p>399.000 VND</p>
-                <p><input type="number" value="1" min="1" id='number'></p>
-                <button onclick='remove()' id='remove'>X</button>
-            </div>
-        </div>
-        <div class='order-content'>
-            <div class='flex' id='box'>
-                <p>MEN T-shirt</p>
-                <p>399.000 VND</p>
-                <p><input type="number" value="1" min="1" id='number'></p>
-            </div>
-        </div>
-        <div class='order-content'>
-            <div class='flex' id='box'>
-                <p>MEN T-shirt</p>
-                <p>399.000 VND</p>
-                <p><input type="number" value="1" min="1" id='number'></p>
-            </div>
-        </div>
-        <div class='order-content order-bar'>
-            <p>Total(<span id='total'></span> items):<span id='price'>1197000 </span>VND</p>
+        <div class='order-content items'>
+
+            <div class='flex item' >
+                <p class='cart-name'>product 1</p>
+                <p class='cart-price'>1000</p>
+                <div class='c-quantity-input'>
+                    <input class='quantity-input' type="number" value="1">
+                    <button class='btn remove-button' type='button'>REMOVE</button>
+                </div>
+            </div><hr>
+            <div class='flex item'>
+                <p class='cart-name'>product 2</p>
+                <p class='cart-price'>2000</p>
+                <div class='c-quantity-input'>
+                    <input class='quantity-input' type="number" value="2">
+                    <button class='btn remove-button' type='button'>REMOVE</button>
+                </div>
+            </div><hr>
+
             <div class='coupon'>
+                <strong>Total</strong>
+                <p class='total-price' id='tprice'>4000</p>
                 <input type='text' id='coupon' placeholder="use coupon here">
                 <button id='check' onclick='validate();'>Apply coupon</button>
                 <p id='note'></p>
             </div>
+            <!--<div class='flex' id='box'>
+                <p>MEN T-shirt</p>
+                <p>399.000 VND</p>
+                <p><input type="number" value="1" min="1" id='number'></p>
+            </div> -->
+        </div> 
+
+        <div class='order-content order-bar'>
+            
+
             <hr style='border-top: 1px dashed grey'><br>
             <div class='order-button'>
                 <a href='index.html'>Continue Shopping</a>

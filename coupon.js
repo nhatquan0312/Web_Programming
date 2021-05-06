@@ -1,9 +1,3 @@
-function total() {
-    var parent = document.getElementsByClassName('background');
-    var sum = parent.getElementById('box');
-    document.getElementById('total').innterHTML = sum;
-}
-
 
 function validate() { 
     /*coupon validication*/
@@ -16,14 +10,14 @@ function validate() {
     var val = document.getElementById('coupon').value; 
 
     if (val == cp2) {
-        text = "You're discounted 10% total price ";
+        text = "You're discounted 10% ";
         x = number-(number*0.1); /*10%*/
         document.getElementById('price').innerHTML = x;
         document.getElementById('coupon').disabled = true;
         document.getElementById('check').disabled = true;
     }
     else if (val == cp1) {
-        text = "You're discounted 20% total price";
+        text = "You're discounted 20% ";
         x = number-(number*0.2); /*20%*/
         document.getElementById('price').innerHTML = x;
         document.getElementById('coupon').disabled = true;
