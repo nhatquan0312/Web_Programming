@@ -79,6 +79,8 @@
                 function AddFunction() {
                     document.getElementById('alert').innerText = 'Added successfully !!!';
                     window.setTimeout(function() {window.location.href= "index.html";},500);
+                    var product1 = ["MEN T-shirt", "399000", "1"]
+                    localStorage.setItem('product1', JSON.stringify(product1))
                 }         
             </script> 
         </div>
