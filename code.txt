@@ -1,408 +1,154 @@
-Trang này để trữ code
-
-  In this first stage, the client wants you to design and implement UI/UX parts of the mall using HTML & CSS. To attract as many visitors as possible, the client wants the new website to support at least 3 types of device:
-
-Desktop computer: 1024 pixels or higher width
-Tablet: 768 to 1023 pixels width
-Smartphone: 767 pixels or lower width
-Here are some places where you may need to provide different UI component arrangements for different device types:
-
-Navigation menu bar: always-visible horizontal navigation menu on desktop computers vs. alternating between visible and hidden vertical navigation menu on tablets/smartphones
-Input form: a label and its linked input field may be positioned on the same line on desktop computers, but they should be placed on 2 different lines on tablets/smartphones
-Layout: a multi-column layout on desktop computers may collapse into a one-column layout on tablets/smartphones
-
-Display a contact form for visitors to contact the mall owner. The form contains the following fields
-
-Contact purpose (a drop-down select element, use human-friendly text to display information, but use shorter computer-friendly values to store information; apply this principle for other inputs too)
-Name: a required text field
-Email: a valid email address
-Phone: a valid phone number
-Preferred contact method: 2 radios (email and phone)
-Contact days: from Monday to Sunday (7 checkboxes)
-Message: a multiple-line text input
-Two buttons: Clear and Send
-Use the same header and footer as the Mall Home page.
-
-A README.md file is required in the root folder of your submission to describes briefly your group and the mall website. It also contains the GitHub URL of your repo. You need to add me as a collaborator to your repo. My GitHub ID is TriDang
-
-
+</header>
+    <main>
+        <div class="background-image">
+            <h2>Welcome back</h2>
+            <div class="buttonBox">
+                <div class="switcher"></div>
+                <button type="button" class="toggle" onclick="login()">Log In</button>
+                <button type="button" class="toggle" onclick="register()">Register</button>
             </div>
-            <div class="Reachus-info"></div>
-                <ul>
-            <li><span> <img src="95977351-map-pin-icon-location-symbol-outline-vector-illustration-.png" alt="location symbol"></span>
-            <span> 26 Tan Thoi Nhat 5</span>
-            </li>
-            
-            <li>
-                <span> <img src="95977351-map-pin-icon-location-symbol-outline-vector-illustration-.png" alt="location symbol"></span>
-                <span> 26 Tan Thoi Nhat 5</span>
-
-            </li>
-                </ul>
-        
-        </div>
-        
-
-
-
-
-        .right-box {
-    display: flex;
-     
-    justify-content: space-around;
-
-}
-.submit {
-cursor: pointer;
-}
-.left-box {
-    display: flex;
-    flex-basis: 60%;
-    flex-direction: column;
-
-} 
-input {
-    background-color: #ccc;
-}
-.container {
-    display: flex;
-    
-    margin: 3vh 0 0 3vh;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 60%;
-    
-    
-}
-pinpoint-icon-vector-9434992.jpeg
-
-contact.html code
-
-<main>
-    
-        
-        <div class="container">
-            <div class="contactinfo">
-            
-           
-        
-        
-    
-       
-            
-                <ul>
-                    <li><span><img src="75444181-phone-call-symbol-simple-silhouette-icon-on-background.jpeg" alt="location"></span>
-                    <span>Nam molestie nec risus placerat interdum. Maecenas sit amet velit vel tortor imperdiet volutpat id nec quam. Nam ac porttitor urna. Aliquam congue ligula ipsum, id r</span>
-                </li>
-                <li><span><img src="#"  alt="location"></span>
-                    <span>Nam molestie nec risus placerat interdum. Maecenas sit amet velit vel tortor imperdiet volutpat id nec quam. Nam ac porttitor urna. </span>
-                </li>
-                <li><span><img src="download.png" alt="mail"></span>
-                    <span>Nam molestie nec risus placerat interdum. Maecenas sit amet velit vel tortor imperdiet volutpat id nec quam. Nam ac portt</span>
-                </li>
-            
-            
-            </ul>
-
-        </div>
-     </div>
-       
-        
-    
-        
-   
-   <section>
-    <div>
-        
-        <p>WE ARE ALWAYS LOOKING FOR GREAT COLLABORATORS. LET’S MESSAGE ME AND MAKE SOMETHING TOGETHER!
-        </p>
-        <form action="">
-        <div class="inputbox w50">
-            <label for="fname"></label><br>
-            <input type="text" id="fname" name="" placeholder="First name" required><br>
-            <span> First name</span>
-        </div>
-        <div class="inputbox w50">
-            <label for="lname"></label><br>
-            <input type="text" id="lname" name="" placeholder="Last name" required><br>
-            <span> Last name</span>
-        </div>
-        <div class="inputbox w50">
-            <label for="address"></label><br>
-            <input type="text" id="address" placeholder="Address" name="" required><br>
-            <span> Address</span>
-        </div>
-       
-        <div class="inputbox w50">
-            <label for="method"></label><br>
-            <select id="method" placeholder="Please choose your preferred contact method" required><br>
-                <option value="phone">Phone</option>
-                <option value="email">Email</option>
-            </select><br><br>
-            <span> Please choose your preferred contact method</span>
-        </div>  
-        
-        <div class="inputbox w50">
-            <label for="email"></label><br>
-            <input type="text" id="email" placeholder="Email" name="" required><br>
-            <span> Email</span>
-        </div>
-        <div class="inputbox w50">  
-        <label for="phone"></label><br>
-            <input type="text" id="phone" name="phone" placeholder="Phone" required><br> 
-            <span> Phone</span>
+            <div class="myaccountform">
+                <form id="login-form" class="myaccount">
+                    <h1 class="title"> 
+                        Log In 
+                    </h1>
+                    <div class="inputBox w40">
+                        <input type="text" name="" placeholder="User Id" required>
+                        <input type="text" name="" placeholder="Enter your password" required>
+                    </div>
+                    <div class="login-button">
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <span> Remember password</span></div>
+                        <button type="submit" class="toggle" id="submit-btn"><a
+                                href="sampleuser.html">Login</a></button>
+                        <button type="button" class="toggle" id="forgot-btn"><a href="resetpass.html">Forgot
+                                password</a></button>
+                    </div>
+                </form>
+                
+                <form id="register-form" class="myaccount" method="POST">
+                    <h1 class="title"> 
+                        Register
+                    </h1>
+                    <div class="upload">
+                        <input type="file" id="upload" name="" placeholder="Upload your profile" class="" >
+                        </div> 
+                        <div class="inputBox w20">
+                             <div class="input-field">
+                            <div class="inputbox success" >
+                                <input type="text" name="" id="phone" placeholder="Phone number" >
+                               <small>Error message</small>
+                                </div>
+                               <div class="inputbox error" >
+                                <input type="text" name="" id="email" placeholder="Email " >
+                                <small>Error message</small>
+                               </div>
+                                <div class="inputbox success" >
+                                     <input type="text" name="" id="fname" placeholder="First name" >
+                                <small>Error message</small>
+                                </div>
+                                <div class="inputbox error" > 
+                                    <input type="text" name="" id="password" placeholder="Password" >
+                                <small>Error message</small>
+                                </div>
+                                <div class="inputbox" >
+                                    <input type="text" name="" id="lname" placeholder="Last name" >
+                                <small>Error message</small>
+                                </div>
+                                <div class="inputbox" >
+                                    <input type="text" name="" id="retype" placeholder="Retype password" >
+                                <small>Error message</small>
+                                </div>
+                                <div class="inputbox" > 
+                                    <input type="text" name="" id="address" placeholder="Address" >
+                                <small>Error message</small>
+                                </div>
+                                <div class="inputbox" >
+                                    <input type="text" name="" id="city" placeholder="City" >
+                                <small>Error message</small></div>
+                                <div class="inputbox" >
+                                    <input type="text" name="" id="zipcode" placeholder="Zipcode" >
+                                <small>Error message</small></div>
+                                <div class="inputbox"> 
+                                    <select name="City" >
+                                    <option value="">Country</option>
+                                    <option value="AF">Afghanistan</option>
+                                    <option value="BE">Belgium</option>
+                                    <option value="CN">China</option>
+                                    <option value="DK">Denmark</option>
+                                    <option value="EG">Egypt</option>
+                                    <option value="FR">France</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="HK">Hong Kong</option>
+                                    <option value="IN">India</option>
+                                    <option value="JP">Japan</option>
+                                    <option value="KE">Kenya</option>
+                                    <option value="LR">Liberia</option>
+                                    <option value="MY">Malaysia</option>
+                                    <option value="NG">Nigeria</option>
+                                    <option value="OM">Oman</option>
+                                    <option value="PH">Philippines</option>
+                                    <option value="QA">Qatar</option>
+                                    <option value="RU">Russian Federation</option>
+                                    <option value="ES">Spain</option>
+                                    <option value="TH">Thailand</option>
+                                    <option value="US">United States</option>
+                                    <option value="VN">Viet Nam</option>
+                                    <option value="WF">Wallis and Futuna</option>
+                                    <option value="YE">Yemen</option>
+                                    <option value="ZM">Zambia</option>
+                                </select>
+                                <br><br><br>
+                            </div>
+                        </div>
+                            <div class="radio-box">
+                                <span>You are:</span><br>
+                                <input type="radio" value="Store owner" name="accounttype" id="Store owner">
+                                <span> Store owner</span><br>
+                                <input type="radio" value="Shopper" name="accounttype" id="Shopper">
+                                <span> Shopper</span>
+                            </div>
+                            
+                            <span class="p">By creating an account you agree to our Terms & Privacy.</span>
+                            <div class="login-button">
+                                    <button type="submit" class="toggle" id="register-btn"> Submit</button>
+                            </div>
+                    </form>
             </div>
-
-           
-           
-        <div class="inputbox w100">
-        <label for="message"></label>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-        
-        <div class="submit">
-            <input type="button" value="Submit">
         </div>
-       
-</div>
-</form>
-</section>
-</main>
-    
-  
-</body>
-<footer>
+    </main>
 
-</footer>
-</html>
- contact.css code 
-.body {
-    background-color: black;
-}
-
-.intro
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: -.02em;
-    line-height: 1.4;
-    text-transform: uppercase;
-    color: #000000;
-    margin: 4vh;
-
-}
-main {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    
-}
- section {
-     content: "";
-     position: absolute;
-     right:0;
-     top: 0;
-     width: 50%;
-     height: 100%;
-     background-color: #ccc;
-
-}
-    
-main. container {
-    position: relative;
-    min-width: 1200px;
-    min-height: 560px;
-    display: flex;
-    z-index: 1000;
-    flex-direction: column;
-}
-
-main .container .contactinfo {
-    position: absolute;
-    min-width: 50%;
-    min-height: 100%;
-    top: 0px;
-    left:0;
-    width: 350px;
-    height: calc (100 - 80px);
-    z-index: 1;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: cadetblue;
-    
-}
+     <form action="" method="POST" class="form" id="form-1">
 
 
+    <div class="spacer"></div>
 
-
-
-
-
-
-
-
-
-main .container .contactinfo {
-    position: absolute;
-    min-width: 50%;
-    min-height: 100%;
-    
-    left:0;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(112, 133, 134); 
-    
-}
-main .container .contactinfo-ul{
-    position: relative;
-    margin: 0 20px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color:  rgb(66, 81, 82);
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-    z-index: 3; 
-    min-height:200px;
-}
-
-
-
-
-
-
-
-
-
-
-
-main .container .contactform form .inputBox input,  
-main .container .contactform form .inputBox textarea
-{
-width: 100%;
-resize: none;
-border: none;
-border-bottom: 2px solid rgb(112, 133, 134);
-font-size: 17px;
-font-weight: 300;
-color:rgb(112, 133, 134);
-padding: 5px 0;
-background-color: cornsilk;
-font-family:'Ubuntu Mono', monospace;
-}
-
-main .container .contactform form .inputBox textarea
-{
-    min-height: 115px;
-}
-main .container .contactform form .inputBox span {
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 17px;
-    font-weight: 300;
-color:rgb(66, 81, 82);
-padding: 5px 0;
-transition: 0.5s;
-pointer-events: none;
-}
-input, 
-.inputBox textarea
-
-select
-{
-font-family:'Ubuntu Mono', monospace;
-color: rgb(112, 133, 134)!important;
-  
-}
-
-my account.css
-main .login-form form .buttonBox 
-{   position: relative;
-    display: flex;
-    justify-content: space-around;
-    
-    width: 230px;
-    box-shadow: 0 0 20px 9px rgb(129, 124, 124);
-    margin: 35px auto;
-    border-radius: 30%;
-}
-
-main .login-form form .buttonBox .toggle 
-{   position: relative;
-    cursor: pointer;
-    border:0;
-    outline: none;
-    display: flex;
-    background-color: none;
-    background: transparent;
-    align-items: center;
-
-}
-
-
-main .login-form form .inputBox.w40, .login-button {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-main .login-form 
-{
-    position: relative;
-    min-width: 390px;
-    margin: 6% auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 490px;
-    background-color: #ccc;
-    padding: 5px;
-}
-
-main .login-form form {
-    flex-wrap: wrap;
-    margin-top: 10px; 
-    width: 50%;
-    height: 40vh;
-    background-color: white;
-}
-
-
-
-    <div class="wrapper-store">
-      <div class="prev-btn1"><i class="fas fa-chevron-left"></i></div>
-      <div class="stores_container">
-        <div class="stores">
-          <a href='store.html' style='text-decoration: none;'><img src='img/Uniqlo/uniqlo_logo .jpg'></a>
-        </div>
-        <div class="stores">
-          <a href='store2.html' style='text-decoration: none;'><img src='img/abi_pic.jpg'></a>
-        </div>
-        <div class="stores">
-          <a href='store3.html' style='text-decoration: none;'><img src='img/phongvu_pic.png'></a>
-        </div>
-      </div>
-      <div class="next-btn1"><i class="fas fa-chevron-right"></i></div>
-      <div class="store-navigation-dots"></div>
+    <div class="form-group">
+      <label for="fullname" class="form-label">Tên đầy đủ</label>
+      <input id="fullname" name="fullname" type="text" placeholder="VD: Sơn Đặng" class="form-control">
+      <span class="form-message"></span>
     </div>
 
+    <div class="form-group">
+      <label for="email" class="form-label">Email</label>
+      <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+      <span class="form-message"></span>
+    </div>
 
+    <div class="form-group">
+      <label for="password" class="form-label">Mật khẩu</label>
+      <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+      <span class="form-message"></span>
+    </div>
 
+    <div class="form-group">
+      <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+      <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+      <span class="form-message"></span>
+    </div>
 
+    <button class="form-submit">Đăng ký</button>
+  </form>
 
-
+</div>
