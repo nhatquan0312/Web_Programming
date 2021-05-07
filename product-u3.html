@@ -59,7 +59,7 @@
                 <hr>
                 <form action='index.html'>
                     <input type='number' value='1' min='1' id='number'>
-                    <label for='selection'>Select size: </label>
+                    <label for='selection'> Size: </label>
                     <select name='selection' id='selection'>
                         <option value='S'>S</option>
                         <option value='M'>M</option>
@@ -68,10 +68,20 @@
                     </select>
                 </form>
                 <hr>
-                <a href='index.html'><button type='submit'>Add To Cart</button></a>
+                <button onclick='AddFunction()'>Add To Cart</button>
+                
                 <a href='orderplacement.html'><button type='button'>Buy Now</button></a>
+                <p></p>
+                <span id='alert'></span>
             </div>
-
+            <script>
+                function AddFunction() {
+                    document.getElementById('alert').innerText = 'Added successfully !!!';
+                    window.setTimeout(function() {window.location.href= "index.html";},500);
+                    var product2 = ["CHILD T-shirt", "249000", "1"]
+                    localStorage.setItem('product2', JSON.stringify(product2))
+                }         
+            </script> 
         </div>
         <div class='description'>
             <h2>Description</h2>

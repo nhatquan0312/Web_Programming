@@ -5,7 +5,10 @@ for ( var i = 0; i < RemoveButton.length; i++) {
     button.addEventListener('click', function(event) {
         var Clicked = event.target 
         Clicked.parentElement.parentElement.remove()
+        localStorage.removeItem("product1")
+        localStorage.removeItem("product2")
         updateCart() 
+        
     })
 }
 var quantityInput = document.getElementsByClassName('quantity-input')
@@ -74,3 +77,27 @@ function validate() {
     }
     document.getElementById('note').innerHTML = text;
 } 
+
+function autoFill() {
+
+
+    var passData = localStorage.getItem('product1')
+    var p1 = JSON.parse(passData)
+
+
+    document.getElementById('name1').innerHTML = p1[0]
+    document.getElementById('price1').innerHTML = p1[1]
+
+    var passData2 = localStorage.getItem('product2')
+    var p2 = JSON.parse(passData2)
+
+    document.getElementById('name2').innerHTML = p2[0]
+    document.getElementById('price2').innerHTML = p2[1]
+
+    
+}
+if (localStorage.getItem("product1") === null) {
+    document.getElementById('box1').style.display = 'none'
+    document.getElementById('box2').style.display = 'none'
+    document.getElementsByClassName('total-price').innerHTML = 0
+}
