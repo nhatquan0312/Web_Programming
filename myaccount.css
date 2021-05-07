@@ -79,10 +79,10 @@ margin: auto;
     
     
  }
-span {
-    
-     visibility: visible;
-    
-     
-     
-  }
+ .form-group.invalid .form-control {
+  border-color: #f33a58;
+}
+
+.form-group.invalid .error-message {
+  color: #f33a58;
+}

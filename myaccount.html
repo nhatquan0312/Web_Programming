@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="myaccount.css">
     <link rel="stylesheet" href="cookies.css">
-    <link rel="stylesheet" href="/fontawesomecss/all.css">
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js" defer></script>
     <script src="myaccount.js"></script>
@@ -154,8 +153,8 @@
     </main>
     <script>
         Validator({
-            form: '#register-form';
-            rule : [
+            form: '#register-form',
+            rules: [
                 Validator.isRequired('#fullname'),
                 Validator.isEmail('#email'),
             ]
