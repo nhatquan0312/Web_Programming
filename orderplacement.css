@@ -8,7 +8,7 @@
 
 .flex {
     display: flex;
-    flex-wrap: nowrap;
+    /*flex-wrap: nowrap; */
     background-color: white;
 }
 
@@ -25,14 +25,7 @@
     text-align: center;
     margin-left: 7%;
 }
-.flex>#remove {
-    width: 50px;
-    height: 50px;
-    line-height: 0px;
-    text-align: center;
-    margin-left: 14%;
-    margin-top: 25px;
-}
+
 
 .order-content {
     margin: 1% 12% 1% 12%;
@@ -84,22 +77,61 @@
     font-style: oblique;
     font-size: 20px;
 }
-
-/* resolution for iphone*/
+.c-quantiny-input {
+    display: flex;
+}
+.quantity-input {
+    margin-left: 170px;
+    padding-left: 1%;
+    box-sizing: border-box;
+    text-align: center;
+    width: 75px;
+    height: 50px;
+}
+.btn {
+    box-sizing: border-box;
+    border: none;
+    background: black;
+    color: white;
+    width: 100px;
+    height: 50px;
+    margin: 25px 0px 10px 250px;
+}
+/*resolution for ipad*/
 @media screen and (max-width: 1024px) {
+    .flex > h2 {
+        margin-left:4%;
+    }
+    .flex > p {
+        margin-left: 90px;
+        width: 70px;
+    }
+    .quantiny-input {
+        width: 50px;
+        height: 25px;
+    }
+    .btn {
+        margin-left: 50px;
+        width: 75px;
+        height: 35px;
+        font-size: 13px;
+    }
+}
+/* resolution for iphone*/
+@media screen and (max-width: 767px) {
     .flex>p {
         font-size: smaller;
         line-height: smaller;
-        margin-left: 4%;
+        margin-left: 0px;
     }
 
     .flex>h2 {
         font-size: smaller;
-        margin-left: 4%;
+        margin-left: 2%;
     }
 
     #number {
-        font-size: 14px;
+        font-size: 10px;
         width: 35px;
         height: 20px;
     }
@@ -124,5 +156,16 @@
     }
     #note {
         font-size: 13px;
+    }
+    .quantity-input {
+        width: 35px;
+        height: 35px;
+        font-size: 10px;
+        margin-left:25px;
+    }
+    .btn {
+        width: 60px;
+        height: 30px;
+        font-size: 10px;
     }
 }

@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="cookies.css">
     <script src="script.js" defer></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src="products-data.js"></script>
-    <sctipt src="cart.js"></sctipt>
+    <script src="products-cart.js"></script>
     <title>Muade</title>
 </head>
 
@@ -76,13 +75,12 @@
                 <p></p>
                 <span id='alert'></span>
             </div>
-            
             <script>
                 function AddFunction() {
                     document.getElementById('alert').innerText = 'Added successfully !!!';
                     window.setTimeout(function() {window.location.href= "index.html";},500);
-                }
-            </script>
+                }         
+            </script> 
         </div>
         <div class='description'>
             <h2>Description</h2>
@@ -153,6 +151,7 @@
         </nav>
 
     </footer>
+    
     <script src="cookies.js"></script>
 </body>
 
