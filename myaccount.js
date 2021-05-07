@@ -69,13 +69,13 @@ if (emailValue === '') {
 }
 
 function setErrorFor(input,message) {
-    const form = input.parentElement;
-    const small = form.querySelector('small');
+    const inputField = input.parentElement;
+    const small = inputField.querySelector('small');
     small.innerText = message;
-    form.className = "inputbox error"
+    inputField.className = "inputbox error"
 }
 
 function setSuccessFor(input) {
-    const form = input.parentElement;
-    form.className = "inputbox success"
+    const inputField = input.parentElement;
+    inputField.className = "inputbox success"
 }

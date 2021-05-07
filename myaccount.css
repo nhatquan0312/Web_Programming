@@ -162,9 +162,6 @@ main .background-image .myaccount .inputBox.w40 {
 main .background-image .myaccount .inputBox.w20
 {   width:100%;
     padding: 50px;
-   
-    
- 
     background-color: white;
   
    
@@ -207,8 +204,8 @@ main .background-image .myaccount .inputBox.w20 .inputbox.error input {
   main .background-image .myaccount .inputBox.w20 .inputbox small {
     
     bottom: 0;
-     display: block;
-     position: absolute;
+    
+     
      margin: auto;
      padding-left: 35.313px;
     
