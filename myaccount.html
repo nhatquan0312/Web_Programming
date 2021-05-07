@@ -14,7 +14,6 @@
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js" defer></script>
     <script src="myaccount.js"></script>
-
     <title>Document</title>
 </head>
 
@@ -153,7 +152,15 @@
         
         </div>
     </main>
-    
+    <script>
+        Validator({
+            form: '#register-form';
+            rule : [
+                Validator.isRequired('#fullname'),
+                Validator.isEmail('#email'),
+            ]
+        });
+    </script>
     <div class="cookie-container">
         <div>
             <p>
