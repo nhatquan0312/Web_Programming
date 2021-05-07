@@ -1,6 +1,6 @@
 .main {
     
-    min-height: 100vh;
+    min-height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13.3333px;
     display: flex;
@@ -9,17 +9,13 @@
   }
 
   .form {
-    
-margin-top: 5vh; 
 position: relative;
-width: 80%;
+width: 60%;
 background-color: none;
-justify-content: center;
-align-items: center;
-margin-left: 10%;
-margin-right:10%;
-
+padding: auto;
+margin: auto;
   }
+
   h1{
     display: block;
     font-size: 2em;
@@ -28,3 +24,65 @@ margin-right:10%;
     margin-inline-end: 0px;
     font-weight: bold;
 }
+.upload {
+    margin-top: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17px;
+  }
+
+  .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    outline: none;
+    border: 1.5px solid rgb(138, 129, 129);
+    border-radius: 3px;
+    font-size: 13.3333px;
+  }
+  
+  .form-control:hover {
+    border-color: cadetblue;
+  }
+    .select-group {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+    .form-radio {
+    display: flex ;
+    flex-direction: column;
+    padding: 8px 12px;
+    
+}
+.form-submit{
+    background: cadetblue;
+    font-size: 26px;
+    height: 50%;
+    width: 63%;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: block;
+    margin: auto;
+    top: 1vh;
+    font-family: inherit;
+}
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+    
+    
+ }
+span {
+    
+     visibility: visible;
+    
+     
+     
+  }

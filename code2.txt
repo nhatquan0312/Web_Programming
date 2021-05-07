@@ -66,14 +66,14 @@ main .background-image  .buttonBox
 }
 main .background-image .buttonBox .switcher 
 {
-background:linear-gradient(to right, cadetblue, #ccc );
-position: absolute;
-height: 30px;
-width: 120px;
-margin: 0;
-border-radius: 40px;
-left: 0;
-cursor: pointer;
+    background:linear-gradient(to right, cadetblue, #ccc );
+    position: absolute;
+    height: 30px;
+    width: 120px;
+    margin: 0;
+    border-radius: 40px;
+    left: 0;
+    cursor: pointer;
 }
 
 main .background-image .buttonBox .toggle 
@@ -93,7 +93,6 @@ main .background-image .myaccount .login-button
     position: relative;
     display:block;
     width: 100%;
-    
 }
 
 main .background-image .myaccount .login-button button {
@@ -111,6 +110,7 @@ main .background-image .myaccount .login-button button {
     top: 1vh;
     font-family: inherit;
 }
+
 main .background-image .myaccount .login-button .checkbox span {
     position: relative;
     height: 30px;
