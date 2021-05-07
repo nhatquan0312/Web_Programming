@@ -1,0 +1,30 @@
+.main {
+    
+    min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13.3333px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form {
+    
+margin-top: 5vh; 
+position: relative;
+width: 80%;
+background-color: none;
+justify-content: center;
+align-items: center;
+margin-left: 10%;
+margin-right:10%;
+
+  }
+  h1{
+    display: block;
+    font-size: 2em;
+    margin: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
