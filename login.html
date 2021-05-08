@@ -53,8 +53,11 @@
     <main>
         <form action="" method="POST" class="form" id="login-form">
           <h1 class="heading">Login</h1>
-          <p></p>
-  
+          <div class="des">
+            <p>Already have an account?</p>
+            <a href="myaccount.html"><label>Sign Up</label></a>
+          </div>
+            
           <div class="form-group">
             <label for="email" class="form-label">Email</label>
             <input id="email" name="email" type="text" placeholder="jessflynn@domain.com" class="form-control">
@@ -78,7 +81,7 @@
       </main>
       
       <script>
-  
+        
         document.addEventListener('DOMContentLoaded', function () {
     
           Validator({
@@ -95,7 +98,7 @@
             }
           });
         });
-  
+        
       </script>
     <div class="cookie-container">
         <div>

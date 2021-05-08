@@ -54,11 +54,11 @@
 
         <form action="" method="POST" class="form" id="register-form">
           <h1 >Register</h1>
-          <p>Have you got an account?</p>
-  
-          
-          
-          <div class="Box">
+          <div class="des">
+            <p>Already have an account?</p>
+            <a href="login.html"><label>Sign In</label></a>
+          </div>
+      
             <div class="form-group">
               <label for="firstname" class="form-label">First name </label>
               <input id="fname" name="firstname" type="text" placeholder="Jess" class="form-control">
@@ -70,7 +70,7 @@
             <input id="lname" name="lastname" type="text" placeholder="Flynn" class="form-control">
             <span class="form-message"></span>
           </div>
-        </div>
+       
 
           <div class="form-group">
             <label for="email" class="form-label">Email</label>
@@ -89,10 +89,10 @@
             <input id="password_retype" name="password_retype" placeholder="Enter your password" type="password" class="form-control">
             <span class="form-message"></span>
           </div>
-          <div class="Box">
+        
             <div class="form-group">
               <label for="zipcode" class="form-label">Zipcode </label>
-              <input id="zcode" name="zipcode" type="text" placeholder="Jess Flynn" class="form-control">
+              <input id="zcode" name="zipcode" type="text" placeholder="6 - digits" class="form-control">
               <span class="form-message"></span>
             </div>
             
@@ -127,40 +127,72 @@
             </select>
             </div>
          
-        </div>
+       
          
         <div class="form-group">
           <label for="address" class="form-label">Address</label>
-          <input id="address" name="address" type="text" placeholder="Flynn" class="form-control">
+          <input id="address" name="address" type="text" placeholder="19 Pham Ngoc Thach street, Phương Liên ward, Dong Da district, Hanoi city." class="form-control">
           <span class="form-message"></span>
         </div>
-         
-          <button class="form-submit">Submit</button>
-        </form>
-  
-        <form action="" method="POST" class="form" id="login-form">
-          <h1 class="heading">Login</h1>
-          <p></p>
-  
-          <div class="form-group">
-            <label for="email" class="form-label">Email</label>
-            <input id="email" name="email" type="text" placeholder="jessflynn@domain.com" class="form-control">
-            <span class="form-message" ></span>
-          </div>
-  
-          <div class="form-group">
-            <label for="password" class="form-label">Password</label>
-            <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
-            <span class="form-message"></span>
-          </div>
-  
-          <button class="form-submit">Login</button>
+
+        <div class="form-group">
+         <span>You are:</span>
+            <div class="Box-2">
+              <div class="radio-box" onclick= "ShowDiv()" id="owner">
+              <input type="radio" value="Store owner" name="accounttype" id="Store owner">
+              <span> Store owner</span>
+              </div >
+                
+              <div id="detail-info">
+                <div class="form-group">
+                  <label for="bname" class="form-label">Business name</label>
+                  <input id="bname" name="bname" type="text" placeholder="Fill this field" class="form-control">
+                  <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="stname" class="form-label">Store name</label>
+                  <input id="stname" name="stname" type="text" placeholder="Fill this field" class="form-control">
+                  <span class="form-message"></span>
+                </div>
+                
+                <div class="form-group">
+                  <label for="Store category" class="form-label">Store category</label>
+                  <select name="City" class='form-control'>
+                    <option>Department</option>
+                    <option>Grocery</option>
+                    <option>Restaurants</option>
+                    <option>Clothing</option>
+                    <option>Accessory</option>
+                    <option>Pharmacies</option>
+                    <option>Technology</option>
+                    <option>Pet </option>
+                    <option>Thrift</option>
+                    <option>Specialty</option>
+                    <option>Toy</option>
+                    <option>Services</option>
+                    <option>Kiosks</option>
+                </select>
+                </div>
+              </div>
+            </div>
+            
+                <div class="radio-box" id="shopper">
+                  <input type="radio" value="Shopper" name="accounttype" id="shopper">
+                  <span>Shopper</span>
+                </div>
+            </div>
+            <div class="Box">
+          <button class="form-submit">Register</button>
+          <button type="submit "class="form-submit">Clear</button>
+        </div>
         </form>
   
       </main>
       
       <script>
-  
+        
+
         document.addEventListener('DOMContentLoaded', function () {
           Validator({
             form: '#register-form',
@@ -169,27 +201,18 @@
             rules: [
               Validator.isRequired('#lname', 'Last name cannot be blank '),
               Validator.isRequired('#fname', 'First name cannot be blank '),
-              Validator.isEmail('#email'),
               Validator.isRequired('#password_retype'),
+              Validator.isEmail('#email'),
+              Validator.isPassword('#password'),
               Validator.isConfirmed('#password_retype', function () {
                 return document.querySelector('#form-1 #password').value;
               }, 'Password does not match'),
               Validator.isNumber ('#zcode'),
-              Validator.minLength('#zcode', 6),
-              Validator.minLength('#password', 6),
-            ],
-            onSubmit: function (data) {
-              console.log(data);
-            }
-          });
-  
-  
-          Validator({
-            form: '#login-form',
-            formGroupSelector: '.form-group',
-            errorSelector: '.form-message',
-            rules: [
-              Validator.isEmail('#email'),
+              Validator.minLength('#fname', 3),
+              Validator.minLength('#lname', 3),
+              Validator.minLength('#address', 3),
+              Validator.minLength('#city', 3),
+              Validator.minLength('#zcode', 3),
               Validator.minLength('#password', 6),
             ],
             onSubmit: function (data) {
@@ -197,7 +220,7 @@
             }
           });
         });
-  
+
       </script>
     <div class="cookie-container">
         <div>
