@@ -130,11 +130,21 @@ Validator.isEmail = function (selector, message) {
     return {
         selector: selector,
         test: function (input) {
-            var regex = /^[a-z]{1,15}$/;
-            return regex.test(input) ? undefined :  message || 'Invalid email';
+            var exp = /^(([a-zA-Z0-9][.]?){2,}|([a-zA-Z0-9]\.)+)([a-zA-Z0-9]|(?!\.))+?[a-zA-Z0-9]@(([a-zA-Z0-9]+\.)+[a-zA-Z]{2,5})$/;
+            return exp.test(input) ? undefined :  message || 'Invalid email';
         }
     };
 }
+
+Validator.isPassword = function (selector, message) {
+    return {
+        selector: selector,
+        test: function (input) {
+            var exp = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])$/; 
+            return exp.test(input) ? undefined :  message || 'Invalid characters';
+        }
+    };
+} 
 
 Validator.minLength = function (selector, min, message) {
     return {
@@ -162,3 +172,4 @@ Validator.isConfirmed = function (selector, getConfirmValue, message) {
         }
     }
 }
+

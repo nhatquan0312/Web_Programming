@@ -7,17 +7,23 @@ main {
     align-items: center;
     margin:auto ;
     position: relative;
+    min-width:100% ;
   }
 
   #register-form {
-    width: 100%;
+    width: 60%;
   }
+  #login-form {
+    width: 100%;
+    
 
+
+  }
   .form {
     max-width: 100%;
     background-color: none;
-    padding: 20px;
-    margin: auto;
+    padding: 40px;
+    margin: 20px;
     align-self: center;
     box-shadow: 15px 14px 12px 0 rgb(61 59 92 / 12%);
   }
@@ -28,7 +34,11 @@ main {
     margin: 0.67em;
     font-weight: bold;
   }
-
+ a {
+   text-decoration: none;
+   list-style: none;
+ }
+  
   .upload {
     margin-top: 20px;
   }
@@ -51,6 +61,10 @@ main {
   
   .form-control:hover {
     border-color: cadetblue;
+  }
+  .form-label {
+    width: auto;
+    margin-bottom: auto;
   }
 
   .form-radio {
@@ -86,14 +100,34 @@ main {
 }
 
 .Box input {
-  width: 70%;
+  width: 100%;
 
 }
-.Box {
- 
+#form-checkbox {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-direction: row !important;
+  
   align-items: center;
+}
+
+.Box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   
 }
+.Box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.des {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#detail-info {
+  margin-top: 10px;
+}
+
+
