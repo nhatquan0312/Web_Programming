@@ -143,7 +143,7 @@
               <span> Store owner</span>
               </div >
                 
-              <div id="detail-info">
+              <div class="detail-info">
                 <div class="form-group">
                   <label for="bname" class="form-label">Business name</label>
                   <input id="bname" name="bname" type="text" placeholder="Fill this field" class="form-control">
@@ -183,8 +183,9 @@
                 </div>
             </div>
             <div class="Box">
-          <button class="form-submit">Register</button>
-          <button type="submit "class="form-submit">Clear</button>
+          <button class="form-submit" type="submit ">Register</button>
+          <button class="form-submit" type="reset">Clear</button>
+          
         </div>
         </form>
   
@@ -211,6 +212,8 @@
               Validator.minLength('#fname', 3),
               Validator.minLength('#lname', 3),
               Validator.minLength('#address', 3),
+              Validator.minLength('#bname', 3),
+              Validator.minLength('#stname', 3),
               Validator.minLength('#city', 3),
               Validator.minLength('#zcode', 3),
               Validator.minLength('#password', 6),

@@ -126,8 +126,12 @@ main {
   align-items: center;
   justify-content: space-between;
 }
-#detail-info {
+.detail-info {
   margin-top: 10px;
+  
 }
 
-
+.show {
+  display: block;
+  visibility: visible;
+}
