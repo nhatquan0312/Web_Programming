@@ -51,14 +51,22 @@
         <div class="contact-box" >
           <form action="" method="GET" id="contactForm"> 
               <h1>Contact Us</h1>
+            <select id="purpose" name="contact_purpose" class="selection">
+      <option value="" selected>Please select your contact purposes</option>
+      <option value="order">Customer Order</option>
+      <option value="price">Pricing</option>
+      <option value="refund_return">Refund or Returns</option>
+      <option value="account">User Account</option>
+      <option value="other">Other</option>
+            </select>
               <div class="input space-between">                    
               <input type="text" placeholder="First Name" pattern="^[A-Za-z]{3,}$" title="Should have more than 3 letters" >
               
               <input type="text" placeholder="Last Name" pattern="^[A-Za-z]{3,}$" title="Should have more than 3 letters" >
               
-              <input type="email" placeholder="Email" pattern="[a-z]{1,15}" title="Should only contain letters and numbers">
+              <input type="email" placeholder="Email" pattern="^(([a-zA-Z0-9][.]?){2,}|([a-zA-Z0-9]\.)+)([a-zA-Z0-9]|(?!\.))+?[a-zA-Z0-9]@(([a-zA-Z0-9]+\.)+[a-zA-Z]{2,5})$" >
       
-              <input type="phone" placeholder="Phone" pattern="[a-z]{1,15}" title="Should only contain letters and numbers">
+              <input type="phone" placeholder="Phone" pattern="^([0-9][-. ]?){8,10}[0-9]$" >
               </div>
               <div class="method">
               <h4>Preferred Method:</h4>
@@ -93,7 +101,8 @@
                   <input type="checkbox" name="days">
               <label for="days">Sunday</label></div>
               </div>
-              <textarea type="text" class="textarea-field" placeholder="Your message" name="" id="" cols="30" rows="10"></textarea>
+              <textarea type="text" class="textarea-field" id="message" placeholder="Your message" name=""  id="" cols="30" rows="10" required></textarea>
+              <span class="requirement-text" id="remaining-letters">500 letters remaining</span>
               <div class="btn space-between">
              <div class="clear">
                   <input class="clear-button" type="reset">

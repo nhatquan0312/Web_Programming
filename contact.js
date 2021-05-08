@@ -28,3 +28,23 @@
 
     init();
 })();
+
+document.getElementById("message").addEventListener("input", updateRequirementMessage);
+function updateRequirementMessage() {
+    let message = document.getElementById("message").value;
+    let T = message.length;
+    let notify;
+    if (T < 50) {
+        notify = "Your message needs " + (50 - T) + " more letters.";
+        document.getElementById('remaining-letters').innerHTML = notify.fontcolor("red");
+    }
+    else if (T <= 500) {
+        notify = "You have " + (500 - T) + " letters left. Please write some more if can.";
+        document.getElementById('remaining-letters').innerHTML = notify.fontcolor("green");
+    }
+    else {
+        notify = "Your message is exceeding " + (T - 500) + " letters.";
+        document.getElementById('remaining-letters').innerHTML = notify.fontcolor("red");
+    }
+}
+
