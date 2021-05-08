@@ -1,105 +1,75 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
 }
-
-body {
-    box-sizing: border-box;
-    font-family: 'Monstercat', sans-serif;
-    color: #494c5f;
-}
-
-.heading-primary {
-    font-size: 2rem;
-    text-align: center;
-    margin: 50px 0;
-}
-
-.plan-section {
+.pricing-table{
+    width: 100%;
+    margin:auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.plan-section .plan {
-    width: 300px;
-    height: 370px;
     text-align: center;
-    padding: 30px 20px;
-    margin-right: 10px;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: 25%;
+    padding: 10px ;
+    box-sizing: border-box;
+}
+.table{
+    background:#fff;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00000070;
+    border-radius: 20px;
+    border: cadetblue solid 2px;
+    font-family: 'Roboto', sans-serif;
+}
+.table h2{
+    text-transform: uppercase;
+}
+.table ul{
+    margin: 0;
+    padding: 0;
+}
+.table ul li{
+    padding:10px 0;
+    list-style: none;
+}
+.price{
+    font-size:40px;
     margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0.6rem 1.6rem #b3b5c6;
 }
-
-.plan-section .plan .plan-price {
-    font-size: 4rem;
-
-}
-
-.plan-section .plan .dollar {
-    font-size: 2rem;
-    font-weight: 400;
-    vertical-align: middle;
-}
-
-.plan-section .plan .plan-features .plan-items {
-    padding: 15px 0;
-    border-bottom: 1px solid #b3b5c6;
-}
-
-.plan-section .plan .btn {
+.price span{
     display: block;
-    background-color: #5f9ea0;
-    padding: 10px;
-    margin-top: 20px;
-    color: #f6f6f6;
-    border-radius: 5px;
+    font-size: 14px;
 }
-
-.plan-section .plan .btn:hover {
-    background-color: #f6f6f6;
-    color: #494c5f;
-    border: 2px solid #5f9ea0;
-    font-weight: 600;
+.table a{
+    text-decoration: none;
+    color:#2c3e50;
+    border:2px solid cadetblue;
+    display: block;
+    padding:10px 0;
+    margin: 10px 0;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.5s linear;
+    
 }
-
-.plan-section .plan .btn-blue {
-    background-color: #f6f6fe;
-    color: #5f9ea0;
+.table a:hover{
+    background-color: cadetblue;
+    color:#fff;
 }
-
-.plan-section .plan .btn-blue:hover {
-    background-color: #5f9ea0;
-    color: #f6f6fe;
-    border: 1px solid #f6f6fe;
+.heading-primary{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
-
-.plan-section .basic {
-    background-color: #f6f6f6;
-}
-
-.plan-section .pro {
-    background-color: #7FB1B3;
-    color: #f6f6fe;
-}
-
-.plan-section .master {
-    background-color: #f6f6f6;
-}
-
-@media only screen and (max-width: 768px) {
-    .plan-section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .plan {
-        flex-direction: row;
-        align-items: flex-start;
-        margin: auto;
+@media screen and (max-width:768px) {
+    .col{
+        width: 65%;
     }
 }
