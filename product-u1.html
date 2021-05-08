@@ -71,7 +71,7 @@
                 <hr>
                 <button onclick='AddFunction()'>Add To Cart</button>
                 
-                <a href='orderplacement.html'><button type='button'>Buy Now</button></a>
+                <button type='button' onclick='Buy()'>Buy Now</button>
                 <p></p>
                 <span id='alert'></span>
             </div>
@@ -81,7 +81,12 @@
                     window.setTimeout(function() {window.location.href= "index.html";},500);
                     var product1 = ["MEN T-shirt", "399000", "1"]
                     localStorage.setItem('product1', JSON.stringify(product1))
-                }         
+                } 
+                function Buy() {
+                    var product1 = ["MEN T-shirt", "399000", "1"]
+                    localStorage.setItem('product1', JSON.stringify(product1))
+                    window.location.href = "orderplacement.html"
+                }        
             </script> 
         </div>
         <div class='description'>
