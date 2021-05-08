@@ -146,6 +146,7 @@ Validator.isPassword = function (selector, message) {
     };
 } 
 
+
 Validator.minLength = function (selector, min, message) {
     return {
         selector: selector,
@@ -172,6 +173,17 @@ Validator.isConfirmed = function (selector, getConfirmValue, message) {
         }
     }
 }
+
+
+Login.Correctpass = function (selector, message) {
+    return {
+        selector: selector,
+        test: function (input) {
+            var pass = /^(password)$/; 
+            return input == pass ? undefined :  message || 'Wrong password';
+        }
+    };
+} 
 
 const button = document.getElementsByClassName('owner')[0]
 const list = document.getElementsByClassName('detail-info')[0]
