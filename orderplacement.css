@@ -20,7 +20,7 @@
 }
 
 .flex>p {
-    width: 250px;
+    width: 220px;
     line-height: 70px;
     text-align: center;
     margin-left: 7%;
@@ -59,6 +59,15 @@
     display: inline-block;
     padding: 10px 20px;
 }
+.order-button>button {
+    font-size: 24px;
+    border:none;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
 #coupon {
     font-size: 20px;
     font-style: italic;
@@ -81,7 +90,7 @@
     display: flex;
 }
 .quantity-input {
-    margin-left: 170px;
+    margin-left: 160px;
     padding-left: 1%;
     box-sizing: border-box;
     text-align: center;
@@ -95,8 +104,17 @@
     color: white;
     width: 100px;
     height: 50px;
-    margin: 25px 0px 10px 250px;
+    margin: 25px 0px 10px 230px;
 }
+#tlt{
+    font-size: 25px;
+    font-style: inherit;
+}
+.total-price {
+    font-size: 30px;
+    font-style: inherit;
+}
+
 /*resolution for ipad*/
 @media screen and (max-width: 1024px) {
     .flex > h2 {
@@ -116,9 +134,13 @@
         height: 35px;
         font-size: 13px;
     }
+
 }
 /* resolution for iphone*/
 @media screen and (max-width: 767px) {
+    .order-content {
+        font-size: smaller;
+    }
     .flex>p {
         font-size: smaller;
         line-height: smaller;
@@ -158,14 +180,15 @@
         font-size: 13px;
     }
     .quantity-input {
-        width: 35px;
-        height: 35px;
-        font-size: 10px;
-        margin-left:25px;
+        width:30px;
+        height:30px;
+        font-size:10px;
+        margin-left: 25px;
     }
     .btn {
-        width: 60px;
-        height: 30px;
-        font-size: 10px;
+        width: 45px;
+        height:25px;
+        margin-left: 20px;
+        font-size: 8px;
     }
 }

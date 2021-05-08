@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="cookies.css">
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js" defer></script>
-    <script src="coupon.js"></script>
     <script src='products-cart.js' async></script>
     <title>Order Placement</title>
 </head>
@@ -52,7 +51,7 @@
     <div class='background'>
         <h1 style='text-align: center; padding:1%;'>YOUR SHOPPING CART</h1>
         <div class='flex order-content'>
-            <h2>Product name</h2>
+            <h2> Name</h2>
             <h2>Price</h2>
             <h2>Quantity</h2>
             <h2>Remove</h2>
@@ -75,9 +74,9 @@
                     <button class='btn remove-button' type='button'>REMOVE</button>
                 </div>
             </div>
-
+            <hr>
             <div class='coupon'>
-                <strong>Total</strong>
+                <p id='tlt'>Total</p>
                 <p class='total-price' id='tprice'>0</p>
                 <input type='text' id='coupon' placeholder="use coupon here">
                 <button id='check' onclick='validate();'>Apply coupon</button>
@@ -96,7 +95,7 @@
             <hr style='border-top: 1px dashed grey'><br>
             <div class='order-button'>
                 <a href='index.html'>Continue Shopping</a>
-                <button onclick='Order()'>Order</a>
+                <button onclick='Order()'>Order</button>
             </div>
 
 
