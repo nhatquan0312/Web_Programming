@@ -39,7 +39,7 @@
             <li><a href="aboutus.html">About us</a></li>
             <li><a href="fees.html">Fees</a></li>
             <li><a href="faqs.html">FAQ</a></li>
-            <li><a href="myaccount.html">My Account</a></li>
+            <li><a href="login.html">My Account</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="orderplacement.html">
                 <ion-icon name="cart-outline"></ion-icon>
@@ -135,12 +135,18 @@
 
         <div class="form-group">
          <span>You are:</span>
-            <div class="Box-2">
+         <div class="radio-box" id="shopper">
+          <input type="radio" value="Shopper" name="accounttype" id="shopper">
+          <span>Shopper</span>
+        </div>   
+         <div class="Box-2">
               <div class="radio-box" onclick= "ShowDiv()" id="owner">
               <input type="radio" value="Store owner" name="accounttype" id="storeOwner">
               <span> Store owner</span>
+              
               </div >              
               <div class="detail-info" id="storeOwnerOnly">
+                <em>For store owner only:</em>
                 <div class="form-group">
                   <label for="bname" class="form-label">Business name</label>
                   <input id="bname" name="bname" type="text" placeholder="Fill this field" class="form-control">
@@ -174,10 +180,7 @@
               </div>
             </div>
             
-                <div class="radio-box" id="shopper">
-                  <input type="radio" value="Shopper" name="accounttype" id="shopper">
-                  <span>Shopper</span>
-                </div>
+                
             </div>
             <div class="Box">
           <button class="form-submit" type="submit ">Register</button>
