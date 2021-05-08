@@ -78,6 +78,7 @@ function validate() {
     document.getElementById('note').innerHTML = text;
 } 
 
+/* get data from localStorage*/
 function autoFill() {
 
 
@@ -100,4 +101,11 @@ if (localStorage.getItem("product1") === null) {
     document.getElementById('box1').style.display = 'none'
     document.getElementById('box2').style.display = 'none'
     document.getElementsByClassName('total-price').innerHTML = 0
+}
+
+/*order button*/
+function Order() {
+    localStorage.removeItem("product1")
+    localStorage.removeItem("product2")
+    window.location.href = "thanks.html"
 }
