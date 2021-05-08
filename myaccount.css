@@ -128,10 +128,14 @@ main {
 }
 .detail-info {
   margin-top: 10px;
-  
+  display: none;
 }
 
 .show {
-  display: block;
-  visibility: visible;
+  display: flex;
+}
+@media screen and (max-width:768px) {
+  .form{
+    
+  }
 }

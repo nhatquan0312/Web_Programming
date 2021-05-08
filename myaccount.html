@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="myaccount.css">
     <link rel="stylesheet" href="cookies.css">
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src="script.js" defer></script>
-    <script src="myaccount.js"></script>
     <title>Document</title>
 </head>
 
@@ -27,9 +25,6 @@
             <li><a href="index.html">MUADE.</a></li>
           </ul>
         </div>
-        <div class="searchbar">
-          <input type="search" placeholder="Search" name="" id="" >
-        </div>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -37,6 +32,9 @@
         </a>
         <div class="navbar-links">
           <ul>
+            <li><div class="searchbar">
+              <input type="search" placeholder="Search" name="" id="" >
+            </div></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="aboutus.html">About us</a></li>
             <li><a href="fees.html">Fees</a></li>
@@ -139,11 +137,10 @@
          <span>You are:</span>
             <div class="Box-2">
               <div class="radio-box" onclick= "ShowDiv()" id="owner">
-              <input type="radio" value="Store owner" name="accounttype" id="Store owner">
+              <input type="radio" value="Store owner" name="accounttype" id="storeOwner">
               <span> Store owner</span>
-              </div >
-                
-              <div class="detail-info">
+              </div >              
+              <div class="detail-info" id="storeOwnerOnly">
                 <div class="form-group">
                   <label for="bname" class="form-label">Business name</label>
                   <input id="bname" name="bname" type="text" placeholder="Fill this field" class="form-control">
@@ -255,5 +252,7 @@
         </nav>
     </footer>
     <script src="cookies.js"></script>
+    <script src="script.js" defer></script>
+    <script src="myaccount.js"></script>
 </body>
 </html>
