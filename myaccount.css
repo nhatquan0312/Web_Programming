@@ -1,5 +1,4 @@
 main {
-    
     min-height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13.3333px;
@@ -7,14 +6,15 @@ main {
     justify-content: space-around;
     align-items: center;
     margin:auto ;
-    padding: auto;
+    position: relative;
+  }
 
-    
+  #register-form {
+    width: 100%;
   }
 
   .form {
-    position: relative;
-    width: 100%;
+    max-width: 100%;
     background-color: none;
     padding: 20px;
     margin: auto;
@@ -27,12 +27,13 @@ main {
     font-size: 2em;
     margin: 0.67em;
     font-weight: bold;
-}
-.upload {
-    margin-top: 20px;
-}
+  }
 
-.form-group {
+  .upload {
+    margin-top: 20px;
+  }
+
+  .form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 17px;
@@ -51,31 +52,25 @@ main {
   .form-control:hover {
     border-color: cadetblue;
   }
-    .select-group {
-    display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-    .form-radio {
-    display: flex ;
-    flex-direction: column;
-    padding: 8px 12px;
-    
-}
+
+  .form-radio {
+  display: flex ;
+  flex-direction: column;
+  padding: 8px 12px;
+  }
+
 .form-submit{
-    background: cadetblue;
-    font-size: 20px;
-    height: 50%;
-    width: 63%;
-    border-radius: 15px;
-    position: relative;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    display: block;
-    margin: auto;
-    top: 1vh;
-    font-family: inherit;
+  background:linear-gradient(to right, grey, cadetblue );
+  font-size: 20px;
+  height: 50%;
+  width: 63%;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  margin: auto;
+  font-family: inherit;
+  box-shadow: 3px 2px 0px 0px #1e6a73;
 }
 .form-message {
     font-size: 10px;
@@ -90,12 +85,12 @@ main {
   color: #e0072c;
 }
 
-.fullname input {
-  width: 100%;
+.Box input {
+  width: 70%;
 
 }
-.fullname {
-  flex-wrap: wrap;
+.Box {
+ 
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;

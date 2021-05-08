@@ -130,7 +130,7 @@ Validator.isEmail = function (selector, message) {
     return {
         selector: selector,
         test: function (input) {
-            var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var regex = /^[a-z]{1,15}$/;
             return regex.test(input) ? undefined :  message || 'Invalid email';
         }
     };

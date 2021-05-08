@@ -165,9 +165,7 @@ body {
 }
 
 /* THIS IS FOR THE FOOTER PART*/
-footer{
-    margin-top: auto;
-}
+
 .footer-navbar {
     display: flex;
     justify-content: space-between;
