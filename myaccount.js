@@ -175,12 +175,12 @@ Validator.isConfirmed = function (selector, getConfirmValue, message) {
 }
 
 
-Login.Correctpass = function (selector, message) {
+Login.Correctpass = function (selector) {
     return {
         selector: selector,
         test: function (input) {
-            var pass = /^(password)$/; 
-            return input == pass ? undefined :  message || 'Wrong password';
+            var corpass = 'password'; 
+            return input == corpass ? undefined :  message || 'Wrong password';
         }
     };
 } 
