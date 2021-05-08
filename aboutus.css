@@ -77,7 +77,28 @@
   .teams {
     max-width: 100%;
   }
-  
+  .bg-active .modal {
+    background-color: whitesmoke;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: #444;
+    padding: 30px 50px;
+  }
+  .bg-active .modal p {
+    margin-top: 44px;
+    font-size: 13px;
+  }
+  .bg-active .modal h1 {
+    margin-bottom: -44px;
+  }
+  .bg-active .modal .modal-info {
+    margin-top: 80px;
+  }
 }
 
 .modal-bg,.modal-bg-2,.modal-bg-3,.modal-bg-4 {
