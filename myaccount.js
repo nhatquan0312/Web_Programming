@@ -189,6 +189,6 @@ const button = document.getElementsByClassName('owner')[0]
 const list = document.getElementsByClassName('detail-info')[0]
 
 button.addEventListener('click',() =>{
-  list.classList.toggle('show')
+  list.classList.toggle('show');
 })
 
