@@ -48,118 +48,146 @@
         </nav>
     </header>
     <main>
+
         <form action="" method="POST" class="form" id="register-form">
-            <h1> 
-                Register
-            </h1>
-            <div class="upload">
-                <input type="file" id="upload" name="" placeholder="Upload your profile" class="" >
-                </div> 
-
-            <div class="spaceBox"></div>
-        
-            <div class="form-group">
-              <label for="firstname" class="form-label">First name</label>
-              <input id="fname" name="firstname" type="text" placeholder="hi" class="form-control">
-              <span class="error-message"></span>
-            </div>
-            
-            <div class="form-group">
-                <label for="lastname" class="form-label">Last name</label>
-                <input id="lname" name="lastname" type="text" placeholder="hi" class="form-control">
-                <span class="error-message"></span>
-              </div>
-
-              <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input id="email" name="email" type="text" placeholder="email@domain.com" class="form-control">
-                <span class="error-message"></span>
-              </div>
-              
-              <div class="form-group">
-                <label for="password" sclass="form-label">Password</label>
-                <input id="password" name="password" type="password" placeholder="Enter your password" class="form-control">
-                <span class="error-message"></span>
-              </div>
+          <h1 >Register</h1>
+          <p class="desc">Have you got an account?</p>
+  
           
-              <div class="form-group">
-                <label for="password_confirmation" class="form-label">Retype your password</label>
-                <input id="password_confirmation" name="password_confirmation" placeholder="Enter your password" type="password" class="form-control">
-                <span class="error-message"></span>
-              </div>
-              
-              <div class="form-group">
-                <label for="phone" class="form-label">Phone number</label>
-                <input id="phone" name="phone" type="text" placeholder="(+84) 0123456789" class="form-control">
-                <span class="error-message"></span>
-              </div>  
-              
-              <div class="form-group">
-                <label for="zipcode" class="form-label">Zip code</label>
-                <input id="zcode" name="zipcode" type="text" placeholder="hi" class="form-control">
-                <span class="error-message"></span>
-              </div>
-            <div class="select-group">
-            
-                <select name="City" class="form-control">
-                <option value="">Select your country</option>
-                <option value="AF">Afghanistan</option>
-                <option value="BE">Belgium</option>
-                <option value="CN">China</option>
-                <option value="DK">Denmark</option>
-                <option value="EG">Egypt</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
-                <option value="HK">Hong Kong</option>
-                <option value="IN">India</option>
-                <option value="JP">Japan</option>
-                <option value="KE">Kenya</option>
-                <option value="LR">Liberia</option>
-                <option value="MY">Malaysia</option>
-                <option value="NG">Nigeria</option>
-                <option value="OM">Oman</option>
-                <option value="PH">Philippines</option>
-                <option value="QA">Qatar</option>
-                <option value="RU">Russian Federation</option>
-                <option value="ES">Spain</option>
-                <option value="TH">Thailand</option>
-                <option value="US">United States</option>
-                <option value="VN">Viet Nam</option>
-                <option value="WF">Wallis and Futuna</option>
-                <option value="YE">Yemen</option>
-                <option value="ZM">Zambia</option>
-            </select>
+          
+          <div class="fullname">
+            <div class="form-group">
+              <label for="firstname" class="form-label">First name </label>
+              <input id="fname" name="firstname" type="text" placeholder="Jess" class="form-control">
+              <span class="form-message"></span>
+            </div>
         
-            <div class="form-radio">
-                <div class="inputBox">
-                <span>You are:</span><br>
-                </div>
-                <div class="inputBox">
-                <input type="radio" value="Store owner" name="accounttype" id="Store owner" >
-                <span> Store owner</span>
-            </div>
-            <div class="inputBox">
-                <input type="radio" value="Shopper" name="accounttype" id="Shopper">
-                <span> Shopper</span>
-            </div>
+          <div class="form-group">
+            <label for="lastname" class="form-label">Last name </label>
+            <input id="lname" name="lastname" type="text" placeholder="Flynn" class="form-control">
+            <span class="form-message"></span>
+          </div>
+        </div>
 
-            </div>
-        </div>
-            <span class="title">By creating an account you agree to our Terms & Privacy.</span>
-            <button class="form-submit">Submit</button>
-          </form>
-        
-        </div>
-    </main>
-    <script>
-        Validator({
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" type="text" placeholder="jessflynn@domain.com" class="form-control">
+            <span class="form-message"></span>
+          </div>
+  
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input id="password" name="password" type="password" placeholder="Enter your password" class="form-control">
+            <span class="form-message"></span>
+          </div>
+  
+          <div class="form-group">
+            <label for="password_retype" class="form-label">Confirm Password</label>
+            <input id="password_retype" name="password_retype" placeholder="Enter your password" type="password" class="form-control">
+            <span class="form-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="zipcode" class="form-label">Zipcode </label>
+            <input id="zcode" name="zipcode" type="text" placeholder="Jess Flynn" class="form-control">
+            <span class="form-message"></span>
+          </div>
+
+          <div class="form-group">
+            <select name="City" class='form-control'>
+              <option value="">Select your country</option>
+              <option value="AF">Afghanistan</option>
+              <option value="BE">Belgium</option>
+              <option value="CN">China</option>
+              <option value="DK">Denmark</option>
+              <option value="EG">Egypt</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+              <option value="HK">Hong Kong</option>
+              <option value="IN">India</option>
+              <option value="JP">Japan</option>
+              <option value="KE">Kenya</option>
+              <option value="LR">Liberia</option>
+              <option value="MY">Malaysia</option>
+              <option value="NG">Nigeria</option>
+              <option value="OM">Oman</option>
+              <option value="PH">Philippines</option>
+              <option value="QA">Qatar</option>
+              <option value="RU">Russian Federation</option>
+              <option value="ES">Spain</option>
+              <option value="TH">Thailand</option>
+              <option value="US">United States</option>
+              <option value="VN">Viet Nam</option>
+              <option value="WF">Wallis and Futuna</option>
+              <option value="YE">Yemen</option>
+              <option value="ZM">Zambia</option>
+          </select>
+          </div>
+  
+          <button class="form-submit">Submit</button>
+        </form>
+  
+        <form action="" method="POST" class="form" id="login-form">
+          <h1 class="heading">Login</h1>
+          <p class="desc"></p>
+  
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" type="text" placeholder="jessflynn@domain.com" class="form-control">
+            <span class="form-message" ></span>
+          </div>
+  
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+            <span class="form-message"></span>
+          </div>
+  
+          <button class="form-submit">Login</button>
+        </form>
+  
+      </main>
+      
+      <script>
+  
+        document.addEventListener('DOMContentLoaded', function () {
+          Validator({
             form: '#register-form',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
             rules: [
-                Validator.isRequired('#fullname'),
-                Validator.isEmail('#email'),
-            ]
+              Validator.isRequired('#lname', 'Last name cannot be blank '),
+              Validator.isRequired('#fname', 'First name cannot be blank '),
+              Validator.isEmail('#email'),
+              Validator.isRequired('#password_retype'),
+              Validator.isConfirmed('#password_retype', function () {
+                return document.querySelector('#form-1 #password').value;
+              }, 'Password does not match'),
+              Validator.isNumber ('#zcode'),
+              Validator.minLength('#zcode', 6),
+              Validator.minLength('#password', 6),
+            ],
+            onSubmit: function (data) {
+              console.log(data);
+            }
+          });
+  
+  
+          Validator({
+            form: '#login-form',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isEmail('#email'),
+              Validator.minLength('#password', 6),
+            ],
+            onSubmit: function (data) {
+              console.log(data);
+            }
+          });
         });
-    </script>
+  
+      </script>
     <div class="cookie-container">
         <div>
             <p>
