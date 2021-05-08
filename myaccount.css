@@ -14,12 +14,10 @@ main {
     width: 60%;
   }
   #login-form {
-    width: 100%;
-    
-
+    width: 60%;
 
   }
-  .form {
+  .form{
     max-width: 100%;
     background-color: none;
     padding: 40px;
