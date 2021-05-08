@@ -1,3 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </header>
     <main>
         <div class="background-image">
@@ -238,3 +269,12 @@ function setSuccessFor(input) {
     const inputField = input.parentElement;
     inputField.className = "inputbox success"
 }
+
+
+
+
+
+
+
+
+

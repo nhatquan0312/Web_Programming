@@ -1,27 +1,31 @@
-.main {
+main {
     
     min-height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13.3333px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin:auto ;
+    padding: auto;
+
+    
   }
 
   .form {
-position: relative;
-width: 60%;
-background-color: none;
-padding: auto;
-margin: auto;
+    position: relative;
+    width: 100%;
+    background-color: none;
+    padding: 20px;
+    margin: auto;
+    align-self: center;
+    box-shadow: 15px 14px 12px 0 rgb(61 59 92 / 12%);
   }
 
   h1{
     display: block;
     font-size: 2em;
     margin: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
 }
 .upload {
@@ -38,9 +42,10 @@ margin: auto;
     height: 40px;
     padding: 8px 12px;
     outline: none;
-    border: 1.5px solid rgb(138, 129, 129);
+    border: 2px solid black;
     border-radius: 3px;
     font-size: 13.3333px;
+
   }
   
   .form-control:hover {
@@ -59,7 +64,7 @@ margin: auto;
 }
 .form-submit{
     background: cadetblue;
-    font-size: 26px;
+    font-size: 20px;
     height: 50%;
     width: 63%;
     border-radius: 15px;
@@ -73,16 +78,27 @@ margin: auto;
     font-family: inherit;
 }
 .form-message {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    padding: 4px 0 0;
-    
-    
+    font-size: 10px;
+    line-height: 15px;
+    padding: 5px 0 0;
  }
  .form-group.invalid .form-control {
-  border-color: #f33a58;
+  border-color: #e0072c;
 }
 
-.form-group.invalid .error-message {
-  color: #f33a58;
+.form-group.invalid .form-message {
+  color: #e0072c;
+}
+
+.fullname input {
+  width: 100%;
+
+}
+.fullname {
+  flex-wrap: wrap;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  
 }
