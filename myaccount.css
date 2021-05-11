@@ -134,3 +134,20 @@ main {
   display: flex;
 }
 
+@media only screen and (width: 375px) {
+#register-form {
+  width: 80%;
+}
+#login-form {
+  width: 100%;
+}
+}
+
+@media only screen and (width: 1024px) {
+  #register-form {
+    width: 50%;
+  }
+  #login-form {
+    width: 60%;
+  }
+  }

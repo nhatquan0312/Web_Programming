@@ -65,22 +65,26 @@ h1 {
     text-transform: uppercase;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (width: 768px) {
    #reset-form {
        width: 70%;
    } 
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (width: 375px) {
     #reset-form {
         width: 70%;
+        margin-bottom: auto;
     } 
+    .heading {
+        font-size: 15px;
+    }
  }
- @media only screen and (max-width: 667px) {
+ @media only screen and (width: 1024px) {
     #reset-form {
-        width: 70%;}
+        width: 50%;}
     .des {
         display: flex;
         flex-direction: column;
     }
-    } 
- }
+} 
+ 
