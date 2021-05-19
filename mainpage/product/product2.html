@@ -7,48 +7,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="product-page.css">
+    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="/mainpage/product/product-page.css">
     <script src="script.js" defer></script>
     <title>Muade</title>
 </head>
 <body>
-        <header>
-            <nav class="navbar">
-                <div class="brand-title">
-                    <ul>
-                        <li><a href="index.html">MUADE.</a></li>
-                    </ul>
-                </div>
-                <a href="#" class="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </a>
-                <div class="navbar-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutus.html">About us</a></li>
-                        <li><a href="fees.html">Fees</a></li>
-                        <li><a href="faqs.html">FAQ</a></li>
-                        <li><a href="myaccount.html">My Account</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <header>
+        <nav class="navbar">
+          <div class="brand-title">
+            <ul>
+              <li><a href="/index.html">MUADE.</a></li>
+            </ul>
+          </div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><div class="searchbar">
+                <input type="search" placeholder="Search" name="" id="" >
+              </div></li>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/navbar/about/aboutus.html">About us</a></li>
+              <li><a href="/navbar/fees/fees.html">Fees</a></li>
+              <li><a href="/navbar/faqs/faqs.html">FAQ</a></li>
+              <li><a href="/account/login/login.html">My Account</a></li>
+              <li><a href="/navbar/contact/contact.html">Contact</a></li>
+              <li><a href="/account/orderplacement.html">
+                  <ion-icon name="cart-outline"></ion-icon>
+                </a></li>
+            </ul>
+          </div>
+        </nav>
     
-    </header>
+      </header>
     <main>
         <div class='container'>
             <div class='image'>
-                <img src='abi2.jpg' alt='T-shirt'>
+                <img src='abi1.jpg' alt='T-shirt'>
             </div>
             <div class='information'>
-                <p class='title'>Khô gà Abi</p>
-                <p class='p-price'> 35.000 VND</p><hr>
+                <p class='title'>Cơm cháy siêu vị</p>
+                <p class='p-price'> 26.000 VND</p><hr>
                 <form action='index.html'>
                     <input type='number' value='1' min='1' id='number'>
-                    <label for='selection'>Size: </label>
+                    <label for='selection'>Select size: </label>
                     <select name='selection' id='selection'>
                         <option value='S'>250gr</option>
                         <option value='M'>500gr</option>
@@ -75,17 +81,17 @@
             <p class='price'>39.999.000 VND</p></a>
         </div>
         <div class='rec-item'>
-            <a href='product3.html'><img src='abi2.jpg'>
+            <a href='orderplacement.html'><img src='abi2.jpg'>
             <h2>kho ga Abi</h2>
             <p class='price'>35.000 VND</p>
         </div>
         <div class='rec-item'>
-            <a href='product-u3.html'><img src='img/Uniqlo/Child_UT.jpg'>
+            <a href='product1.html'><img src='img/Uniqlo/Child_UT.jpg'>
             <h2>CHILD T-shirt</h2>
             <p class='price'>249.000 VND</p>
         </div>
         <div class='rec-item'>
-            <a href='product4.html'><img src='mac6.webp'>
+            <a href='orderplacement.html'><img src='mac6.webp'>
             <h2>MAcbook Air 2020</h2>
             <p class='price'>28.999.000 VND</p>
         </div>
@@ -96,24 +102,21 @@
         </div>
     </div><hr>
     <footer>
-        <ul>
-            <li>
-            © 2021 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Docs
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About</li>
-            <li><a href="tos.html">Terms of Service</a> </li>
-            <li><a href="privacy-policy.html">Privacy Policy</a> </li>
-        </ul>
-    </footer>   
+        <nav class="footer-navbar">
+    
+          <div class="footer-navbar-links">
+            <ul>
+              <li><a href="/navbar/copyright/copyright.html">Copyright</a></li>
+              <li><a href="/navbar/copyright/tos.html">Terms of Service</a></li>
+              <li><a href="/navbar/copyright/privacy-policy.html">Privacy Poilcy</a></li>
+    
+            </ul>
+    
+          </div>
+          <div class="brand-title"> @2021 MUADE All right reserved</div>
+        </nav>
+    
+      </footer>
         
     
 </body>
