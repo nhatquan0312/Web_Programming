@@ -111,5 +111,5 @@ if (localStorage.getItem("product1") === null) {
 function Order() {
     localStorage.removeItem("product1")
     localStorage.removeItem("product2")
-    window.location.href = "thanks.html"
+    window.location.href = "thanks/thanks.html"
 }
