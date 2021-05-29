@@ -98,8 +98,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/492245eeb1.js" crossorigin="anonymous"></script>
-
-
   <script src="script.js" defer></script>
   <title>Muade</title>
 </head>
@@ -113,7 +111,7 @@
     <nav class="navbar">
       <div class="brand-title">
         <ul>
-          <li><a href="/index.html">MUADE.</a></li>
+          <li><a href="/index.php">MUADE.</a></li>
         </ul>
       </div>
       <a href="#" class="toggle-button">
@@ -126,13 +124,13 @@
           <li><div class="searchbar">
             <input type="search" placeholder="Search" name="" id="" >
           </div></li>
-          <li><a href="/index.html">Home</a></li>
+          <li><a href="/index.php">Home</a></li>
           <li><a href="/navbar/about/aboutus.html">About us</a></li>
           <li><a href="/navbar/fees/fees.html">Fees</a></li>
           <li><a href="/navbar/faqs/faqs.html">FAQ</a></li>
           <li><a href="/account/login/login.html">My Account</a></li>
           <li><a href="/navbar/contact/contact.html">Contact</a></li>
-          <li><a href="/account/orderplacement.html">
+          <li><a href="/account/orderplacement.php">
               <ion-icon name="cart-outline"></ion-icon>
             </a></li>
         </ul>

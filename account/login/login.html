@@ -8,17 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/nav.css">
-    <link rel="stylesheet" href="/account/myaccount.css">
+    <link rel="stylesheet" href="/account/login/login.css">
     <link rel="stylesheet" href="/cookies.css">
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src="script.js" defer></script>
-    <script src="myaccount.js"></script>
+    <script src="/script.js" defer></script>
+   
     <title>Login page</title>
 </head>
 
 <body>
     <div class="wrapper">
-
     </div>
     <header>
       <nav class="navbar">
@@ -52,86 +51,65 @@
   
     </header>
     <main>
-        <form action="" method="POST" class="form" id="login-form">
-          <h1 class="heading">Login</h1>
-          <div class="des">
-            <p>Already have an account?</p>
-            <a href="/account/myaccount.html"><label>Sign Up</label></a>
-          </div>
-            
-          <div class="form-group">
-            <label for="email-log" class="form-label">Email</label>
-            <input id="email-log" name="email" type="text" placeholder="jessflynn@domain.com" class="form-control">
-            <span class="form-message" ></span>
-          </div>
-  
-          <div class="form-group">
-            <label for="password-log" class="form-label">Password</label>
-            <input id="password-log" name="password" type="password" placeholder="Enter your password" class="form-control">
-            <span class="form-message"></span>
-          </div>
+      <form action="#" onsubmit="return validate()">
+        <h1 class="heading">Login</h1>
+        
+        <div class="form-group">
+                  <label class="form-label">Email</label>
+                  <input id="username" name="email" type="text" placeholder="jessflynn@domain.com" class="form-control success" autocomplete="off">
+                  <span id="user"class="form-message" ></span>
+        </div>
           
-          <div class="des" id="form-checkbox">
-          <div ><input id="check-box" type="checkbox">
-          <label for="line" class="form-label">Remember password</label></div>
-          <a href="resetpass.html"><label>Forgot password</label></a>
-        </div>
-          <button class="form-submit"><a href="sampleuser.html">Login</a></button>
-        </form>
-  
-      </main>
-      
-      <script>
+                 <div class="form-group">
+                  <label for="password" class="form-label">Password</label>
+                  <input id="password" name="password" type="password" placeholder="Enter your password" class="form-control" autocomplete="off">
+                  <span id="pass" class="form-message"></span>
+                </div>
+                
+                <div class="des" id="form-checkbox">
+                <div>
+                  <input id="check-box" type="checkbox">
+                <label for="line" class="form-label">Remember password</label>
+              </div>
+              <input type="submit" class="form-submit" name="submit" autocomplete= "off" value="Login">
         
-        document.addEventListener('DOMContentLoaded', function () {
-    
-          Validator({
-            form: '#login-form',
-            formGroupSelector: '.form-group',
-            errorSelector: '.form-message',
-            rules: [
-              Login.Correctpass('#password-log')
-            ],
-            onSubmit: function (data) {
-              console.log(data);
-            }
-          });
-        });
-        
-      </script>
-    <div class="cookie-container">
-        <div>
-            <p>
-                Our website uses cookies necessary for its basic functioning. By continuing browsing, you consent to my
-                use of
-                cookies and other technologies. To find out more, read our
-                <a href="privacy-policy.html">privacy policy</a> and <a href="#">cookie policy</a>.
-            </p>
-        </div>
-        <div class="button-container">
-            <button class="cookie-btn">
-                I understand
-            </button>
-            <span><a href="#">Learn more</a></span>
-        </div>
+      </form>
+  </main>
+  <div class="cookie-container">
+    <div>
+        <p>
+            Our website uses cookies necessary for its basic functioning. By continuing browsing, you consent to my
+            use of
+            cookies and other technologies. To find out more, read our
+            <a href="privacy-policy.html">privacy policy</a> and <a href="#">cookie policy</a>.
+        </p>
     </div>
-    <footer>
-      <nav class="footer-navbar">
-  
-        <div class="footer-navbar-links">
-          <ul>
-            <li><a href="/navbar/copyright/copyright.html">Copyright</a></li>
-            <li><a href="/navbar/copyright/tos.html">Terms of Service</a></li>
-            <li><a href="/navbar/copyright/privacy-policy.html">Privacy Poilcy</a></li>
-  
-          </ul>
-  
-        </div>
-        <div class="brand-title"> @2021 MUADE All right reserved</div>
-      </nav>
-  
-    </footer>
-  
-    <script src="cookies.js"></script>
+    <div class="button-container">
+        <button class="cookie-btn">
+            I understand
+        </button>
+        <span><a href="#">Learn more</a></span>
+    </div>
+</div>
+<footer>
+    <nav class="footer-navbar">
+
+      <div class="footer-navbar-links">
+        <ul>
+          <li><a href="/navbar/copyright/copyright.html">Copyright</a></li>
+          <li><a href="/navbar/copyright/tos.html">Terms of Service</a></li>
+          <li><a href="/navbar/copyright/privacy-policy.html">Privacy Poilcy</a></li>
+
+        </ul>
+
+      </div>
+      <div class="brand-title"> @2021 MUADE All right reserved</div>
+    </nav>
+
+  </footer>
+<script src="/cookies.js"></script>
+
+<script src="login.js"></script>
 </body>
 </html>
+
