@@ -58,7 +58,23 @@ form{
   font-family: inherit;
   box-shadow: 3px 2px 0px 0px #1e6a73;
 }
+a {
+    text-decoration: none;
+    list-style: none;
+    color: cadetblue;
 
+  }
+a :hover {
+    color: grey;
+}
+
+
+.des {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
 .form-message {
     font-size: 12px;
     line-height: 15px;
@@ -72,3 +88,16 @@ form{
 .form-error{
   border:3px solid #e0072c;
 }
+
+@media only screen and (width: 375px) {
+    form {
+      width: 100%;
+    }
+    }
+    
+    @media only screen and (width: 1024px) {
+   
+      form {
+        width: 60%;
+      }
+      }
