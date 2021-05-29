@@ -9,7 +9,8 @@ display_success("#username","#user");
    }
   
   var pass = document.getElementById("loginpass").value;
-    if (pass.length == 0 ||  pass.length <= 3) { display_error("#loginpass","#lpass");                
+    if (pass.length == 0 ||  pass.length <= 3) { 
+document.getElementById('lpass').innerHTML = "Required field";   display_error("#loginpass","#lpass");                
       return false;
     }
   else {

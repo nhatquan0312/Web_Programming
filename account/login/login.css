@@ -17,7 +17,20 @@ form{
   align-self: center;
   box-shadow: 15px 14px 12px 0 rgb(61 59 92 / 12%);
 }
-
+.des {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+a {
+ text-decoration: none;
+ list-style: none;
+ color: black;
+}
+a:hover {
+color: cadetblue;
+}
 h1{
   display: block;
   font-size: 2em;
@@ -40,7 +53,7 @@ h1{
 }
 
 .form-control:hover {
-   border:3px solid cadetblue;
+   border:3px solid rgb(161, 216, 218);
 }
 
 
