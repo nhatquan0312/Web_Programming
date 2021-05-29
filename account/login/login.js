@@ -1,24 +1,33 @@
 function validate() {
-    var user = document.getElementById("username").value;
-      if (user.length == 0 ||  user.length <= 3) { document.getElementById('user').innerHTML = "Required field"; 
-  
-  document.getElementById('username').classList.add("form-error");                    
-        return false;
-      }
-    else {
-  document.getElementById('username').classList.add("form-success"); 
+  var user = document.getElementById("username").value;
+    if (user.length == 0 || user.length <= 3) { document.getElementById('user').innerHTML = "Required field"; 
+display_error("#username","#user");                
+      return false;
     }
-    var pass = document.getElementById("loginpass").value;
-      if (pass.length == 0 ||  pass.length <= 3) { document.getElementById('lpass').innerHTML = "Required field"; 
+  else {
+display_success("#username","#user");
+   }
   
-  document.getElementById('loginpass').classList.add("form-error");                    
-        return false;
-      }
-    else {
-  document.getElementById('lpass').classList.add("form-success"); 
-    return true;
+  var pass = document.getElementById("loginpass").value;
+    if (pass.length == 0 ||  pass.length <= 3) { display_error("#loginpass","#lpass");                
+      return false;
     }
-    
-  
-  }
-  
+  else {
+display_success("#loginpass","#lpass");
+   }
+};
+
+ function display_success(input,span) {
+ var span = document.querySelector(span);
+ var input = document.querySelector(input);
+   input.classList.remove("form-error");
+       input.classList.add("form-success");
+  span.innerHTML="Success"
+   span.classList.add("success-message");   
+   }
+
+ function display_error(input,span) {
+ var span = document.querySelector(span);
+ var input = document.querySelector(input);    input.classList.add("form-error");
+   span.classList.add("error-message");   
+   }
