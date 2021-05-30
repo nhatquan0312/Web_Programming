@@ -2,25 +2,43 @@ main {
   min-height: 100%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 13.3333px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin:auto ;
+  padding: 40px;
   width:100% ;
 }
 
-form{
-  width: 50%;
-  background-color: none;
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-sep {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form2{
+  width: 100%;
+  background-color: whitesmoke;
   padding: 40px;
   margin: auto;
   align-self: center;
   box-shadow: 15px 14px 12px 0 rgb(61 59 92 / 12%);
 }
+.form1 {
+  width: 100%;
+  background-color: none;
+  padding: 40px;
+  margin: auto;
+  align-self: center;
+ 
+}
+
 .des {
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around;
 margin-bottom: 20px;
 }
 a {
@@ -33,8 +51,8 @@ color: black;
 }
 h1{
   display: block;
-  font-size: 2em;
-  margin: 0.67em;
+  font-size: 3em;
+  margin: auto;
   font-weight: bold;
 }
 .form-group {
@@ -53,15 +71,16 @@ h1{
 }
 
 .form-control:hover {
-   border:3px solid rgb(161, 216, 218);
+   
+  background-color: whitesmoke;
 }
 
 
 .form-submit{
 background:linear-gradient(to right, grey, cadetblue );
-font-size: 20px;
+font-size: 17px;
 height: 50%;
-width: 60%;
+width: 20%;
 border-radius: 15px;
 cursor: pointer;
 outline: none;
@@ -79,10 +98,10 @@ box-shadow: 3px 2px 0px 0px #1e6a73;
 font-weight: bold;
 }
 .form-success {
- border:3px solid cadetblue;
+ border:2px solid cadetblue;
 }
 .form-error{
-border:3px solid #e0072c;
+border:2px solid #e0072c;
 }
 
 .error-message {
@@ -90,4 +109,11 @@ border:3px solid #e0072c;
 }
 .success-message {
 color:#5f9ea0;
+}
+
+.Box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
 }

@@ -49,180 +49,85 @@
       </nav>
 
     </header>
-    <main>
+    
 
-        <form action="" method="POST" class="form" id="register-form">
-          <h1 >Register</h1>
-          <div class="des">
-            <p>Already have an account?</p>
-            <a href="login.html"><label>Sign In</label></a>
+      <h1 >Register</h1>
+      <div class="des">
+        <p>Already have an account?</p>
+        <a href="login.html"><label>Sign In</label></a>
+      </div>
+      <main> 
+<form action="#" onsubmit= "return validate()">
+<div class="form-sep">
+  <div class="form2">
+    <div class="form-group">
+            <label for="firstname" class="form-label">First name</label>
+            <input id="firstname" name="firstname" type="text" placeholder="jessglynn@gmail.com" class="form-control" autocomplete="off">
+            <span id="fname" class="form-message"></span>
           </div>
-
-            <div class="form-group">
-              <label for="firstname" class="form-label">First name </label>
-              <input id="fname" name="firstname" type="text" placeholder="Jess" class="form-control">
-              <span class="form-message"></span>
-            </div>
-
-          <div class="form-group">
-            <label for="lastname" class="form-label">Last name </label>
-            <input id="lname" name="lastname" type="text" placeholder="Flynn" class="form-control">
-            <span class="form-message"></span>
+    
+    <div class="form-group">
+            <label for="lastname" class="form-label">Last name</label>
+            <input id="lastname" name="lastname" type="text" placeholder="jessglynn@gmail.com" class="form-control" autocomplete="off">
+            <span id="lname" class="form-message"></span>
           </div>
-
-
-          <div class="form-group">
-            <label for="email" class="form-label">Email</label>
-            <input id="email" name="email" type="text" placeholder="jessflynn@domain.com" class="form-control">
-            <span class="form-message"></span>
-          </div>
-
-          <div class="form-group">
-            <label for="password" class="form-label">Password</label>
-            <input id="password" name="password" type="password" placeholder="Enter your password" class="form-control">
-            <span class="form-message"></span>
-          </div>
-
-          <div class="form-group">
-            <label for="password_retype" class="form-label">Confirm Password</label>
-            <input id="password_retype" name="password_retype" placeholder="Enter your password" type="password" class="form-control">
-            <span class="form-message"></span>
-          </div>
-
-            <div class="form-group">
-              <label for="zipcode" class="form-label">Zipcode </label>
-              <input id="zcode" name="zipcode" type="text" placeholder="6 - digits" class="form-control">
-              <span class="form-message"></span>
-            </div>
-
-            <div class="form-group">
-              <label for="City" class="form-label">Select your city </label>
-              <select name="City" class='form-control'>
-                <option value="AF">Afghanistan</option>
-                <option value="BE">Belgium</option>
-                <option value="CN">China</option>
-                <option value="DK">Denmark</option>
-                <option value="EG">Egypt</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
-                <option value="HK">Hong Kong</option>
-                <option value="IN">India</option>
-                <option value="JP">Japan</option>
-                <option value="KE">Kenya</option>
-                <option value="LR">Liberia</option>
-                <option value="MY">Malaysia</option>
-                <option value="NG">Nigeria</option>
-                <option value="OM">Oman</option>
-                <option value="PH">Philippines</option>
-                <option value="QA">Qatar</option>
-                <option value="RU">Russian Federation</option>
-                <option value="ES">Spain</option>
-                <option value="TH">Thailand</option>
-                <option value="US">United States</option>
-                <option value="VN">Viet Nam</option>
-                <option value="WF">Wallis and Futuna</option>
-                <option value="YE">Yemen</option>
-                <option value="ZM">Zambia</option>
-            </select>
-            </div>
+       
+    
+        <div class="form-group">
+          <label for="zipcode" class="form-label">Zipcode </label>
+          <input id="zipcode" name="zipcode" type="text" placeholder="6 - digits" class="form-control" autocomplete="off">
+          <span class="form-message" id="zcode"></span>
+        </div>
 
         <div class="form-group">
+          <label for="city" class="form-label">City</label>
+          <input id="city" name="city" type="text" placeholder="jessglynn@gmail.com" class="form-control" autocomplete="off">
+          <span id="cty" class="form-message"></span>
+        </div>
+  
+<div class="form-group">
           <label for="address" class="form-label">Address</label>
-          <input id="address" name="address" type="text" placeholder="19 Pham Ngoc Thach street, Phương Liên ward, Dong Da district, Hanoi city." class="form-control">
-          <span class="form-message"></span>
-        </div>
+          <input id="address" name="address" type="text" placeholder="19 Pham Ngoc Thach street, Phương Liên ward, Dong Da district, Hanoi city."
+          class="form-control" autocomplete="off">
+          <span id="" class="form-message"></span>
+        </div> 
+      </div>   
+  <div class="form1">
+       
+    <div class="form-group">
+                <label for="username" class="form-label">Email</label>
+                <input id="username" name="username" type="text" placeholder="jessglynn@gmail.com" class="form-control" autocomplete="off">
+                <span id="user" class="form-message"></span>
+              </div>
+    <div class="form-group">
+                <label for="phone" class="form-label">Phone number </label>
+                <input id="mphone" name="phonenumber" type="text" placeholder="6 - digits" class="form-control" autocomplete="off">
+                <span id="phone" class="form-message"></span>           
+              </div>
+
+    <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input id="loginpass" name="password" type="password" placeholder="Enter your password" class="form-control" autocomplete="off">
+                <span id="lpass" class="form-message"></span>
+              </div>
 
         <div class="form-group">
-         <span>You are:</span>
-         <div class="radio-box" id="shopper">
-          <input type="radio" value="Shopper" name="accounttype" id="shopper">
-          <span>Shopper</span>
-        </div>   
-         <div class="Box-2">
-              <div class="radio-box" onclick= "ShowDiv()" id="owner">
-              <input type="radio" value="Store owner" name="accounttype" id="storeOwner">
-              <span> Store owner</span>
-
-              </div >              
-              <div class="detail-info" id="storeOwnerOnly">
-                <em>For store owner only:</em>
-
-                <div class="form-group">
-                  <label for="bname" class="form-label">Business name</label>
-                  <input id="bname" name="bname" type="text" placeholder="Fill this field" class="form-control">
-                  <span class="form-message"></span>
-                </div>
-
-                <div class="form-group">
-                  <label for="stname" class="form-label">Store name</label>
-                  <input id="stname" name="stname" type="text" placeholder="Fill this field" class="form-control">
-                  <span class="form-message"></span>
-                </div>
-
-                <div class="form-group">
-                  <label for="Store category" class="form-label">Store category</label>
-                  <select name="City" class='form-control'>
-                    <option>Department</option>
-                    <option>Grocery</option>
-                    <option>Restaurants</option>
-                    <option>Clothing</option>
-                    <option>Accessory</option>
-                    <option>Pharmacies</option>
-                    <option>Technology</option>
-                    <option>Pet </option>
-                    <option>Thrift</option>
-                    <option>Specialty</option>
-                    <option>Toy</option>
-                    <option>Services</option>
-                    <option>Kiosks</option>
-                </select>
-                </div>
-              </div>
-            </div>
-
-
-            </div>
-            <div class="Box">
-          <button class="form-submit" type="submit ">Register</button>
-          <button class="form-submit" type="reset">Clear</button>
-
+          <label for="password_retype" class="form-label">Confirm Password</label>
+          <input id="repassword" name="password_retype" placeholder="Retype your password " type="password" class="form-control" autocomplete="off">
+          <span class="form-message" id="repass"></span>
         </div>
-        </form>
-
-      </main>
-
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          Validator({
-            form: '#register-form',
-            formGroupSelector: '.form-group',
-            errorSelector: '.form-message',
-            rules: [
-              Validator.isRequired('#lname', 'Last name cannot be blank '),
-              Validator.isRequired('#fname', 'First name cannot be blank '),
-              Validator.isRequired('#password_retype'),
-              Validator.isEmail('#email'),
-              Validator.isPassword('#password'),
-              Validator.isConfirmed('#password_retype', function () {
-                return document.querySelector('#form-1 #password').value;
-              }, 'Password does not match'),
-              Validator.isNumber ('#zcode'),
-              Validator.minLength('#fname', 3),
-              Validator.minLength('#lname', 3),
-              Validator.minLength('#address', 3),
-              Validator.minLength('#bname', 3),
-              Validator.minLength('#stname',3),
-              Validator.minLength('#city', 3),
-              Validator.minLength('#zcode', 3),
-              Validator.minLength('#password', 6),
-            ],
-            onSubmit: function (data) {
-              console.log(data);
-            }
-          });
-        });
-
-      </script>
+                 
+</div>
+    
+</div>
+        
+<div class="Box">
+      <input type="submit" class="form-submit" name="submit" autocomplete= "off" value="Register">
+                    <input type="reset" class="form-submit" name="reset" autocomplete= "off" value="Clear">
+                            
+            </div>
+      </form>
+</main>
     <div class="cookie-container">
         <div>
             <p>
