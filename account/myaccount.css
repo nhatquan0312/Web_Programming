@@ -20,19 +20,18 @@ form {
 
 .form2{
   width: 100%;
-  background-color: whitesmoke;
   padding: 40px;
   margin: auto;
   align-self: center;
   box-shadow: 15px 14px 12px 0 rgb(61 59 92 / 12%);
 }
+
 .form1 {
   width: 100%;
   background-color: none;
   padding: 40px;
   margin: auto;
   align-self: center;
- 
 }
 
 .des {
@@ -41,25 +40,30 @@ align-items: center;
 justify-content: space-around;
 margin-bottom: 20px;
 }
+
 a {
  text-decoration: none;
  list-style: none;
  color: cadetblue;
 }
+
 a:hover {
 color: black;
 }
+
 h1{
   display: block;
   font-size: 3em;
   margin: auto;
   font-weight: bold;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 17px;
 }
+
 .form-control {
   height: 40px;
   padding: 8px 12px;
@@ -71,10 +75,8 @@ h1{
 }
 
 .form-control:hover {
-   
   background-color: whitesmoke;
 }
-
 
 .form-submit{
 background:linear-gradient(to right, grey, cadetblue );
@@ -116,4 +118,7 @@ color:#5f9ea0;
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 20px;
+}
+#detail {
+  visibility: hidden;
 }

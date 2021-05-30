@@ -31,6 +31,33 @@ display_error("#zipcode","#zcode");
  } else { display_success("#zipcode","#zcode"); 
    } 
 
+  var ctry = document.getElementById("country").value;
+    if (ctry == "") { 
+ document.getElementById('ctry').innerHTML = "Please select one";      display_error("#country","#ctry");            
+  return false;
+    }
+  else {
+display_success("#country","#ctry");  
+}
+
+  var city = document.getElementById("city").value;
+    if (city.length == 0 ||  city.length < 3) { 
+document.getElementById('cty').innerHTML = "This field is required";      display_error("#city","#cty");             
+      return false;
+    }
+  else {
+display_success("#city","#cty");
+   }
+  
+    var adr = document.getElementById("address").value;
+    if (adr.length == 0 ||  adr.length <3) { 
+ document.getElementById('adr').innerHTML = "This field is required";      display_error("#address","#adr");            
+  return false;
+    }
+  else {
+display_success("#address","#adr");  
+}  
+  
 var user = document.getElementById("username").value;
     if (user.length == 0 || user.length <3) { document.getElementById('user').innerHTML = "This field is required"; 
 display_error("#username","#user");                
@@ -79,32 +106,13 @@ display_error("#repassword","#repass");
     }
   else { display_success("#repassword","#repass"); 
    } 
-  
-  var city = document.getElementById("city").value;
-    if (city.length == 0 ||  city.length < 3) { 
-document.getElementById('cty').innerHTML = "This field is required";      display_error("#city","#cty");             
-      return false;
-    }
-  else {
-display_success("#city","#cty");
-   }
-  
-    var adr = document.getElementById("address").value;
-    if (adr.length == 0 ||  adr.length <3) { 
- document.getElementById('adr').innerHTML = "This field is required";      display_error("#address","#adr");            
-  return false;
-    }
-  else {
-display_success("#address","#adr");  
-}
 }
 
  function display_success(input,span) {
  var span = document.querySelector(span);
  var input = document.querySelector(input);
-   input.classList.remove("form-error");
-       input.classList.add("form-success");
-  span.innerHTML="Success"
+   input.classList.remove("form-error");       input.classList.add("form-success");
+  span.innerHTML="Success";
    span.classList.add("success-message");   
    }
 
@@ -113,4 +121,15 @@ display_success("#address","#adr");
  var input = document.querySelector(input);    input.classList.add("form-error");
    span.classList.add("error-message");   
    }
+
+function showDiv() {
+  var show = document.querySelector("#detail");
+  show.style.visibility ="visible";
+
+}
+function hideDiv() {
+  var hide = document.querySelector("#detail");
+  hide.style.visibility ="hidden";
+
+}
 
