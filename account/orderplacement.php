@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    function Order() {
+        if(!isset($_SESSION['loggedin'])) {
+            header('Location: login/login.html');
+        };
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,11 +105,6 @@
 
             <hr style='border-top: 1px dashed grey'><br>
             <div class='order-button'>
-                <?php 
-                  function Order() {
-                    header('Location: /login/login.html');
-                  }
-                ?>
                 <a href='index.php'>Continue Shopping</a>
                 <button type='sunmit' onclick='Order()'>Order</button>
             </div>
