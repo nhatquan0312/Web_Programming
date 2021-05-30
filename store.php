@@ -1,3 +1,52 @@
+<?php
+    session_start();
+
+    require 'functions.php';
+
+
+    $products = read_all_products();
+    $stores = read_all_stores();
+
+    $store_id = $_GET['id'];
+    
+    //Get featured products
+    $featured_products = [];
+    foreach($products as $product) {
+        if($product['store_id'] == $store_id && $product['featured_in_store'] == TRUE && count($featured_products) < 5) {
+            $featured_products[] = $product;
+        }
+    }
+
+    //get the sorted by time products
+
+    $filtered_products = [];
+    foreach ($products as $product) {
+        if ($product['store_id'] == $store_id) {
+            $filtered_products[] = $product;
+        }
+    }
+    //new products
+
+    $new_pro = read_all_products();
+
+    usort($new_pro, "created_time_cmp");
+
+    $new_products = [];
+
+    $count_for_new_products = 0;
+
+    echo '';
+    foreach ($new_pro as $np) {
+        if ($np['store_id'] == $store_id) {
+            $new_products[] = $np;
+            $count_for_new_products++;
+            if ($count_for_new_products == 5) {
+                break;
+            }
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +59,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/nav.css">
     <link rel="stylesheet" href="/index.css">
-    <link rel="stylesheet" href="/mainpage/store/store.css">
+    <link rel="stylesheet" href="/store.css">
     <link rel="stylesheet" href="/cookies.css">
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js" defer></script>
@@ -25,7 +74,7 @@
         <nav class="navbar">
           <div class="brand-title">
             <ul>
-              <li><a href="/index.html">MUADE.</a></li>
+              <li><a href="/index.php">MUADE.</a></li>
             </ul>
           </div>
           <a href="#" class="toggle-button">
@@ -38,7 +87,7 @@
               <li><div class="searchbar">
                 <input type="search" placeholder="Search" name="" id="" >
               </div></li>
-              <li><a href="/index.html">Home</a></li>
+              <li><a href="/index.php">Home</a></li>
               <li><a href="/navbar/about/aboutus.html">About us</a></li>
               <li><a href="/navbar/fees/fees.html">Fees</a></li>
               <li><a href="/navbar/faqs/faqs.html">FAQ</a></li>
@@ -57,7 +106,7 @@
             <img src='img/Uniqlo/uniqlo_logo .jpg' alt='Uniqlo Logo'>
         </div>
         <div class='store-description'>
-            <h2>Uniqlo_VN</h2>
+            <h2><?=$stores[$store_id-1]['name']?></h2>
             <p>Uniqlo is a clothing apparel company, which war originally founded in Yamaguchi, Japan in 1949 as a
                 textiles manufacturer. Now it is a global brand with over 1000 stores around the world. Redefining
                 clothing, with a focus on quality and textiles which has been unwaverd since the company's origins in
@@ -74,17 +123,17 @@
                 <div class='browse'>
                     <button class='dropdown-button'>Categories</button>
                     <div class='dropdown-content'>
-                        <a href='product-list.html'>Tops</a>
-                        <a href='product-list.html'>Outerwears</a>
-                        <a href='product-list.html'>Bottoms</a>
-                        <a href='product-list.html'>Accessories</a>
+                        <a href='/mainpage/product/product-list.html'>Tops</a>
+                        <a href='/mainpage/product/product-list.html'>Outerwears</a>
+                        <a href='/mainpage/product/product-list.html'>Bottoms</a>
+                        <a href='/mainpage/product/product-list.html'>Accessories</a>
                     </div>
                 </div>
                 <div class='browse'>
                     <button class='dropdown-button'>Created time</button>
                     <div class='dropdown-content'>
-                        <a href='product-list.html'>Newest First</a>
-                        <a href='product-list.html'>Oldest First</a>
+                        <a href='/mainpage/product/product-list.html'>Newest First</a>
+                        <a href='/mainpage/product/product-list.html'>Oldest First</a>
                     </div>
                 </div>
             </h2>
@@ -93,37 +142,19 @@
             <h1>New Products</h1><br>
 
             <div class='new-products'>
+                <?php 
+                    foreach ($new_products as $new_product) {
+                ?>
                 <div class='item-box'>
                     <a href='product-u1.html'><img src='img/Uniqlo/Men_UT.jpg' alt='T-shirt'>
-                        <h2>MEN T-shirt</h2>
-                        <p class='price'>399.000 VND</p>
+                        <h2><?=$new_product['name']?></h2>
+                        <p class='price'><?=$new_product['price']?></p>
                     </a>
                 </div>
-                <div class='item-box'>
-                    <a href='product-u1.html'><img src='img/Uniqlo/Jacket.jpg' alt='Jacket'>
-                        <h2>WOMEN Jacket</h2>
-                        <p class='price'>599.000 VND</p>
-                    </a>
-                </div>
-                <div class='item-box'>
-                    <a href='product-u1.html'><img src='img/Uniqlo/Blazer.jpg' alt='Blazer'>
-                        <h2>MEN Blazer</h2>
-                        <p class='price'>1.299.000 VND</p>
-                    </a>
-                </div>
-                <div class='item-box'>
-                    <a href='product-u1.html'><img src='img/Uniqlo/Women_UT.jpg' alt='T-shirt'>
-                        <h2>WOMEN T-shirt</h2>
-                        <p class='price'>199.000 VND</p>
-                    </a>
-                </div>
-                <div class='item-box'>
-                    <a href='product-u3.html'><img src='img/Uniqlo/Child_UT.jpg' alt='T-shirt'>
-                        <h2>CHILD T-shirt</h2>
-                        <p class='price'>249.000 VND</p>
-                    </a>
 
-                </div>
+                <?php
+                    }
+                ?>
             </div>
         </div><br>
         <hr>
@@ -131,36 +162,20 @@
             <h1> Feature Products</h1><br>
 
             <div class='new-products'>
+
+                <?php
+                    foreach ($featured_products as $featured_product) {
+                ?>
                 <div class='item-box'>
                     <a href='product1.html'><img src='img/Uniqlo/Pant.jpg' alt='Pant'>
-                        <h2>MEN Pants</h2>
-                        <p class='price'>999.000 VND</p>
+                        <h2><?=$featured_product['name']?></h2>
+                        <p class='price'><?=$featured_product['price']?></p>
                     </a>
                 </div>
-                <div class='item-box'>
-                    <a href='product1.html'><img src='img/Uniqlo/Child_UT.jpg' alt='T-shirt'>
-                        <h2>CHILD T-shirt</h2>
-                        <p class='price'>249.000 VND</p>
-                    </a>
-                </div>
-                <div class='item-box'>
-                    <a href='product1.html'><img src='img/Uniqlo/Bag.jpg' alt='Bag'>
-                        <h2>Bag</h2>
-                        <p class='price'>99.000 VND</p>
-                    </a>
-                </div>
-                <div class='item-box'>
-                    <a href='product1.html'><img src='img/Uniqlo/Blazer.jpg' img='Blazer'>
-                        <h2>MEN Blazer</h2>
-                        <p class='price'>1.299.000 VND</p>
-                    </a>
-                </div>
-                <div class='item-box'>
-                    <a href='product-u1.html'><img src='img/Uniqlo/Men_UT.jpg' alt='T-shirt'>
-                        <h2>MEN T-shirt</h2>
-                        <p class='price'>399.000 VND</p>
-                    </a>
-                </div>
+
+                <?php
+                    }
+                ?>
             </div><br>
             <hr>
         </div>
