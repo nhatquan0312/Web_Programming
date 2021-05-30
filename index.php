@@ -11,7 +11,7 @@
 
       $count = 0;
 
-      echo '<ul>';
+      echo '';
       foreach ($products as $p) {
           if ($p['featured_in_mall'] === "TRUE") {
             $featured_products[] = $p;
@@ -29,7 +29,7 @@
 
       $count_for_stores = 0;
 
-      echo '<ul>';
+      echo '';
       foreach ($stores as $s) {
           if ($s['featured'] === "TRUE") {
             $featured_stores[] = $s;
@@ -50,7 +50,7 @@
 
       $count_for_new_products = 0;
 
-      echo '<ul>';
+      echo '';
       foreach ($new_pro as $np) {
             $new_products[] = $np;
             $count_for_new_products++;
@@ -69,7 +69,7 @@
 
       $count_for_new_stores = 0;
 
-      echo '<ul>';
+      echo '';
       foreach ($new_sto as $ns) {
             $new_stores[] = $ns;
             $count_for_new_stores++;
