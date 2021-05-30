@@ -155,7 +155,7 @@
         ?>
 
         <div class="store-image">
-          <a href='mainpage/store/store.html' style='text-decoration: none;'><img id="str-img" src='img/Uniqlo-logo(1).jpg'></a>
+          <a href='store.php' style='text-decoration: none;'><img id="str-img" src='img/Uniqlo-logo(1).jpg'></a>
           <h3> <?=$ns['name']?> </h3>
         </div>
 
@@ -207,7 +207,7 @@
         ?>
 
         <div class="ftstore-image">
-          <a href='mainpage/store/store.html' style='text-decoration: none;'><img id="str-img"src='img/Uniqlo-logo(1).jpg' ></a>
+          <a href='store.php' style='text-decoration: none;'><img id="str-img"src='img/Uniqlo-logo(1).jpg' ></a>
           <h3><?=$s['name']?></h3>
         </div>
 
