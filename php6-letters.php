@@ -103,7 +103,6 @@
     </form>
   </div>
 
-  <section id=" stores">
     <div class="container">
       <!-- Store card row-->
       <div class="store-container">

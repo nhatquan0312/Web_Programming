@@ -1,50 +1,7 @@
 <?php
     session_start();
 
-    require 'functions.php';
 
-
-    $products = read_all_products();
-    $stores = read_all_stores();
-
-    $store_id = (isset($_GET['id']));
-    
-    //Get featured products
-    $featured_products = [];
-    foreach($products as $product) {
-        if($product['store_id'] == $store_id && $product['featured_in_store'] == TRUE && count($featured_products) < 5) {
-            $featured_products[] = $product;
-        }
-    }
-
-    //get the sorted by time products
-
-    $filtered_products = [];
-    foreach ($products as $product) {
-        if ($product['store_id'] == $store_id) {
-            $filtered_products[] = $product;
-        }
-    }
-    //new products
-
-    $new_pro = read_all_products();
-
-    usort($new_pro, "created_time_cmp");
-
-    $new_products = [];
-
-    $count_for_new_products = 0;
-
-    echo '';
-    foreach ($new_pro as $np) {
-        if ($np['store_id'] == $store_id) {
-            $new_products[] = $np;
-            $count_for_new_products++;
-            if ($count_for_new_products == 5) {
-                break;
-            }
-        }
-    }
 ?>
 
 <!DOCTYPE html>
@@ -139,7 +96,7 @@
                 $page = $_GET['page'];
               } //show current page
               for ($page=1;$page<=$total_pages;$page++) {
-                echo '<a href="pagination.php?page=' . $page . '">' .$page . '</a>'
+                echo '<a href="pagination.php?page=' . $page . '">' .$page . '</a>';
               }
             ?>
       <div class='fbutton'>

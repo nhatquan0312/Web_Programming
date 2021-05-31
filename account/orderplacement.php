@@ -1,9 +1,17 @@
 <?php
-    session_start();
-    function Order() {
-        if(!isset($_SESSION['loggedin'])) {
-            header('Location: login/login.html');
+  session_start();
+  if(!(isset($_SESSION['username'])))
+  {
+      function order() {
+          header("Location: login/login.html");
+        }
+      if(array_key_exists('order', $_POST)) { 
+        order();
         };
+  } else {
+    header("Location: thanks/thanks.php");
+  }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -105,8 +113,10 @@
 
             <hr style='border-top: 1px dashed grey'><br>
             <div class='order-button'>
-                <a href='index.php'>Continue Shopping</a>
-                <button type='sunmit' onclick='Order()'>Order</button>
+                <a href='/index.php'>Continue Shopping</a>
+                <form method='post'>
+                  <input type='submit' name='order' value='Order' />
+                </form>
             </div>
         
 
