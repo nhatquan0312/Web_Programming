@@ -1,7 +1,7 @@
 function validate() {
   var  name1= document.getElementById("firstname").value;
     if (name1.length == 0 ||  name1.length <3) { 
-document.getElementById('fname').innerHTML = "This field is required";    display_error("#firstname","#fname");                
+    display_error("#firstname","#fname");                
       return false;
     }
   else {

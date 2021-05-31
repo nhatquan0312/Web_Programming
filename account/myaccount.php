@@ -63,7 +63,7 @@
   <div class="form-group">
           <label for="firstname" class="form-label">First name</label>
           <input id="firstname" name="firstname" type="text" placeholder="jessglynn@gmail.com" class="form-control" autocomplete="off">
-          <span id="fname" class="form-message"></span>
+          <span id="fname" class="form-message"><?php echo $fname_error?></span>
         </div>
   
   <div class="form-group">
@@ -141,13 +141,13 @@
   <div class="form-group">
               <label for="password" class="form-label">Password</label>
               <input id="loginpass" name="password" type="password" placeholder="Enter your password" class="form-control" autocomplete="off">
-              <span id="lpass" class="form-message"></span>
+              <span id="lpass" class="form-message"><?php echo $pass_error?></span>
             </div>
 
       <div class="form-group">
         <label for="password_retype" class="form-label">Confirm Password</label>
         <input id="repassword" name="password_retype" placeholder="Retype your password " type="password" class="form-control" autocomplete="off">
-        <span class="form-message" id="repass"></span>
+        <span class="form-message" id="repass"><?php echo $repass_error?></span>
       </div>
 
   

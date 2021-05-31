@@ -19,19 +19,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $repass_error = "Please confirm password";
         echo '<script type="text/javascript">',
         'display_error("#repassword","#repass"); ;',
-        '</script>'     
+        '</script>';     
     } else{
         $repass = trim($repass);
         echo '<script type="text/javascript">',
      'display_success("#repassword","#repass"); ;',
-     '</script>'
-;
+     '</script>';}
 
         if(empty($password_error) && ($password != $repass)){
             $repass_error = "Password did not match";
             echo '<script type="text/javascript">',
         'display_error("#repassword","#repass"); ;',
-        '</script>' 
+        '</script>'; 
         }
     }
 ?>

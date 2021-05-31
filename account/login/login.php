@@ -52,7 +52,7 @@
   
     </header>
     <main>
-      <form action="" onsubmit="return validate()">
+      <form action="result.php" onsubmit="return validate()">
         <h1 class="heading">Login</h1>
         <div class="des">
           <p>Already have an account?</p>
