@@ -1,3 +1,7 @@
+<?php
+    require "php6-function-cat.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/nav.css">
-  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/php6-letters.css">
   <link rel="stylesheet" href="/cookies.css">
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -55,6 +59,37 @@
     </nav>
 
   </header>
+    <div class="browse">
+        <button class="dropdown-letter-list">Browse by categories :</button>
+        <form method="post" action="php6-categories.php">
+            <input type="submit" name="categories" value="Department stores" ></input>
+            <input type="submit" name="categories" value="Grocery stores" ></input>
+            <input type="submit" name="categories" value="Restaurants" ></input>
+            <input type="submit" name="categories" value="Clothing stores" ></input>
+            <input type="submit" name="categories" value="Accessory stores" ></input>
+            <input type="submit" name="categories" value="Pharmacies" ></input>
+            <input type="submit" name="categories" value="Technology stores" ></input>
+            <input type="submit" name="categories" value="Pet stores" ></input>
+            <input type="submit" name="categories" value="Toy Stores" ></input>
+            <input type="submit" name="categories" value="Specialty stores" ></input>
+            <input type="submit" name="categories" value="Thrift stores" ></input>
+            <input type="submit" name="categories" value="Services" ></input>
+            <input type="submit" name="categories" value="Kiosks" ></input>
+        </form>
+    </div>
+
+    <div class="store-container">
+        <?php
+        for ($i = 0; $i < count($category); $i++) {
+        ?>
+        <div class="store-image">
+          <a href="store.php?id=<?=$category[$i][0]?>" style='text-decoration: none;'><img id="str-img" src='img/Uniqlo-logo(1).jpg'></a>
+          <h3> <?=$category[$i][1]?> </h3>
+        </div>
+        <?php    
+            }
+        ?>
+    </div>
 
 
 
