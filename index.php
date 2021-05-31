@@ -146,6 +146,15 @@
 
     <div class="title"><strong>NEW STORES</strong><span><a href="#">MORE</a></span></div>
 
+    <h2 class='browse-tlt'> Browse stores by:
+                <div class='browse'>
+                    <button class='dropdown-button' ><a href="php6-categories.php" style='text-decoration: none;'>Categories</button>
+                </div>
+                <div class='browse'>
+                    <button class='dropdown-button'><a href="php6-letters.php" style='text-decoration: none;'>Letters</button>
+                </div>
+    </h2>
+
 
     <div class="wrapper-store">
       <div class="prev-btn"><i class="fas fa-chevron-left" id="button"></i></div>
@@ -167,6 +176,8 @@
     </div>
     <script src="main.js"></script>
     <div class="title"><strong>NEW PRODUCTS</strong><span><a href="#">MORE</a></span></div>
+
+    
 
     <div class="proprev-btn"><i class="fas fa-chevron-left"></i></div>
     <div class="wrapper-product">
