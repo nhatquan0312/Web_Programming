@@ -59,7 +59,8 @@
     display: inline-block;
     padding: 10px 20px;
 }
-.order-button>button {
+input[type=submit] {
+    margin: 1px;
     font-size: 24px;
     border:none;
     background-color: black;
@@ -163,6 +164,11 @@
     }
 
     .order-button>a {
+        font-size: 16px;
+        padding: 7px 15px;
+        margin: 2px;
+    }
+    input[type=submit] {
         font-size: 16px;
         padding: 7px 15px;
         margin: 2px;
