@@ -8,14 +8,7 @@ function validate() {
 display_success("#firstname","#fname");
    }
   
-  var name2 = document.getElementById("lastname").value;
-    if (name2.length == 0 ||  name2.length <3) { 
-document.getElementById('lname').innerHTML = "This field is requiredd";      display_error("#lastname","#lname");                
-      return false;
-    }
-  else {
-display_success("#lastname","#lname");
-   }
+
   
   var zcode = document.getElementById("zipcode").value;
     if (zcode.length == 0) { 

@@ -13,7 +13,7 @@ include ('myaccount.php');
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    if(emty(trim($firstname))) {
+    if(emty($firstname)) {
         $fname_error ="This field is required";
     } 
     if(strlen(trim($firstname)) <3 ) {
