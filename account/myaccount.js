@@ -61,7 +61,7 @@ display_success("#address","#adr");
 var user = document.getElementById("username").value;
     if (user.length == 0 || user.length <3) { document.getElementById('user').innerHTML = "This field is required"; 
 display_error("#username","#user");                
-      return false;
+      return false; 
     }
   if ( () => {
 var exp = /^(([a-zA-Z0-9][.]?){2,}|([a-zA-Z0-9]\.)+)([a-zA-Z0-9]|(?!\.))+?[a-zA-Z0-9]@(([a-zA-Z0-9]+\.)+[a-zA-Z]{2,5})$/; 
@@ -70,7 +70,7 @@ if (!exp.test(input)) {
 }
   }
      ) {
-document.getElementById('user').innerHTML = "This field is required"; 
+document.getElementById('user').innerHTML = "Invalid email"; 
 display_error("#username","#user");                
     }
   else {

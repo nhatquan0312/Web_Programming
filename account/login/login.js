@@ -1,6 +1,6 @@
 function validate() {
   var user = document.getElementById("username").value;
-    if (user.length == 0 || user.length <= 3) { document.getElementById('user').innerHTML = "Required field"; 
+    if (user.length == 0 || user.length <= 3) { document.getElementById('user').innerHTML = "This field is required"; 
 display_error("#username","#user");                
       return false;
     }
@@ -10,7 +10,8 @@ display_success("#username","#user");
   
   var pass = document.getElementById("loginpass").value;
     if (pass.length == 0 ||  pass.length <= 3) { 
-document.getElementById('lpass').innerHTML = "Required field";   display_error("#loginpass","#lpass");                
+document.getElementById('lpass').innerHTML = "This field is required";   
+display_error("#loginpass","#lpass");                
       return false;
     }
   else {
@@ -29,6 +30,7 @@ display_success("#loginpass","#lpass");
 
  function display_error(input,span) {
  var span = document.querySelector(span);
- var input = document.querySelector(input);    input.classList.add("form-error");
+ var input = document.querySelector(input);    
+ input.classList.add("form-error");
    span.classList.add("error-message");   
    }
