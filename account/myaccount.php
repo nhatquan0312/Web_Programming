@@ -39,7 +39,7 @@
             <li><a href="/navbar/about/aboutus.html">About us</a></li>
             <li><a href="/navbar/fees/fees.html">Fees</a></li>
             <li><a href="/navbar/faqs/faqs.html">FAQ</a></li>
-            <li><a href="/account/login/login.html">My Account</a></li>
+            <li><a href="/account/login/login.php">My Account</a></li>
             <li><a href="/navbar/contact/contact.html">Contact</a></li>
             <li><a href="/account/orderplacement.html">
                 <ion-icon name="cart-outline"></ion-icon>
@@ -57,7 +57,7 @@
       <a href="login.html"><label>Sign In</label></a>
     </div>
     <main> 
-<form action="#" onsubmit= "return validate()">
+<form action="result1.php" method="POST" onsubmit= "return validate()">
 <div class="form-sep">
 <div class="form2">
   <div class="form-group">

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +41,7 @@
             <li><a href="/navbar/about/aboutus.html">About us</a></li>
             <li><a href="/navbar/fees/fees.html">Fees</a></li>
             <li><a href="/navbar/faqs/faqs.html">FAQ</a></li>
-            <li><a href="/account/login/login.html">My Account</a></li>
+            <li><a href="/account/login/login.php">My Account</a></li>
             <li><a href="/navbar/contact/contact.html">Contact</a></li>
             <li><a href="/account/orderplacement.html">
                 <ion-icon name="cart-outline"></ion-icon>
@@ -55,7 +56,7 @@
         <h1 class="heading">Login</h1>
         <div class="des">
           <p>Already have an account?</p>
-          <a href="/account/myaccount.html"><label>Sign Up</label></a>
+          <a href="/account/myaccount.php"><label>Sign Up</label></a>
         </div>
       <div class="form-group">
                   <label for="username" class="form-label">Username</label>
