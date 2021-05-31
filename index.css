@@ -418,3 +418,40 @@ a>img {
     display: block;
 }*/
 
+/*Browser*/
+
+.browse-tlt {
+    width: 100%;
+    margin: 30px 20px;
+    font-size: 20px;
+    text-transform: initial;
+    font-family: 'Inter', sans-serif;
+    color: #252525;
+    margin-left: 10%;
+    text-decoration: underline;
+}
+
+.browse {
+    position: relative;
+    display: inline-block;
+}
+
+button a{
+    font-size: 20px;
+    text-transform: initial;
+    font-family: 'Inter', sans-serif;
+    color: #252525;
+}
+
+.dropdown-button {
+    width: 141px;
+    background-color:whitesmoke;
+    color: black;
+    padding: 18px;
+    font-size: 21px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
