@@ -1,25 +1,39 @@
 <?php 
-$username = $_POST['username'];
-$password = $_POST['password'];
 
-if(emty($username)) {
-    $name_error ="Please insert your name";
-}
-if(emty($password)) {
-    $pass_error ="Please insert your password";
-}
+
+$password = $_POST['password'];
+$repass = $_POST['repassword'];
+include ('myaccount.php');
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+    if(empty(trim($password))){
+        $pass_error = "This field is required";     
+    } elseif(strlen(trim($password)) < 6){
+        $pass_error = "Password must have atleast 6 characters";
+    } else{
+        $password = trim($password);
+    }
+
+    if(empty(trim($repass))){
+        $repass_error = "Please confirm password";
+        echo '<script type="text/javascript">',
+        'display_error("#repassword","#repass"); ;',
+        '</script>'     
+    } else{
+        $repass = trim($repass);
+        echo '<script type="text/javascript">',
+     'display_success("#repassword","#repass"); ;',
+     '</script>'
+;
+
+        if(empty($password_error) && ($password != $repass)){
+            $repass_error = "Password did not match";
+            echo '<script type="text/javascript">',
+        'display_error("#repassword","#repass"); ;',
+        '</script>' 
+        }
+    }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Username: <?php echo $username ?></h1>
-    <h2>Username: <?php echo $username ?></h2>
-</body>
-</html>
+
