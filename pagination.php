@@ -1,5 +1,48 @@
 <?php
     session_start();
+    //require 'functions.php';
+    // read file
+    function read_all_products() {
+      $file_name = 'products.csv';
+      $fp = fopen($file_name, 'r');
+      $first = fgetcsv($fp);
+      $products = [];
+      while ($row = fgetcsv($fp)) {
+        $i = 0;
+        $product = [];
+        foreach ($first as $col_name) {
+          $product[$col_name] =  $row[$i];
+          $i++;
+        }
+        $products[] = $product;
+      }
+      return $products;
+    }
+
+
+    //get id
+    $store_id = $_GET['id'];
+    //convert time
+    function created_time_cmp($p1,$p2) {
+      return - (strtotime($p1['created_time']) - strtotime($p2['created_time']));
+    }
+    // get products
+    $f_products = read_all_products();    
+    usort($f_products, 'created_time_cmp');
+
+    $n_products = [];
+    $counting = 0;
+    
+    echo '';
+    foreach ($f_products as $np) {
+      if ($np['store_id'] == $store_id) {
+        $n_products = $np;
+        $counting++;
+        if ($counting == 2) {
+            break;
+        }
+      }
+    }
 
 
 ?>
@@ -26,11 +69,17 @@
   .button {
     text-decoration:none;
     display:inline-block;
-    background-color: green;
+    background-color: black;
     color:white;
+    text-align:center;
     padding: 8px 16px;
+    width: 100px;
+    height: 35px;
     border:none;
 
+  }
+  .btn1 {
+    margin-left: 45%;
   }
 </style>
 <body>
@@ -71,14 +120,14 @@
     <section>
       <div class='new-products'>
             <?php 
-                foreach ($new_products as $new_product) {
+                foreach ($n_products as $n_product) {
             ?>
-            <div class='item-box'>
-                <a href='product-u1.html'><img src='img/Uniqlo/Men_UT.jpg' alt='T-shirt'>
-                    <h2><?=$new_product['name']?></h2>
-                    <p class='price'><?=$new_product['price']?></p>
-                </a>
-            </div>
+              <div class='item-box'>
+                  <a href='product-u1.html'><img src='img/Uniqlo/Men_UT.jpg' alt='T-shirt'>
+                      <h2><?= $n_products['name']?></h2>
+                      <p class='price'><?= $n_products['price']?></p>
+                  </a>
+              </div>
 
             <?php
                 }
@@ -86,23 +135,23 @@
         </div>
       </div><br>
             <?php
-              require 'function.php';
+              /*require 'functions.php';
               $products_per_pages = 2;
               $products = read_all_products(); //read all products
-              $total_pages = ceil($products/$products_per_pages); //count total pages
+              $total_pages = ceil($products/$products_per_pages); //count total pages */
               if (!isset($_GET['page'])) {
                 $page = 1;
               } else {
                 $page = $_GET['page'];
               } //show current page
-              for ($page=1;$page<=$total_pages;$page++) {
+              /*for ($page=1;$page<=$total_pages;$page++) {
                 echo '<a href="pagination.php?page=' . $page . '">' .$page . '</a>';
-              }
+              }*/
             ?>
-      <div class='fbutton'>
-        <a href='pagination.php?page' class='button'>Previous</a>
-        <a href='pagination.php?page' class='button'>Next</a>
-      </div>
+      <form class='fbutton'>
+        <a href='pagination.php?id=<?echo $store_id?>' class='button btn1'>Previous</a>
+        <a href='pagination.php?id=<?echo $store_id?>' class='button'>Next</a>
+      </form>
     </section>
     <div class="cookie-container">
         <div>

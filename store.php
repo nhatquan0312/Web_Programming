@@ -132,8 +132,8 @@
                 <div class='browse'>
                     <button class='dropdown-button'>Created time</button>
                     <div class='dropdown-content'>
-                        <a href='/pagination.php'>Newest First</a>
-                        <a href='/pagination.php'>Oldest First</a>
+                        <a href='/pagination.php?id=<?echo $store_id?>'>Newest First</a>
+                        <a href='/pagination.php?id=<?echo $store_id?>'>Oldest First</a>
                     </div>
                 </div>
             </h2>

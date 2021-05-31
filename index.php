@@ -128,7 +128,7 @@
           <li><a href="/navbar/about/aboutus.html">About us</a></li>
           <li><a href="/navbar/fees/fees.html">Fees</a></li>
           <li><a href="/navbar/faqs/faqs.html">FAQ</a></li>
-          <li><a href="/account/login/login.html">My Account</a></li>
+          <li><a href="/account/login/login.php">My Account</a></li>
           <li><a href="/navbar/contact/contact.html">Contact</a></li>
           <li><a href="/account/orderplacement.php">
               <ion-icon name="cart-outline"></ion-icon>
