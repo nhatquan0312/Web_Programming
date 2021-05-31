@@ -96,7 +96,7 @@
                 $page = $_GET['page'];
               } //show current page
               for ($page=1;$page<=$total_pages;$page++) {
-                echo '<a href="pagination.php?page=' . $page . '">' .$page . '</a>'
+                echo '<a href="pagination.php?page=' . $page . '">' .$page . '</a>';
               }
             ?>
       <div class='fbutton'>
