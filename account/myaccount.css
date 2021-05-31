@@ -113,6 +113,10 @@ border:2px solid #e0072c;
 color:#5f9ea0;
 }
 
+.detail-info {
+  
+  
+}
 .Box {
   display: flex;
   align-items: flex-start;
@@ -121,4 +125,5 @@ color:#5f9ea0;
 }
 #detail {
   visibility: hidden;
+
 }
