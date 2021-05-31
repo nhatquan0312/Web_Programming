@@ -57,7 +57,7 @@
       <a href="login.html"><label>Sign In</label></a>
     </div>
     <main> 
-<form action="result1.php" onsubmit= "return validate()">
+<form action="result1.php" method="POST" onsubmit= "return validate()">
 <div class="form-sep">
 <div class="form2">
   <div class="form-group">
