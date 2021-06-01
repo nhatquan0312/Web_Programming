@@ -14,22 +14,16 @@ function textClean($string)
 
 $user = "";
 $pass = "";
-  
 
 $useroptions = ['cost' => 10,]; 
 $pwoptions   = ['cost' => 10,]; 
 $userhash    = password_hash($username, PASSWORD_BCRYPT, $useroptions); 
-$passhash    = password_hash($password, PASSWORD_BCRYPT, $pwoptions);  
-$hasheduser  = file_get_contents("store_data.csv"); 
-$hashedpass  = file_get_contents("store_data.csv"); 
-
-
-
+$passhash    = password_hash($password, PASSWORD_BCRYPT, $pwoptions);   
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($username)) {
         $user_error ="Please enter you username";
-    } if {isset($_POST['user'])) {
+    } else {
         $success ="Success";
         $username = $username;
     }
@@ -37,11 +31,28 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   if (isset($_POST['submit'])) {
     if ($password == 'password') {
       $_SESSION['loggedin'] = true;
-      header('location: sampleuser.html');} 
-      else {
+      header('location: sampleuser.html');}     
+    if ((password_verify($user, $hasheduser)) && (password_verify($pass,$hashedpass))) {
+  
+          include ("sampleuser.html");}
+          else {
       $pass_error = 'Invalid username/password';
     }
   }
+}
+?>
 
-      ?>
+    
+    
+    
+    
+
+    
+    
+  
+
+
+
+
+
 
