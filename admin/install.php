@@ -43,7 +43,7 @@ if(isset($_POST["submit"]))
    'password' => $password
   );
   fputcsv($file_open, $form_data);
-  $error = '<label class="text-success">Thank you for contacting us</label>';
+  $error = '<label class="text-success">Register Success. Please delete this file and click on this <a href="login.php">link</a> to proceed to login page</label>';
   $username = '';
   $password='';
  }
