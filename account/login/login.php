@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/nav.css">
+    
     <link rel="stylesheet" href="/account/login/login.css">
+    <link rel='stylesheet' type='text/css' href='/account/login/style.php'>
     <link rel="stylesheet" href="/cookies.css">
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="/script.js" defer></script>
@@ -52,7 +54,7 @@
   
     </header>
     <main>
-      <form action="result.php" onsubmit="return validate()">
+      <form action="result.php" method="post" >
         <h1 class="heading">Login</h1>
         <div class="des">
           <p>Already have an account?</p>
@@ -61,13 +63,19 @@
       <div class="form-group">
                   <label for="username" class="form-label">Username</label>
                   <input id="username" name="username" type="text" placeholder="jessglynn@gmail.com" class="form-control" autocomplete="off">
-                  <span id="user" class="form-message"></span>
+                  <?php if(isset($user_error)) { ?> 
+                  <span id="user" class="error-message"><?php echo $user_error ?></span><?php } elseif(isset($success)) { ?> 
+                    <span id="user" class="success-message"><?php echo $success ?></span>
+                <?php } ?>
                 </div>
  
        <div class="form-group">
                   <label for="password" class="form-label">Password</label>
                   <input id="loginpass" name="password" type="password" placeholder="Enter your password" class="form-control" autocomplete="off">
-                  <span id="lpass" class="form-message"><?php echo $pass_error; ?></span>
+                  <?php if(isset($pass_error)) { ?> 
+                  <span id="loginpass" class="error-message"><?php echo $pass_error ?></span><?php } elseif(isset($success)) { ?> 
+                    <span id="loginpass" class="success-message"><?php echo $success ?></span>
+                <?php } ?>
                 </div>
                 
         <div class="des" id="form-checkbox">

@@ -2,38 +2,34 @@
 
 
 $password = $_POST['password'];
-$repass = $_POST['repassword'];
+$username = $_POST['username'];
 
+function textClean($string)
+{
+ $string = trim($string);
+ $string = stripslashes($string);
+ $string = htmlspecialchars($string);
+ return $string;
+}
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-    if(empty(trim($password))){
-        $pass_error = "This field is required";     
-    } elseif(strlen(trim($password)) < 6){
-        $pass_error = "Password must have atleast 6 characters";
-    } else{
+    if(empty($username)) {
+        $user_error ="This field is required";
+    } if(textClean(strlen($username)) <3 ) {
+        $user_error ="Your first name needs to have a minimum length of 6";
+    } else {
+        $success ="Success";
+        $username = $username;
+    }
+    
+    if(empty($password)){
+        $pass_error = "Please confirm password";     
+    } else {
+        $success ="Success";
         $password = trim($password);
     }
 
-    if(empty(trim($repass))){
-        $repass_error = "Please confirm password";
-        echo '<script type="text/javascript">',
-        'display_error("#repassword","#repass"); ;',
-        '</script>';     
-    } else{
-        $repass = trim($repass);
-        echo '<script type="text/javascript">',
-     'display_success("#repassword","#repass"); ;',
-     '</script>';}
-
-        if(empty($password_error) && ($password != $repass)){
-            $repass_error = "Password did not match";
-            echo '<script type="text/javascript">',
-        'display_error("#repassword","#repass"); ;',
-        '</script>'; 
-        }
-        include (login.php);
-    }
+    include ('login.php'); }
 ?>
 
 

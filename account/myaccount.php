@@ -63,33 +63,48 @@
   <div class="form-group">
           <label for="firstname" class="form-label">First name</label>
           <input id="firstname" name="firstname" type="text" placeholder="jessglynn@gmail.com" class="form-control" autocomplete="off">
-          <span id="fname" class="form-message"><?php echo $fname_error; ?></span>
+          <?php if(isset($fname_error)) { ?> 
+                  <span id="fname" class="error-message"><?php echo $fname_error ?></span><?php } elseif(isset($success)) { ?> 
+                    <span id="fname" class="success-message"><?php echo $success ?></span>
+                <?php } ?>
         </div>
   
   <div class="form-group">
           <label for="lastname" class="form-label">Last name</label>
           <input id="lastname" name="lastname" type="text" placeholder="jessglynn@gmail.com" class="form-control" autocomplete="off">
-          <span id="lname" class="form-message"></span>
+          <?php if(isset($lname_error)) { ?> 
+                  <span id="lname" class="error-message"><?php echo $lname_error ?></span><?php } elseif(isset($success)) { ?> 
+                    <span id="lname" class="success-message"><?php echo $success ?></span>
+                <?php } ?>
         </div>
      
   
       <div class="form-group">
         <label for="zipcode" class="form-label">Zipcode </label>
         <input id="zipcode" name="zipcode" type="text" placeholder="6 - digits" class="form-control" autocomplete="off">
-        <span class="form-message" id="zcode"></span>
+        <?php if(isset($zcode_error)) { ?> 
+                  <span id="zcode" class="error-message"><?php echo $zcode_error ?></span><?php } elseif(isset($success)) { ?> 
+                    <span id="zcode" class="success-message"><?php echo $success ?></span>
+                <?php } ?>
       </div>
 
       <div class="form-group">
         <label for="city" class="form-label">City</label>
         <input id="city" name="city" type="text" placeholder="jessglynn@gmail.com" class="form-control" autocomplete="off">
-        <span id="cty" class="form-message"></span>
+        <?php if(isset($cty_error)) { ?> 
+                  <span id="cty" class="error-message"><?php echo $cty_error ?></span><?php } elseif(isset($success)) { ?> 
+                    <span id="city" class="success-message"><?php echo $success ?></span>
+                <?php } ?>
       </div>
 
 <div class="form-group">
         <label for="address" class="form-label">Address</label>
         <input id="address" name="address" type="text" placeholder="19 Pham Ngoc Thach street, Phương Liên ward, Dong Da district, Hanoi city."
         class="form-control" autocomplete="off">
-        <span id="adr" class="form-message"></span>
+        <?php if(isset($adr_error)) { ?> 
+                  <span id="adr" class="error-message"><?php echo $adr_error ?></span><?php } elseif(isset($success)) { ?> 
+                    <span id="adr" class="success-message"><?php echo $success ?></span>
+                <?php } ?>
       </div> 
 
 <div class="form-group">
@@ -122,7 +137,10 @@
         <option value="YE">Yemen</option>
         <option value="ZM">Zambia</option>
     </select>
-    <span id="ctry" class="form-message"></span>
+    <?php if(isset($ctry_error)) { ?> 
+                  <span id="ctry" class="error-message"><?php echo $ctry_error ?></span><?php } elseif(isset($success)) { ?> 
+                    <span id="ctry" class="success-message"><?php echo $success ?></span>
+                <?php } ?>
     </div>      
     </div>   
 <div class="form1">
@@ -130,7 +148,10 @@
   <div class="form-group">
               <label for="username" class="form-label">Email</label>
               <input id="username" name="username" type="text" placeholder="jessglynn@gmail.com" class="form-control" autocomplete="off">
-              <span id="user" class="form-message"></span>
+              <?php if(isset($user_error)) { ?> 
+                  <span id="user" class="error-message"><?php echo $user_error ?></span><?php } elseif(isset($success)) { ?> 
+                    <span id="user" class="success-message"><?php echo $success ?></span>
+                <?php } ?>
             </div>
   <div class="form-group">
               <label for="phone" class="form-label">Phone number </label>
@@ -141,13 +162,19 @@
   <div class="form-group">
               <label for="password" class="form-label">Password</label>
               <input id="loginpass" name="password" type="password" placeholder="Enter your password" class="form-control" autocomplete="off">
-              <span id="lpass" class="form-message"><?php echo $pass_error;?></span>
+              <?php if(isset($pass_error)) { ?> 
+                  <span id="lpass" class="error-message"><?php echo $pass_error ?></span><?php } elseif(isset($success)) { ?> 
+                    <span id="lpass" class="success-message"><?php echo $success ?></span>
+                <?php } ?>
             </div>
 
       <div class="form-group">
         <label for="password_retype" class="form-label">Confirm Password</label>
         <input id="repassword" name="password_retype" placeholder="Retype your password " type="password" class="form-control" autocomplete="off">
-        <span class="form-message" id="repass"><?php echo $repass_error; ?></span>
+        <?php if(isset($repass_error)) { ?> 
+                  <span id="repass" class="error-message"><?php echo $repass_error ?></span><?php } elseif(isset($success)) { ?> 
+                    <span id="repass" class="success-message"><?php echo $success ?></span>
+                <?php } ?>
       </div>
 
   

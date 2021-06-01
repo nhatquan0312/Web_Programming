@@ -93,12 +93,6 @@ font-family: inherit;
 box-shadow: 3px 2px 0px 0px #1e6a73;
 }
 
-.form-message {
-  font-size: 12px;
-  line-height: 15px;
-  padding: 5px 0 0;
-font-weight: bold;
-}
 .form-success {
  border:2px solid cadetblue;
 }
@@ -108,9 +102,17 @@ border:2px solid #e0072c;
 
 .error-message {
   color: #e0072c;
+  font-size: 12px;
+line-height: 15px;
+padding: 5px 0 0;
+font-weight: bold;
 }
 .success-message {
 color:#5f9ea0;
+font-size: 12px;
+line-height: 15px;
+padding: 5px 0 0;
+font-weight: bold;
 }
 
 .detail-info {

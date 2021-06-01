@@ -72,22 +72,36 @@ font-family: inherit;
 box-shadow: 3px 2px 0px 0px #1e6a73;
 }
 
-.form-message {
+.form-success {
+ border:3px solid cadetblue;
+ height: 40px;
+ padding: 8px 12px;
+ outline: none;
+ border: 2px solid black;
+ border-radius: 3px;
+ font-size: 13.3333px;
+}
+.form-error{
+border:3px solid #e0072c;
+height: 40px;
+padding: 8px 12px;
+outline: none;
+border: 2px solid black;
+border-radius: 3px;
+font-size: 13.3333px;
+}
+
+.error-message {
+  color: #e0072c;
   font-size: 12px;
   line-height: 15px;
   padding: 5px 0 0;
 font-weight: bold;
 }
-.form-success {
- border:3px solid cadetblue;
-}
-.form-error{
-border:3px solid #e0072c;
-}
-
-.error-message {
-  color: #e0072c;
-}
 .success-message {
 color:#5f9ea0;
+font-size: 12px;
+line-height: 15px;
+padding: 5px 0 0;
+font-weight: bold;
 }

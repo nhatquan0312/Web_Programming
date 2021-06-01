@@ -1,14 +1,4 @@
-function validate() {
-  var user = document.getElementById("username").value;
-    if (user.length == 0 || user.length <= 3) { document.getElementById('user').innerHTML = "This field is required"; 
-display_error("#username","#user");                
-      return false;
-    }
-  else {
-display_success("#username","#user");
-   }
-  
-  
+
 
  function display_success(input,span) {
  var span = document.querySelector(span);
