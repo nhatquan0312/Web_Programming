@@ -29,7 +29,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $password = trim($password);
     }
 
-    include ('login.php'); }
+    
+    //go to page
+    if(isset($_POST['submit'])) {
+        header('Location: /index.php'); // 'Location: /account/orderplacement.php'
+    }
+    include ('login.php');
+
+}
 ?>
+
+
+
 
 

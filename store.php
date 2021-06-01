@@ -91,9 +91,9 @@
               <li><a href="/navbar/about/aboutus.html">About us</a></li>
               <li><a href="/navbar/fees/fees.html">Fees</a></li>
               <li><a href="/navbar/faqs/faqs.html">FAQ</a></li>
-              <li><a href="/account/login/login.html">My Account</a></li>
+              <li><a href="/account/login/login.php">My Account</a></li>
               <li><a href="/navbar/contact/contact.html">Contact</a></li>
-              <li><a href="/account/orderplacement.html">
+              <li><a href="/account/orderplacement.php">
                   <ion-icon name="cart-outline"></ion-icon>
                 </a></li>
             </ul>
@@ -132,8 +132,8 @@
                 <div class='browse'>
                     <button class='dropdown-button'>Created time</button>
                     <div class='dropdown-content'>
-                        <a href='/pagination.php?id=<?echo $store_id?>'>Newest First</a>
-                        <a href='/pagination.php?id=<?echo $store_id?>'>Oldest First</a>
+                        <a href='/pagination.php?id=<?=$store_id?>'>Newest First</a>
+                        <a href='/pagination.php?id=<?=$store_id?>'>Oldest First</a>
                     </div>
                 </div>
             </h2>
