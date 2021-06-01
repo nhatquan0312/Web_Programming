@@ -15,9 +15,10 @@ $city= textClean($_POST['city']);
 $address = textClean($_POST['address']);
 $country = textClean($_POST['country']);
 $username = textClean($_POST['username']);
+$phone = textClean($_POST['phone']);
 $password = textClean($_POST['password']);
 $repass = textClean($_POST['repassword']);
-$error= "";
+$type = textClean($_POST['radio']);
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($lastname)) {
@@ -38,7 +39,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     if(empty($zipcode)) {
         $zcode_error ="This field is required";
-    } if(!is_nan($zipcode)) {
+    } if(!is_nan(floatVal($zipcode))) {
         $zcode_error ="This field only contains digits";
     } if(strlen($zipcode) <3 || strlen($zipcode) >7 ) {
         $zcode_error ="Zipcode must contain 4 to 6 digits";
@@ -63,18 +64,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $address = $address;
     }
     if(empty($country)) {
-        $ctry_error ="Please select one";
+        $ctry_error ="Please select the value";
     } else {
-        $success ="Success";
+        $success ="You have chosen: $country";
         $country = $country;
     }
     if(empty($username)) {
         $user_error ="This field is required";
     } if(!preg_match('/^(([a-zA-Z0-9][.]?){2,}|([a-zA-Z0-9]\.)+)([a-zA-Z0-9]|(?!\.))+?[a-zA-Z0-9]@(([a-zA-Z0-9]+\.)+[a-zA-Z]{2,5})$/', $username)){
-        $user_error ="$email is not a valid email address";
+        $user_error ="$username is not a valid email address";
     } else {
         $success ="$username is a valid email address";
         $username = $username;
+    }
+    if(empty($phone)){
+        $phone_error = "Please enter your phone number";     
+    } if(!preg_match('/^([0-9][-. ]?){8,10}[0-9]$/', $phone)) {
+        $phone_error ="Passwords must contain 8 to 20 characters, no space, with at least 1 lower case letter, 1 upper case letter, 1 digit, 1 special character in the set !@#$%^&*";
+    } else {
+        $success ="Success";
+        $phone = $phone;
     }
     if(empty($password)){
         $pass_error = "Please enter your password";     
@@ -84,7 +93,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $pass_error ="Passwords must contain 8 to 20 characters, no space, with at least 1 lower case letter, 1 upper case letter, 1 digit, 1 special character in the set !@#$%^&*";
     } else {
         $success ="Success";
-        $password = $password;
+        $password = password_hash($password, PASSWORD_BCRYPT);
     }
     if(empty($repass)){
         $repass_error = "Please confirm password";     
@@ -96,6 +105,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $success ="Success";
         $repass = $repass;
     }
+    if (isset($_POST['submit'])) {
+        if(!isset($type)){
+            $type_error ="Select a value"; //  Displaying Selected Value
+        } else {
+            $success= "";
+        }
+    }
+    
     if($success !== '')
     {
      $file_open = fopen("store_data.csv", "a");
@@ -112,6 +129,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       'city' => $city,
       'address' => $address,
       'email'  => $username,
+      'phone' => $phone,
       'password'  => $password,
       'confirm pass'  => $repass
      );
@@ -123,9 +141,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
      $city = '';
      $address = '';
      $username = '';
+     $phone = '';
      $password = '';
      $repass = '';
     }
+    include("myaccount.php");
 }
    
 ?>

@@ -62,7 +62,7 @@
 <div class="form2">
   <div class="form-group">
           <label for="firstname" class="form-label">First name</label>
-          <input id="firstname" name="firstname" type="text" placeholder="jessglynn@gmail.com" class="form-control" autocomplete="off">
+          <input id="firstname" name="firstname" type="text" placeholder="jessglynn@gmail.com" class="form-control"  autocomplete="off">
           <?php if(isset($fname_error)) { ?> 
                   <span id="fname" class="error-message"><?php echo $fname_error ?></span><?php } elseif(isset($success)) { ?> 
                     <span id="fname" class="success-message"><?php echo $success ?></span>
@@ -110,7 +110,7 @@
 <div class="form-group">
       <label for="country" class="form-label">Country </label>
       <select name="country" id="country" class='form-control'>
-        <option value="">Select one</option>
+        <option disabled selected value="">Select one</option>
         <option value="AF">Afghanistan</option>
         <option value="BE">Belgium</option>
         <option value="CN">China</option>
@@ -147,7 +147,7 @@
      
   <div class="form-group">
               <label for="username" class="form-label">Email</label>
-              <input id="username" name="username" type="text" placeholder="jessglynn@gmail.com" class="form-control" autocomplete="off">
+              <input id="username" name="username" type="text" placeholder="jessglynn@gmail.com" class="form-control" value="<?php echo $username?>" autocomplete="off">
               <?php if(isset($user_error)) { ?> 
                   <span id="user" class="error-message"><?php echo $user_error ?></span><?php } elseif(isset($success)) { ?> 
                     <span id="user" class="success-message"><?php echo $success ?></span>
@@ -155,13 +155,16 @@
             </div>
   <div class="form-group">
               <label for="phone" class="form-label">Phone number </label>
-              <input id="mphone" name="phonenumber" type="text" placeholder="6 - digits" class="form-control" autocomplete="off">
-              <span id="phone" class="form-message"></span>           
+              <input id="mphone" name="phone" type="text" placeholder="6 - digits" class="form-control" autocomplete="off">
+              <?php if(isset($phone_error)) { ?> 
+                  <span id="phone" class="error-message"><?php echo $phone_error ?></span><?php } elseif(isset($success)) { ?> 
+                    <span id="phone" class="success-message"><?php echo $success ?></span>
+                <?php } ?>         
             </div>
 
   <div class="form-group">
               <label for="password" class="form-label">Password</label>
-              <input id="loginpass" name="password" type="password" placeholder="Enter your password" class="form-control" autocomplete="off">
+              <input id="loginpass" name="password" type="password" placeholder="Enter your password" class="form-control"  autocomplete="off">
               <?php if(isset($pass_error)) { ?> 
                   <span id="lpass" class="error-message"><?php echo $pass_error ?></span><?php } elseif(isset($success)) { ?> 
                     <span id="lpass" class="success-message"><?php echo $success ?></span>
@@ -180,10 +183,15 @@
   
          <span>You are:</span>
          <div>
-          <input class="radio-box" type="radio" value="shopper" onclick="hideDiv()" name="accounttype" id="shopper" autocomplete="off">
-          <span>Shopper</span>
-          <input class="radio-box" type="radio" value="owner"  onclick="showDiv()" id="owner" name="accounttype" autocomplete="off">
-          <span> Store owner</span>             
+          <input class="radio-box" type="radio" value="shopper" onclick="hideDiv()" name="radio" id="shopper" autocomplete="off" required>
+          <label for="shopper" class="form-label">Shopper</label>
+          <input class="radio-box" type="radio" value="owner"  onclick="showDiv()" id="owner" name="radio" autocomplete="off" required>
+          <label for="owner" class="form-label">Store owner</label>
+          </div>
+          <?php if(isset($success)) { ?> 
+                  <span id="type" class="error-message"><?php echo $success;?></span><?php } else { ?> 
+                    <span id="type"><?php echo $type_error ?></span>
+                <?php } ?>          
             <div  id="detail">
             <div class="form-group">
                   <label for="business name" class="form-label">Business name</label>
@@ -199,19 +207,20 @@
             <div class="form-group">
               <label for="category" class="form-label">Store category</label>
               <select name="category" id="category" class='form-control'>
-                <option>Department</option>
-                <option>Grocery</option>
-                <option>Restaurants</option>
-                <option>Clothing</option>
-                <option>Accessory</option>
-                <option>Pharmacies</option>
-                <option>Technology</option>
-                <option>Pet </option>
-                <option>Thrift</option>
-                <option>Specialty</option>
-                <option>Toy</option>
-                <option>Services</option>
-                <option>Kiosks</option>
+              <option disabled selected value="">Select one</option> 
+              <option value="Department">Department</option>
+                <option value="Grocery">Grocery</option>
+                <option value="Restaurants">Restaurants</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Accessory">Accessory</option>
+                <option value="Pharmacies">Pharmacies</option>
+                <option value="Technology">Technology</option>
+                <option value="Pet">Pet </option>
+                <option value="Thrift">Thrift</option>
+                <option value="Specialty">Specialty</option>
+                <option value="Toy">Toy</option>
+                <option value="Services">Services</option>
+                <option value="Kiosks">Kiosks</option>
             </select>
             <span class="form-message" id="cate"></span>
             </div>
