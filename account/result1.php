@@ -7,7 +7,7 @@ function textClean($string)
  $string = htmlspecialchars($string);
  return $string;
 }
-
+$rows = []
 $firstname = textClean($_POST['firstname']);
 $lastname = textClean($_POST['lastname']);
 $zipcode = textClean($_POST['zipcode']);
@@ -80,7 +80,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($phone)){
         $phone_error = "Please enter your phone number";     
     } if(!preg_match('/^([0-9][-. ]?){8,10}[0-9]$/', $phone)) {
-        $phone_error ="Passwords must contain 8 to 20 characters, no space, with at least 1 lower case letter, 1 upper case letter, 1 digit, 1 special character in the set !@#$%^&*";
+        $phone_error ="Phone number must contain 9-10 digits";
     } else {
         $success ="Success";
         $phone = $phone;
@@ -104,6 +104,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     } else {
         $success ="Success";
         $repass = $repass;
+
     }
     if (isset($_POST['submit'])) {
         if(!isset($type)){
@@ -134,7 +135,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       'confirm pass'  => $repass
      );
      fputcsv($file_open, $form_data);
-     $label = '<label class="heading">Thank you for contacting us</label>';
      $firstname = '';
      $lastname = '';
      $zipcode = '';
@@ -146,6 +146,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
      $repass = '';
     }
     include("myaccount.php");
-}
+    
+} header("Location: account/login/login.php?signup=success");
    
 ?>
