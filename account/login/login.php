@@ -67,7 +67,7 @@
        <div class="form-group">
                   <label for="password" class="form-label">Password</label>
                   <input id="loginpass" name="password" type="password" placeholder="Enter your password" class="form-control" autocomplete="off">
-                  <span id="lpass" class="form-message"></span>
+                  <span id="lpass" class="form-message"><?php echo $pass_error; ?></span>
                 </div>
                 
         <div class="des" id="form-checkbox">

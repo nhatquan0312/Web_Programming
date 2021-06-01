@@ -8,16 +8,7 @@ display_error("#username","#user");
 display_success("#username","#user");
    }
   
-  var pass = document.getElementById("loginpass").value;
-    if (pass.length == 0 ||  pass.length <= 3) { 
-document.getElementById('lpass').innerHTML = "This field is required";   
-display_error("#loginpass","#lpass");                
-      return false;
-    }
-  else {
-display_success("#loginpass","#lpass");
-   }
-};
+  
 
  function display_success(input,span) {
  var span = document.querySelector(span);

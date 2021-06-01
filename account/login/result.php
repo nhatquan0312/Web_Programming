@@ -3,7 +3,7 @@
 
 $password = $_POST['password'];
 $repass = $_POST['repassword'];
-include ('myaccount.php');
+
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -32,6 +32,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         'display_error("#repassword","#repass"); ;',
         '</script>'; 
         }
+        include (login.php);
     }
 ?>
 

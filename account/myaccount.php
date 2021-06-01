@@ -54,7 +54,7 @@
     <h1 >Register</h1>
     <div class="des">
       <p>Already have an account?</p>
-      <a href="login.html"><label>Sign In</label></a>
+      <a href="/account/login/login.php"><label>Sign In</label></a>
     </div>
     <main> 
 <form action="result1.php" method="POST" onsubmit= "return validate()">
