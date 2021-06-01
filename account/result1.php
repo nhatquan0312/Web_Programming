@@ -16,10 +16,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(emty($firstname)) {
         $fname_error ="This field is required";
     } 
-    if(strlen(trim($firstname)) <3 ) {
+    if(strlen($firstname) <3 ) {
         $fname_error ="Your first name needs to have a minimum length of 6";
     } else {
-        $fname = trim($fname);
+        $fname = $fname;
     }
 
     if(empty(trim($repass))){
@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         echo '<script type="text/javascript">',
         'display_error("#repassword","#repass");',
         '</script>';     
-    } else{
+    } else {
         $repass = trim($repass);
         echo '<script type="text/javascript">',
      'display_success("#repassword","#repass");',
