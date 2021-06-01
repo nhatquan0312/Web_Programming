@@ -45,7 +45,7 @@
             <li><a href="/navbar/faqs/faqs.html">FAQ</a></li>
             <li><a href="/account/login/login.php">My Account</a></li>
             <li><a href="/navbar/contact/contact.html">Contact</a></li>
-            <li><a href="/account/orderplacement.html">
+            <li><a href="/account/orderplacement.php">
                 <ion-icon name="cart-outline"></ion-icon>
               </a></li>
           </ul>
