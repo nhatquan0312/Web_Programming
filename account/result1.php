@@ -109,19 +109,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       'firstname'  => $firstname,
       'lastname'  => $lastname,
       'zipcode'  => $zipcode,
-      'email'  => $username,
       'city' => $city,
       'address' => $address,
       'email'  => $username,
       'password'  => $password,
-      'confirm pass'  => $repass,
+      'confirm pass'  => $repass
      );
      fputcsv($file_open, $form_data);
      $label = '<label class="heading">Thank you for contacting us</label>';
-     $name = '';
-     $email = '';
-     $subject = '';
-     $message = '';
+     $firstname = '';
+     $lastname = '';
+     $zipcode = '';
+     $city = '';
+     $address = '';
+     $username = '';
+     $password = '';
+     $repass = '';
     }
 }
    
