@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 function textClean($string)
 {
  $string = trim($string);
