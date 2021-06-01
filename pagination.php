@@ -19,7 +19,6 @@
       return $products;
     }
 
-
     //get id
     $store_id = $_GET['id'];
     //convert time
@@ -27,18 +26,18 @@
       return - (strtotime($p1['created_time']) - strtotime($p2['created_time']));
     }
     // get products
-    $f_products = read_all_products();    
-    usort($f_products, 'created_time_cmp');
+    $all_products = read_all_products();  
+    usort($all_products, 'created_time_cmp');
 
     $n_products = [];
-    $counting = 0;
+    $count_products = 0;
     
     echo '';
-    foreach ($f_products as $np) {
+    foreach ($all_products as $np) {
       if ($np['store_id'] == $store_id) {
-        $n_products = $np;
-        $counting++;
-        if ($counting == 2) {
+        $n_products[] = $np;
+        $count_products++;
+        if ($count_products == 2) {
             break;
         }
       }
@@ -63,9 +62,12 @@
     <link rel="stylesheet" href="/cookies.css">
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>Created time</title>
 </head>
 <style>
+  .item-box {
+    margin-left: 25%;
+  }
   .button {
     text-decoration:none;
     display:inline-block;
@@ -79,7 +81,7 @@
 
   }
   .btn1 {
-    margin-left: 45%;
+    margin-left: 46%;
   }
 </style>
 <body>
@@ -90,7 +92,7 @@
         <nav class="navbar">
           <div class="brand-title">
             <ul>
-              <li><a href="/index.html">MUADE.</a></li>
+              <li><a href="/index.php">MUADE.</a></li>
             </ul>
           </div>
           <a href="#" class="toggle-button">
@@ -103,13 +105,13 @@
               <li><div class="searchbar">
                 <input type="search" placeholder="Search" name="" id="" >
               </div></li>
-              <li><a href="/index.html">Home</a></li>
+              <li><a href="/index.php">Home</a></li>
               <li><a href="/navbar/about/aboutus.html">About us</a></li>
               <li><a href="/navbar/fees/fees.html">Fees</a></li>
               <li><a href="/navbar/faqs/faqs.html">FAQ</a></li>
-              <li><a href="/account/login/login.html">My Account</a></li>
+              <li><a href="/account/login/login.php">My Account</a></li>
               <li><a href="/navbar/contact/contact.html">Contact</a></li>
-              <li><a href="/account/orderplacement.html">
+              <li><a href="/account/orderplacement.php">
                   <ion-icon name="cart-outline"></ion-icon>
                 </a></li>
             </ul>
@@ -123,9 +125,9 @@
                 foreach ($n_products as $n_product) {
             ?>
               <div class='item-box'>
-                  <a href='product-u1.html'><img src='img/Uniqlo/Men_UT.jpg' alt='T-shirt'>
-                      <h2><?= $n_products['name']?></h2>
-                      <p class='price'><?= $n_products['price']?></p>
+                  <a href='/mainpage/product/product-u1.html'><img src='img/Uniqlo/Men_UT.jpg' alt='T-shirt'>
+                      <h2><?= $n_product['name']?></h2>
+                     <p class='price'><?= $n_product['price']?></p>
                   </a>
               </div>
 
@@ -138,7 +140,7 @@
               /*require 'functions.php';
               $products_per_pages = 2;
               $products = read_all_products(); //read all products
-              $total_pages = ceil($products/$products_per_pages); //count total pages */
+              $total_pages = ceil($products/$products_per_pages); //count total pages 
               if (!isset($_GET['page'])) {
                 $page = 1;
               } else {
@@ -149,8 +151,8 @@
               }*/
             ?>
       <form class='fbutton'>
-        <a href='pagination.php?id=<?echo $store_id?>' class='button btn1'>Previous</a>
-        <a href='pagination.php?id=<?echo $store_id?>' class='button'>Next</a>
+        <a href='pagination.php?id=<?=$store_id?>' class='button btn1'>Previous</a>
+        <a href='pagination.php?id=<?=$store_id?>' class='button'>Next</a>
       </form>
     </section>
     <div class="cookie-container">

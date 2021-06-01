@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if(!(isset($_SESSION['username'])))
+  if(!(isset($_SESSION['loggedin'])))
   {
       function order() {
           header("Location: login/login.php");
