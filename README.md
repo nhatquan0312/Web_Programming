@@ -32,7 +32,8 @@ The MUADEApp is compatible with devices of all sizes and all OS's, and consisten
 		    </tr>
 </thead>
 
-<tbody> <tr>
+<tbody>
+	<tr>
 	<td> S3819347</td> 
 	<td>S3879069 </td> 
 	<td>S3818552 </td> 
@@ -43,5 +44,4 @@ The MUADEApp is compatible with devices of all sizes and all OS's, and consisten
 </table>
 
 	
-</style>
 
